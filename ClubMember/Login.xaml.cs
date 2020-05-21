@@ -14,21 +14,20 @@ using System.Windows.Shapes;
 namespace ClubMember
 {
     /// <summary>
-    /// Interaction logic for MembershipPage.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class MembershipPage : Page
+    public partial class Login : Page
     {
-        private String MemberID;
-        public MembershipPage()
+        public Login()
         {
             InitializeComponent();
         }
 
-        public void setMemberID(String _MemberID)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MemberID = _MemberID;
-            this.Membership.Content = "Membership ID: " + MemberID;
+            MembershipPage membership = new MembershipPage();
+            membership.setMemberID("5325552");
+            this.NavigationService.Navigate(membership);
         }
     }
-
 }

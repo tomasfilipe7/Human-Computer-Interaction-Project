@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\App.xaml
-2-337251240
+3-1907885553
 
-5-1079735556
+6-289438642
 1921654412462
-MainWindow.xaml;MembershipPage.xaml;
+Login.xaml;MainWindow.xaml;MembershipPage.xaml;
 
-True
+False
 

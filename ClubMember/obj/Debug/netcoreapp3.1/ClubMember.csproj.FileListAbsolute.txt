@@ -20,3 +20,5 @@ C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMem
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\MembershipPage.g.cs
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\MembershipPage.baml
+C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Login.g.cs
+C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Login.baml
