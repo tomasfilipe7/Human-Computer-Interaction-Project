@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,13 +14,21 @@ using System.Windows.Shapes;
 namespace ClubMember
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MembershipPage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class MembershipPage : Page
     {
-        public MainWindow()
+        private String MemberID;
+        public MembershipPage()
         {
             InitializeComponent();
         }
+
+        public void setMemberID(String _MemberID)
+        {
+            MemberID = _MemberID;
+            this.Membership.Content = MemberID;
+        }
     }
+
 }

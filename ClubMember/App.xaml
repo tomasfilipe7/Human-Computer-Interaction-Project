@@ -4,6 +4,22 @@
              xmlns:local="clr-namespace:ClubMember"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="WindowStyle" TargetType="Window">
+            <Setter Property="Background" Value="#193F96"/>
+            <Setter Property="Width" Value="375"/>
+            <Setter Property="Height" Value="675"/>
+        </Style>
+        <Style x:Key="PageStyle" TargetType="Page">
+            <Setter Property="Background" Value="#193F96"/>
+            <Setter Property="Width" Value="375"/>
+            <Setter Property="Height" Value="675"/>
+        </Style>
+        <Style x:Key="WhiteLabelStyle" TargetType="Label">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
     </Application.Resources>
 </Application>
