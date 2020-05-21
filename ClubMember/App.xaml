@@ -20,6 +20,43 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#000000"/>
+        </Style>
+        <Style x:Key="WhiteRectangleStyle" TargetType="Rectangle">
+            <Setter Property="Fill" Value="#FFFFFF"/>
+            <Setter Property="Stroke" Value="#FFFFFF"/>
+        </Style>
+        <Style x:Key="BlueButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#29A8F8"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#29A8F8"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+        </Style>
+        <Style x:Key="WhiteButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+            <Setter Property="Foreground" Value="#000000"/>
+        </Style>
+        <Style x:Key="SignalButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#7D888F"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#7D888F"/>
+            <Setter Property="Foreground" Value="#000000"/>
         </Style>
     </Application.Resources>
 </Application>

@@ -25,9 +25,10 @@ namespace ClubMember
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MembershipPage membership = new MembershipPage();
-            membership.setMemberID("5325552");
-            this.NavigationService.Navigate(membership);
+            PageManager.pagemanager = new PageManager();
+            PageManager.pagemanager.setMembership("3332243525", 32, "VIP");
+            PageManager.pagemanager.setpaymentCCPage();
+            this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
         }
     }
 }

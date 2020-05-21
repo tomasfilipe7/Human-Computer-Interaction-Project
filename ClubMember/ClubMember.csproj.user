@@ -13,6 +13,9 @@
     <Compile Update="MembershipPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PaymentCCPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Login.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MembershipPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PaymentCCPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

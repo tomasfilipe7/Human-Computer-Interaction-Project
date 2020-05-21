@@ -1,0 +1,22 @@
+﻿<Page x:Class="ClubMember.PaymentCCPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="PaymentCCPage">
+
+    <Grid>
+        <Button x:Name="CreditCard" Style="{StaticResource WhiteButtonStyle}" Content="Credit Card" HorizontalAlignment="Left" Margin="48,36,0,0" VerticalAlignment="Top" Height="31" Width="140"/>
+        <Button x:Name="Paypal" Style="{StaticResource WhiteButtonStyle}" Content="PayPal" Margin="188,36,0,0" VerticalAlignment="Top" Height="31" Width="140" HorizontalAlignment="Left"/>
+        <Rectangle HorizontalAlignment="Left" Height="9" Margin="48,58,0,0" Stroke="#FF484848" VerticalAlignment="Top" Width="140" Fill="#FF484848"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="84" Margin="0,124,0,0" VerticalAlignment="Top" Width="281"/>
+        <Label Content="Months" Style="{StaticResource WhiteLabelStyle}" Margin="48,124,0,489" HorizontalAlignment="Left" Width="100" FontSize="18" />
+        <Label x:Name="PricePerMonth" Content="6€ per moth" Style="{StaticResource WhiteLabelStyle}" Margin="47,172,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" FontSize="8" Foreground="#FFA2A2A2" FontWeight="Normal"/>
+        <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalButtonStyle}" Margin="244,146,0,0" Width="28" FontSize="22" Click="Increase_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28"/>
+        <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalButtonStyle}" Margin="294,146,0,0" Width="28" FontSize="22" Click="Decrease_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28"/>
+        <Label x:Name="QuantityMonths" Content="1" Style="{StaticResource WhiteLabelStyle}" Margin="273,146,0,0" VerticalAlignment="Top" Width="21" HorizontalAlignment="Left" Foreground="#FFA2A2A2" FontWeight="Normal" Height="28"/>
+    </Grid>
+</Page>

@@ -19,6 +19,8 @@ namespace ClubMember
     public partial class MembershipPage : Page
     {
         private String MemberID;
+        private int days_left;
+        private String memberplan;
         public MembershipPage()
         {
             InitializeComponent();
@@ -28,6 +30,27 @@ namespace ClubMember
         {
             MemberID = _MemberID;
             this.Membership.Content = "Membership ID: " + MemberID;
+        }
+
+        public void setDays(int _daysleft)
+        {
+            days_left = _daysleft;
+            this.DaysLeft.Content = "Days left: " + days_left;
+        }
+        public void setMemberPlan(String _memberplan)
+        {
+            memberplan = _memberplan;
+            this.MembershipPlan.Content = "Membership plan: " + memberplan;
+        }
+
+        private void Renew_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getPaymentCCPage());
+        }
+
+        private void Upgrade_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 
