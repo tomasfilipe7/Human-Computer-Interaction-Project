@@ -12,6 +12,7 @@ namespace ClubMember
         private PaymentCCPage paymentccpage;
         private PaymentPaypalPage paypalpayment;
         private CreateAccount createAccount;
+        private ForgotPassword forgotpass;
 
         public PageManager()
         {
@@ -53,6 +54,16 @@ namespace ClubMember
         public CreateAccount getCreateAccount()
         {
             return createAccount;
+        }
+
+        public void setForgotPassword()
+        {
+            forgotpass = new ForgotPassword();
+        }
+
+        public ForgotPassword getForgotPassword()
+        {
+            return forgotpass;
         }
     }
 }
