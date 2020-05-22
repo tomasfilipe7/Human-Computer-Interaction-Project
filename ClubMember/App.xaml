@@ -5,12 +5,12 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="WindowStyle" TargetType="Window">
-            <Setter Property="Background" Value="#193F96"/>
+            <Setter Property="Background" Value="#183E7E"/>
             <Setter Property="Width" Value="375"/>
             <Setter Property="Height" Value="675"/>
         </Style>
         <Style x:Key="PageStyle" TargetType="Page">
-            <Setter Property="Background" Value="#193F96"/>
+            <Setter Property="Background" Value="#183E7E"/>
             <Setter Property="Width" Value="375"/>
             <Setter Property="Height" Value="675"/>
         </Style>

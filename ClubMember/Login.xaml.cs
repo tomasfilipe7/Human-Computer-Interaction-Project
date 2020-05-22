@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace ClubMember
 {
@@ -29,6 +30,31 @@ namespace ClubMember
             PageManager.pagemanager.setMembership("3332243525", 32, "VIP");
             PageManager.pagemanager.setpaymentCCPage();
             this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string line;
+            StreamReader reader = new StreamReader("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt");
+
+            string ID = textBox1.Text;
+            string password = textBox2.Text;
+
+
+            while ((line = reader.ReadLine()) != null)
+            {
+                System.Console.WriteLine(line);
+                textBox1.Text = line;
+            }
+
+            reader.Close();
+
+            System.Console.ReadLine();
         }
     }
 }

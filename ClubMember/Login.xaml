@@ -9,7 +9,16 @@
       Style="{StaticResource PageStyle}">
 
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="188,96,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,611,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
+        <Label Content="Welcome to" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" FontSize="25" Height="49" Width="148" Foreground="White"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Center" Margin="0,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light" FontStyle="Italic" Height="25" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Stretch" AutomationProperties.Name="TextBox"/>
+        <Label Content="MemberID:" HorizontalAlignment="Left" Margin="75,306,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="75,381,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Button Style="{StaticResource BlueButtonStyle}" Content="LOGIN" HorizontalAlignment="Left" Margin="124,491,0,0" VerticalAlignment="Top" Height="41" Width="115" Click="Button_Click_1"/>
+        <Label Content="ClubMember" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Foreground="White" Height="42" Width="172" FontSize="28"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Center" Margin="0,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light" FontStyle="Italic" Height="25" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Stretch" AutomationProperties.Name="TextBox"/>
 
     </Grid>
 </Page>

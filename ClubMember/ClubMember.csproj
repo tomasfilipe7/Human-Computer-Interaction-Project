@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\football-png-7.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\football-png-7.png" />
+  </ItemGroup>
+
 </Project>

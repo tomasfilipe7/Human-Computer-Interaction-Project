@@ -24,3 +24,29 @@ C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMem
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Login.baml
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentCCPage.g.cs
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentCCPage.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\bin\Debug\netcoreapp3.1\ClubMember.exe
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\bin\Debug\netcoreapp3.1\ClubMember.deps.json
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\bin\Debug\netcoreapp3.1\ClubMember.runtimeconfig.json
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\bin\Debug\netcoreapp3.1\ClubMember.runtimeconfig.dev.json
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\bin\Debug\netcoreapp3.1\ClubMember.dll
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\bin\Debug\netcoreapp3.1\ClubMember.pdb
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.csprojAssemblyReference.cache
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Login.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\MembershipPage.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentCCPage.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember_MarkupCompile.cache
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember_MarkupCompile.lref
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Login.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\MembershipPage.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentCCPage.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.g.resources
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.csproj.CoreCompileInputs.cache
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.AssemblyInfoInputs.cache
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.AssemblyInfo.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.dll
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.pdb
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.genruntimeconfig.cache
