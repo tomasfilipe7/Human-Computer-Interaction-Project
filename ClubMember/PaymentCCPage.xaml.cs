@@ -20,6 +20,7 @@ namespace ClubMember
     {
         private int months;
         private int price;
+        private double total_price;
         public PaymentCCPage()
         {
             InitializeComponent();
@@ -58,7 +59,18 @@ namespace ClubMember
         {
             price = 6 * months;
             this.QuantityMonths.Content = months;
-            this.PricePerMonth.Content = price + "€ per month";
+            this.SubTotalPrice.Content = price + "€";
+            total_price = (double)price * 0.23 + price;
+            this.TotalPrice.Content = total_price;
+        }
+
+        private void Pay_check(object sender, RoutedEventArgs e)
+        {
+            ConfirmPayment window = new ConfirmPayment();
+            window.HorizontalAlignment = HorizontalAlignment.Center;
+            window.VerticalAlignment = VerticalAlignment.Center;
+            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.ShowDialog();
         }
     }
 }

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\marci\\.nuget\\packages\\": {}
+    "C:\\Users\\tomas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marci\\Desktop\\IHC_Projeto\\ClubMember\\ClubMember\\ClubMember.csproj",
+      "projectUniqueName": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\Universidade\\IHC\\ClubMember\\ClubMember\\ClubMember.csproj",
       "projectName": "ClubMember",
-      "projectPath": "C:\\Users\\marci\\Desktop\\IHC_Projeto\\ClubMember\\ClubMember\\ClubMember.csproj",
-      "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marci\\Desktop\\IHC_Projeto\\ClubMember\\ClubMember\\obj\\",
+      "projectPath": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\Universidade\\IHC\\ClubMember\\ClubMember\\ClubMember.csproj",
+      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomas\\OneDrive\\Ambiente de Trabalho\\Universidade\\IHC\\ClubMember\\ClubMember\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

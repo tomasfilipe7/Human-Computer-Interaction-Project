@@ -29,7 +29,10 @@ namespace ClubMember
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            PageManager.pagemanager = new PageManager();
+            PageManager.pagemanager.setMembership("38385296",56,"VIP");
+            PageManager.pagemanager.setpaymentCCPage();
+            this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
