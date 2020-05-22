@@ -10,12 +10,19 @@
 
     <Grid>
         <Label Content="CREATE ACCOUNT" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="87,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="87,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="87,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="87,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
-        <Button Style="{StaticResource BlueButtonStyle}" Content="CREATE" Margin="0,387,0,0" VerticalAlignment="Top" Height="32" Width="95" Click="Button_Click"/>
-        <PasswordBox x:Name="textBox5" HorizontalAlignment="Left" Margin="87,296,0,0" VerticalAlignment="Top" Width="191" BorderBrush="{x:Null}" Height="21"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="75,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="75,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="75,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Center" Margin="0,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
+        <Button Style="{StaticResource BlueButtonStyle}" Content="CREATE" Margin="0,551,0,0" VerticalAlignment="Top" Height="45" Width="140" Click="Button_Click"/>
+        <PasswordBox x:Name="textBox5" HorizontalAlignment="Left" Margin="74,415,0,0" VerticalAlignment="Top" Width="163" BorderBrush="{x:Null}" Height="21"/>
+        <Label Content="First Name:" HorizontalAlignment="Left" Margin="69,170,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Margin="69,222,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Label Content="MemberID:" HorizontalAlignment="Left" Margin="69,277,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="69,330,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="69,383,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Center" Margin="0,473,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
+        <Label Content="Favourite movie:" HorizontalAlignment="Left" Margin="69,441,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
 
 
     </Grid>

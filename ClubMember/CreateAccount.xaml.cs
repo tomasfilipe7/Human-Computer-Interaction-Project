@@ -32,39 +32,16 @@ namespace ClubMember
             string memberID = textBox3.Text;
             string email = textBox4.Text;
             string password = textBox5.Password;
+            string movie = textBox6.Text;
 
             string daysLeft = "90";
             string memberType = "Standard";
 
-            if (fname == "" && lname == "" && memberID == "" && email  == "" && password == "")
+            if (fname == "" || lname == "" || memberID == "" || email  == "" || password == "" || movie == "")
             {
                 MessageBox.Show("Inputs cannot be left in blank", "Create Account", MessageBoxButton.OK);
             }
-            else if (fname == "")
-            {
-                MessageBox.Show("Please, insert first name", "Create Account", MessageBoxButton.OK);
-            }
-
-            else if (lname == "")
-            {
-                MessageBox.Show("Please, insert last name", "Create Account", MessageBoxButton.OK);
-            }
-
-            else if (memberID == "")
-            {
-                MessageBox.Show("Please, insert member ID", "Create Account", MessageBoxButton.OK);
-            }
-
-            else if (email == "")
-            {
-                MessageBox.Show("Please, insert e-mail", "Create Account", MessageBoxButton.OK);
-            }
-
-            else if (password == "")
-            {
-                MessageBox.Show("Please, insert password", "Create Account", MessageBoxButton.OK);
-            }
-
+       
             else
             {
                 string[] allLines = System.IO.File.ReadAllLines("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt");
@@ -83,12 +60,15 @@ namespace ClubMember
 
                 if (found == false)
                 {
-                    string line = memberID + "," + password + "," + daysLeft + "," + memberType + "," + fname + "," + lname + "," + email;
+                    string line = memberID + "," + password + "," + daysLeft + "," + memberType + "," + fname + "," + lname + "," + email + "," + movie;
 
                     using (StreamWriter writer = new StreamWriter("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt", true))
                     {
                         writer.WriteLine(line);
                     }
+
+                    MessageBox.Show(memberID + " account was successfully created!", "Create Accoutn", MessageBoxButton.OK);
+                    
                 }
                 
             }

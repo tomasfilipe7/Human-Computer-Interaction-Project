@@ -83,6 +83,12 @@ namespace ClubMember
                         PageManager.pagemanager.setMembership(ID, Int32.Parse(timeLeft), memberType);
                         PageManager.pagemanager.setpaymentCCPage();
                         this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+
+                        if (checkBox1.IsChecked == false)
+                        {
+                            ID = "";
+                            password = "";
+                        }
                     }
                 }
 
@@ -101,6 +107,12 @@ namespace ClubMember
         {
             PageManager.pagemanager.setcreateAccount();
             this.NavigationService.Navigate(PageManager.pagemanager.getCreateAccount());
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            PageManager.pagemanager.setForgotPassword();
+            this.NavigationService.Navigate(PageManager.pagemanager.getForgotPassword());
         }
     }
 }
