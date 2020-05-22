@@ -14,25 +14,26 @@ using System.Windows.Shapes;
 namespace ClubMember
 {
     /// <summary>
-    /// Interaction logic for PaymentCCPage.xaml
+    /// Interaction logic for PaymentPaypalPage.xaml
     /// </summary>
-    public partial class PaymentCCPage : Page
+    public partial class PaymentPaypalPage : Page
     {
         private int months;
         private int price;
         private double total_price;
-        public PaymentCCPage()
+        public PaymentPaypalPage()
         {
             InitializeComponent();
             months = 1;
             UpdateMonthsText();
             UpdatePriceText();
         }
+        
 
         private void Increase_Months(object sender, RoutedEventArgs e)
         {
             months += 1;
-            if(months >= 12)
+            if (months >= 12)
             {
                 months = 12;
             }
@@ -43,7 +44,7 @@ namespace ClubMember
         private void Decrease_Months(object sender, RoutedEventArgs e)
         {
             months -= 1;
-            if(months <= 1)
+            if (months <= 1)
             {
                 months = 1;
             }
@@ -73,9 +74,9 @@ namespace ClubMember
             window.ShowDialog();
         }
 
-        private void Paypal_Click(object sender, RoutedEventArgs e)
+        private void CreditCard_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(PageManager.pagemanager.getPaymentPaypalPage());
+            this.NavigationService.Navigate(PageManager.pagemanager.getPaymentCCPage());
         }
     }
 }

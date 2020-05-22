@@ -45,6 +45,8 @@ namespace ClubMember
 
         private void Renew_Click(object sender, RoutedEventArgs e)
         {
+            PageManager.pagemanager.setpaymentCCPage();
+            PageManager.pagemanager.setpaymentPayPalPage();
             this.NavigationService.Navigate(PageManager.pagemanager.getPaymentCCPage());
         }
 

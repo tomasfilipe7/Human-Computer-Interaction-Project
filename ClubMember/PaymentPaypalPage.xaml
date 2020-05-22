@@ -1,0 +1,38 @@
+﻿<Page x:Class="ClubMember.PaymentPaypalPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="PaymentPaypalPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="104*"/>
+            <RowDefinition Height="571*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="CreditCard" Style="{StaticResource WhiteBoldButtonStyle}" Content="Credit Card" HorizontalAlignment="Left" Margin="48,0,0,0" VerticalAlignment="Center" Height="31" Width="140" Click="CreditCard_Click"/>
+        <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Content="PayPal" Margin="188,0,0,0" VerticalAlignment="Center" Height="31" Width="140" HorizontalAlignment="Left"/>
+        <Rectangle HorizontalAlignment="Left" Height="6" Margin="188,62,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="84" Margin="0,20,0,0" VerticalAlignment="Top" Width="281" Grid.Row="1"/>
+        <Label Content="Months" Style="{StaticResource WhiteBoldLabelStyle}" Margin="48,20,0,489" HorizontalAlignment="Left" Width="100" FontSize="18" Grid.Row="1" />
+        <Label x:Name="PricePerMonth" Content="6€ per moth" Style="{StaticResource WhiteBoldLabelStyle}" Margin="47,68,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" FontSize="10" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1"/>
+        <Label x:Name="QuantityMonths" Content="1" Style="{StaticResource WhiteBoldLabelStyle}" Margin="258,42,0,0" VerticalAlignment="Top" Width="33" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Foreground="#FFA2A2A2" FontWeight="Bold" Height="28" Grid.Row="1"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="35" Margin="0,152,0,0" VerticalAlignment="Top" Width="281" Grid.Row="1"/>
+        <CheckBox Content="Do you want to save this paypal account?" HorizontalAlignment="Left" Margin="48,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" Foreground="#FF7D888F" FontSize="10"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Left" Height="35" Margin="46,216,0,0" VerticalAlignment="Top" Width="280" Grid.Row="1"/>
+        <Label x:Name="PricePerMonth_Copy" Content="SubTotal" Style="{StaticResource WhiteBoldLabelStyle}" Margin="48,216,0,0" VerticalAlignment="Top" Width="110" HorizontalAlignment="Left" FontSize="14" Foreground="Black" FontWeight="Bold" Grid.Row="1" Height="35"/>
+        <Label x:Name="SubTotalPrice" Content="6€" Style="{StaticResource WhiteBoldLabelStyle}" Margin="210,216,0,0" VerticalAlignment="Top" Width="118" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="35"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="53" Margin="0,285,0,0" VerticalAlignment="Top" Width="281" Grid.Row="1"/>
+        <Label x:Name="PricePerMonth_Copy1" Content="Total:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="0,285,0,0" VerticalAlignment="Top" Width="280" FontSize="14" Foreground="Black" FontWeight="Bold" Grid.Row="1" Height="26"/>
+        <Label x:Name="TotalPrice" Content="7,38€ *" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" Margin="207,285,0,0" VerticalAlignment="Top" Width="119" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="291,285,0,0" Grid.Row="1" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="6" Width="90" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
+        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,311,0,0" VerticalAlignment="Top" Width="114" Height="27" Foreground="Black" Click="Pay_check" Grid.Row="1" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
+        <Image HorizontalAlignment="Left" Height="100" Margin="47,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Source="Images/paypal.png"/>
+        <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="291,41,55,0" FontSize="22" Click="Increase_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
+        <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalBoldButtonStyle}" Margin="230,41,117,0" FontSize="22" Click="Decrease_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
+    </Grid>
+
+</Page>

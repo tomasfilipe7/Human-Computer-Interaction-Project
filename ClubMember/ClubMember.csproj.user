@@ -19,6 +19,9 @@
     <Compile Update="PaymentCCPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PaymentPaypalPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CreateAccount.xaml">
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PaymentCCPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PaymentPaypalPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

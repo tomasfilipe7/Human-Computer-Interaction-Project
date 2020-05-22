@@ -63,6 +63,49 @@
             <Setter Property="Foreground" Value="#000000"/>
             <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
-
+        <Style x:Key="WhiteBoldLabelStyle" TargetType="Label">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
+        </Style>
+        <Style x:Key="SignalBoldButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#7D888F"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#7D888F"/>
+            <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
+        </Style>
+        <Style x:Key="WhiteBoldButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+            <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
+        </Style>
+        <Style x:Key="BlueBoldButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#29A8F8"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextBlock.TextAlignment" Value="Justify"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#29A8F8"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

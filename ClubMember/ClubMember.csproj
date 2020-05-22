@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <None Remove="Images\football-png-7.png" />
+    <None Remove="Images\paypal.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\football-png-7.png" />
+    <Resource Include="Images\paypal.png" />
   </ItemGroup>
 
 </Project>
