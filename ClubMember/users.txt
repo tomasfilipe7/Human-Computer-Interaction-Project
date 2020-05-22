@@ -1,2 +1,2 @@
-12345,aeiou
-98765,adeus
+12345,aeiou,32,VIP
+98765,adeus,11,Standard
