@@ -1,2 +1,3 @@
-12345,aeiou,32,VIP
-98765,adeus,11,Standard
+12345,aeiou,32,VIP,John,Doe,john_99@gmail.com
+98765,adeus,11,Standard,Jane,Doe,jane.doe10@gmail.com
+adr,adr,90,Standard,adr,adr,adr

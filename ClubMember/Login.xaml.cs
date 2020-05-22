@@ -96,5 +96,11 @@ namespace ClubMember
 
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            PageManager.pagemanager.setcreateAccount();
+            this.NavigationService.Navigate(PageManager.pagemanager.getCreateAccount());
+        }
     }
 }

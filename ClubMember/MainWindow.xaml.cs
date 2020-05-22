@@ -23,6 +23,7 @@ namespace ClubMember
         public MainWindow()
         {
             InitializeComponent();
+            ShowsNavigationUI = false;
         }
     }
 }

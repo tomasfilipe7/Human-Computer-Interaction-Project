@@ -52,3 +52,7 @@ C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1
 C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ClubMember.genruntimeconfig.cache
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ConfirmPayment.g.cs
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ConfirmPayment.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ConfirmPayment.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ConfirmPayment.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\CreateAccount.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\CreateAccount.baml

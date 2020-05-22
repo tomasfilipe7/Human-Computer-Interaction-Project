@@ -13,6 +13,7 @@
             <Setter Property="Background" Value="#183E7E"/>
             <Setter Property="Width" Value="375"/>
             <Setter Property="Height" Value="675"/>
+            <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
         <Style x:Key="WhiteLabelStyle" TargetType="Label">
             <Setter Property="Background" Value="#FFFFFF"/>
@@ -22,6 +23,7 @@
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
         <Style x:Key="WhiteRectangleStyle" TargetType="Rectangle">
             <Setter Property="Fill" Value="#FFFFFF"/>
@@ -36,6 +38,7 @@
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="BorderBrush" Value="#29A8F8"/>
             <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
         <Style x:Key="WhiteButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FFFFFF"/>
@@ -46,6 +49,7 @@
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="BorderBrush" Value="#FFFFFF"/>
             <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
         <Style x:Key="SignalButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#7D888F"/>
@@ -57,6 +61,8 @@
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="BorderBrush" Value="#7D888F"/>
             <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
+
     </Application.Resources>
 </Application>

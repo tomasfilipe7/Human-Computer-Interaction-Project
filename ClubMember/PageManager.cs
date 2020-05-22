@@ -10,6 +10,8 @@ namespace ClubMember
         private MembershipPage membershipPage;
         private Login login;
         private PaymentCCPage paymentccpage;
+        private CreateAccount createAccount;
+
         public PageManager()
         {
             pagemanager = this;
@@ -33,6 +35,16 @@ namespace ClubMember
         public PaymentCCPage getPaymentCCPage()
         {
             return paymentccpage;
+        }
+
+        public void setcreateAccount()
+        {
+            createAccount = new CreateAccount();
+        }
+
+        public CreateAccount getCreateAccount()
+        {
+            return createAccount;
         }
     }
 }
