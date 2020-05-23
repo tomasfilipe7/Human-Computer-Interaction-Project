@@ -22,7 +22,7 @@
         <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}">
             <Image Source="Images/cart.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Stretch" Click="Button_Click_1">
+        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Stretch">
             <Image Source="Images/settings.png" Height="40" Width="50"/>
         </Button>
         <Rectangle HorizontalAlignment="Left" Height="189" Margin="20,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>

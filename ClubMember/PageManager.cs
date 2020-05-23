@@ -110,6 +110,16 @@ namespace ClubMember
             return settings;
         }
 
+        public void setLogin()
+        {
+            login = new Login();
+        }
+
+        public Login getLogin()
+        {
+            return login;
+        }
+
 
     }
 }

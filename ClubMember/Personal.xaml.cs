@@ -26,15 +26,8 @@ namespace ClubMember
         // button to Settings
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.setSettings();
             this.NavigationService.Navigate(PageManager.pagemanager.getSettings());
         }
 
-        // button to Profile
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            PageManager.pagemanager.setProfile();
-            this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
-        }
     }
 }

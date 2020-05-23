@@ -26,21 +26,13 @@ namespace ClubMember
         // button to Profile
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.setProfile();
             this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
-        }
-
-        // button to Settings
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            PageManager.pagemanager.setSettings();
-            this.NavigationService.Navigate(PageManager.pagemanager.getSettings());
         }
 
         // button to Log Out
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
+            this.NavigationService.Navigate(PageManager.pagemanager.getLogin());
         }
 
         // button to Settings

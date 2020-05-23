@@ -24,8 +24,8 @@ namespace ClubMember
         public Login()
         {
             InitializeComponent();
-            PageManager.pagemanager = new PageManager();
-            
+            PageManager.pagemanager.setSettings();
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

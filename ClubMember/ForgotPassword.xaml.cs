@@ -65,6 +65,7 @@ namespace ClubMember
                         {
                             MessageBox.Show("Your password is: " + content[1], "Forgot Password", MessageBoxButton.OK);
                             foundMovie = true;
+                            this.NavigationService.Navigate(PageManager.pagemanager.getLogin());
                         }
                     }
 

@@ -24,6 +24,8 @@ namespace ClubMember
         {
             InitializeComponent();
             ShowsNavigationUI = false;
+            PageManager.pagemanager = new PageManager();
+            PageManager.pagemanager.setLogin();
         }
     }
 }
