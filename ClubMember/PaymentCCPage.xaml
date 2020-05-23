@@ -14,7 +14,9 @@
             <RowDefinition Height="571*"/>
         </Grid.RowDefinitions>
         <Button x:Name="CreditCard" Style="{StaticResource WhiteBoldButtonStyle}" Content="Credit Card" HorizontalAlignment="Left" Margin="48,0,0,0" VerticalAlignment="Center" Height="31" Width="140"/>
-        <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Content="PayPal" Margin="188,0,0,0" VerticalAlignment="Center" Height="31" Width="140" HorizontalAlignment="Left" Click="Paypal_Click"/>
+        <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Margin="188,0,0,0" VerticalAlignment="Center" Height="31" Width="140" HorizontalAlignment="Left" Click="Paypal_Click">
+            <Label Content="Paypal"/>
+        </Button>
         <Rectangle HorizontalAlignment="Left" Height="5" Margin="48,62,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F"/>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="84" Margin="0,20,0,0" VerticalAlignment="Top" Width="281" Grid.Row="1"/>
         <Label Content="Months" Style="{StaticResource WhiteBoldLabelStyle}" Margin="48,20,0,489" HorizontalAlignment="Left" Width="100" FontSize="18" Grid.Row="1" />
