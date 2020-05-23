@@ -16,10 +16,19 @@
         <Label Content="Membership status:" HorizontalAlignment="Left" Margin="115,204,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium"/>
         <Image HorizontalAlignment="Left" Height="90" Margin="25,155,0,0" VerticalAlignment="Top" Width="90" Source="Images/person.png"/>
 
-        <Button x:Name="Button1" Content="Tickets" Margin="38,259,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="314"/>
-        <Button x:Name="Button2" Content="Items bought" Margin="38,0,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Center" Width="314"/>
-        <Button x:Name="Button3" Content="Historic" Margin="38,364,0,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="314"/>
-        <Button x:Name="Button4" Content="Profile Settings" Margin="38,418,0,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="314"/>
+        <Button x:Name="Button1" Margin="20,259,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="332">
+            <Image Source="Images/arrow.png" Height="40" Width="50"></Image>
+            
+        </Button>
+        <Button x:Name="Button2" Margin="20,0,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Center" Width="332">
+            <Image Source="Images/arrow.png" Height="40" Width="50"></Image>
+        </Button>
+        <Button x:Name="Button3" Margin="20,364,0,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="332">
+            <Image Source="Images/arrow.png" Height="40" Width="50"></Image>
+        </Button>
+        <Button x:Name="Button4" Margin="20,418,0,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="332">
+            <Image Source="Images/arrow.png" Height="40" Width="50"></Image>
+        </Button>
 
 
         <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}">
