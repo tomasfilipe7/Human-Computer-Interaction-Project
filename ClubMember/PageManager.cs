@@ -15,6 +15,7 @@ namespace ClubMember
         private CreateAccount createAccount;
         private ForgotPassword forgotpass;
         private NavigationWindow mainWindow;
+        private UpgradeMembershipPage changePlan;
 
         public PageManager()
         {
@@ -76,6 +77,15 @@ namespace ClubMember
         public ForgotPassword getForgotPassword()
         {
             return forgotpass;
+        }
+        public void setUpgradeMembershipPage(String _plan)
+        {
+            changePlan = new UpgradeMembershipPage();
+            changePlan.setPlan(_plan);
+        }
+        public UpgradeMembershipPage getUpgradeMembershipPage()
+        {
+            return changePlan;
         }
     }
 }

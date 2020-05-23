@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -43,16 +44,22 @@ namespace ClubMember
             this.MembershipPlan.Content = "Membership plan: " + memberplan;
         }
 
+        public void addDays(int moredays)
+        {
+            days_left += moredays;
+        }
+
         private void Renew_Click(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.setpaymentCCPage();
-            PageManager.pagemanager.setpaymentPayPalPage();
+            PageManager.pagemanager.setpaymentCCPage(memberplan);
+            PageManager.pagemanager.setpaymentPayPalPage(memberplan);
             this.NavigationService.Navigate(PageManager.pagemanager.getPaymentCCPage());
         }
 
         private void Upgrade_Click(object sender, RoutedEventArgs e)
         {
-
+            PageManager.pagemanager.setUpgradeMembershipPage(memberplan);
+            this.NavigationService.Navigate(PageManager.pagemanager.getUpgradeMembershipPage());
         }
     }
 

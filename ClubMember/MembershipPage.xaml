@@ -13,6 +13,6 @@
         <Label x:Name="DaysLeft" Style="{StaticResource WhiteBoldLabelStyle}" Content="Days left: 34" Margin="0,292,0,0" VerticalAlignment="Top" Height="58" Width="228"/>
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="Renew" Margin="0,338,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="Renew_Click"/>
         <Label x:Name="MembershipPlan" Style="{StaticResource WhiteBoldLabelStyle}" Content="Membership Plan: Standard" Margin="0,416,0,0" VerticalAlignment="Top" Height="58" Width="228"/>
-        <Button x:Name="Upgrade" Style="{StaticResource BlueBoldButtonStyle}" Content="Upgrade" Margin="0,460,0,0" VerticalAlignment="Top" Width="228" Height="40" Foreground="White" Click="Upgrade_Click" />
+        <Button x:Name="ChangePlan" Style="{StaticResource BlueBoldButtonStyle}" Content="Change Plan" Margin="0,460,0,0" VerticalAlignment="Top" Width="228" Height="40" Foreground="White" Click="Upgrade_Click" />
     </Grid>
 </Page>

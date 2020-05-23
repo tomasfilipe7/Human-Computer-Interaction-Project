@@ -8,5 +8,18 @@
       Style="{StaticResource PageStyle}"
       Title="UpgradeMembershipPage">
 
-    <Grid/>
+    <Grid>
+        <Label Content="Current Plan:" Style="{StaticResource WhiteLabelStyle}" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="236" Height="86" FontSize="22"/>
+        <Label x:Name="Plan" Content="Standard" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="205,135,0,0" VerticalAlignment="Top" Width="160" Height="86" FontSize="22"/>
+        <Label Content="Current Fee:" Style="{StaticResource WhiteLabelStyle}" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="236" Height="50" FontSize="16"/>
+        <Label x:Name="PricePerMonth" Content="6€ per month" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="205,191,0,0" VerticalAlignment="Top" Width="160" Height="50" FontSize="16"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="157" VerticalAlignment="Top" Width="355" Margin="0,320,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,296,0,0" Text="Options available:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
+        <RadioButton x:Name="StandardButton" Content="Standard:" HorizontalAlignment="Left" Margin="18,346,0,0" VerticalAlignment="Top" Width="228" FontWeight="Bold" FontFamily="Yu Gothic" GroupName="PlanGroup"/>
+        <RadioButton x:Name="VIPButton" Content="VIP:" HorizontalAlignment="Left" Margin="18,412,0,0" VerticalAlignment="Top" Width="228" GroupName="PlanGroup" FontWeight="Bold" FontFamily="Yu Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,347,0,0" Text="6€ per month, includes discount on home tickets, aswell as on the club store." TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="64,412,0,0" Text="9€ per month, includes discount on home tickets, discount on the club store, access to VIP events and VIP cabins." TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="10"/>
+        <Button x:Name="ChangePlan" Style="{StaticResource BlueBoldButtonStyle}" Content="Change Plan" Margin="0,492,0,0" VerticalAlignment="Top" Width="228" Height="40" Foreground="White" Click="ChangePlan_Click"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,532,0,0" Text="* The change will automatically take effect, upon the ending of the current plan." TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Width="228" FontSize="7"/>
+    </Grid>
 </Page>
