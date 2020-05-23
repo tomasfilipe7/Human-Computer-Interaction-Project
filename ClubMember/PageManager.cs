@@ -18,6 +18,7 @@ namespace ClubMember
         private UpgradeMembershipPage changePlan;
         private Personal personalProfile;
         private Settings settings;
+        private BuyTickets buytickets;
 
         public PageManager()
         {
@@ -120,6 +121,14 @@ namespace ClubMember
             return login;
         }
 
+        public void setBuyTickets()
+        {
+            buytickets = new BuyTickets();
+        }
 
+        public BuyTickets getBuyTickets()
+        {
+            return buytickets;
+        }
     }
 }

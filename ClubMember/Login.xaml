@@ -22,6 +22,8 @@
         <Button Style="{StaticResource BlueButtonStyle}" Content="CREATE ACCOUNT" Margin="0,552,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="Button_Click_2"/>
         <CheckBox x:Name="checkBox1" Content="Remember me" HorizontalAlignment="Left" Margin="80,420,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="White" IsChecked="True"/>
         <Button Content="Forgot password" HorizontalAlignment="Left" Margin="209,418,0,0" VerticalAlignment="Top" Width="94" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Height="20" FontSize="11" Click="Button_Click_3"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="308,650,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="42,646,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
 
     </Grid>
 </Page>

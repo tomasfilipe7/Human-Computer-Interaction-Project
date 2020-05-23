@@ -1,0 +1,15 @@
+﻿<Page x:Class="ClubMember.BuyTickets"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="BuyTickets">
+
+    <Grid>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Center" Margin="0,62,0,0" Text="Choose the game" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <Calendar HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.537" Height="174"/>
+    </Grid>
+</Page>
