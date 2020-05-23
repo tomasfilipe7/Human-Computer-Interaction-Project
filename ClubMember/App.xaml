@@ -107,5 +107,9 @@
             <Setter Property="Foreground" Value="#FFFFFF"/>
             <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
         </Style>
+        <Style x:Key="TextnStyle" TargetType="Button">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
