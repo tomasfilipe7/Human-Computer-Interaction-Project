@@ -125,6 +125,7 @@
             <Setter Property="Background" Value="White"/>
             <Setter Property="FontFamily" Value="Yu Gothic UI Semibold"/>
             <Setter Property="FontSize" Value="14"/>
+
         </Style>
     </Application.Resources>
 </Application>

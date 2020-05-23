@@ -19,6 +19,9 @@ namespace ClubMember
         private Personal personalProfile;
         private Settings settings;
         private BuyTickets buytickets;
+        private ItemsBought itemsBought;
+        private Historic historic;
+        private ProfileSettings profSettings;
 
         public PageManager()
         {
@@ -91,9 +94,12 @@ namespace ClubMember
             return changePlan;
         }
 
-        public void setProfile()
+        public void setProfile(string fname, string lname, int days)
         {
             personalProfile = new Personal();
+            personalProfile.setFname(fname);
+            personalProfile.setLname(lname);
+            personalProfile.setDaysLeft(days);
         }
 
         public Personal getProfile()
@@ -129,6 +135,36 @@ namespace ClubMember
         public BuyTickets getBuyTickets()
         {
             return buytickets;
+        }
+
+        public void setItemsBought()
+        {
+            itemsBought = new ItemsBought();
+        }
+
+        public ItemsBought getItemsBought()
+        {
+            return itemsBought;
+        }
+
+        public void setHistoric()
+        {
+            historic = new Historic();
+        }
+
+        public Historic getHistoric()
+        {
+            return historic;
+        }
+
+        public void setProfileSettings()
+        {
+            profSettings = new ProfileSettings();
+        }
+
+        public ProfileSettings getProfileSettings()
+        {
+            return profSettings;
         }
     }
 }

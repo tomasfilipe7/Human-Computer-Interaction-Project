@@ -25,6 +25,9 @@ namespace ClubMember
         {
             InitializeComponent();
             PageManager.pagemanager.setSettings();
+            PageManager.pagemanager.setItemsBought();
+            PageManager.pagemanager.setHistoric();
+            PageManager.pagemanager.setProfileSettings();
 
         }
 
@@ -73,15 +76,13 @@ namespace ClubMember
                         found = true;
                         string timeLeft = content[2];
                         string memberType = content[3];
+                        string fName = content[4];
+                        string lName = content[5];
                         PageManager.pagemanager.setMembership(ID, Int32.Parse(timeLeft), memberType);
-                        PageManager.pagemanager.setProfile();
+                        PageManager.pagemanager.setProfile(fName,lName,Int32.Parse(timeLeft));
                         this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
 
-                        if (checkBox1.IsChecked == false)
-                        {
-                            ID = "";
-                            password = "";
-                        }
+                        
                     }
                 }
 

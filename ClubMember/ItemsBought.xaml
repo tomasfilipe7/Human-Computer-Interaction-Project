@@ -1,0 +1,42 @@
+﻿<Page x:Class="ClubMember.ItemsBought"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="ItemsBought">
+
+    <Grid>
+        <Label Content="ITEMS BOUGHT" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301"/>
+        <Grid Margin="20,155,40,497" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" HorizontalContentAlignment="Center" Background="Gray" FontSize="10" FontFamily="Yu Gothic UI Semibold" Foreground="White">Item</Label>
+            <Label Grid.Column="1" HorizontalContentAlignment="Center" Background="Gray" FontSize="10" FontFamily="Yu Gothic UI Semibold" Foreground="White">Quantity</Label>
+            <Label Grid.Column="2" HorizontalContentAlignment="Center" Background="Gray" FontSize="10" FontFamily="Yu Gothic UI Semibold" Foreground="White">Price</Label>
+            <Label Grid.Column="3" HorizontalContentAlignment="Center" Background="Gray" FontSize="10" FontFamily="Yu Gothic UI Semibold" Foreground="White">Date</Label>
+        </Grid>
+        <ScrollViewer Margin="20,183,23,82" HorizontalScrollBarVisibility="Auto">
+            <StackPanel x:Name="stackP" Background="White" Height="438">
+                <Grid x:Name="myGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="C1"/>
+                        <ColumnDefinition x:Name="C2"/>
+                        <ColumnDefinition x:Name="C3"/>
+                        <ColumnDefinition x:Name="C4"/>
+                    </Grid.ColumnDefinitions>
+                    
+                </Grid>
+            </StackPanel>
+
+
+        </ScrollViewer>
+
+    </Grid>
+</Page>
