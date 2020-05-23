@@ -107,9 +107,26 @@
             <Setter Property="Foreground" Value="#FFFFFF"/>
             <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
         </Style>
-        <Style x:Key="TextnStyle" TargetType="Button">
+        <Style x:Key="TextStyle" TargetType="Button">
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
+        </Style>
+        <Style x:Key="BottomBarButton" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Width" Value="75"/>
+        </Style>
+        <Style x:Key="ProfileOptions" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Width" Value="332"/>
+            <Setter Property="Height" Value="53"/>
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="FontFamily" Value="Yu Gothic UI Semibold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
         </Style>
     </Application.Resources>
 </Application>
