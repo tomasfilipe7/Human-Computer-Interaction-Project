@@ -25,12 +25,7 @@ namespace ClubMember
         {
             InitializeComponent();
             PageManager.pagemanager = new PageManager();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            PageManager.pagemanager.setMembership("38385296",56,"VIP");
-            this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -40,7 +35,7 @@ namespace ClubMember
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+
             string[] line = System.IO.File.ReadAllLines("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt") ;
 
             string[] content;
@@ -79,7 +74,8 @@ namespace ClubMember
                         string timeLeft = content[2];
                         string memberType = content[3];
                         PageManager.pagemanager.setMembership(ID, Int32.Parse(timeLeft), memberType);
-                        this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+                        PageManager.pagemanager.setProfile();
+                        this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
 
                         if (checkBox1.IsChecked == false)
                         {
@@ -95,7 +91,7 @@ namespace ClubMember
                 }
             }
             
-            this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+            
 
 
         }

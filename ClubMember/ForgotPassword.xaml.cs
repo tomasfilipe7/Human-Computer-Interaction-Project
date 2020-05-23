@@ -25,38 +25,66 @@ namespace ClubMember
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             string[] allLines = System.IO.File.ReadAllLines("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt");
 
             string[] content;
-            Boolean found = false;
+            Boolean foundID = false;
+            Boolean foundMovie = false;
 
-            string movie = textBox1.Text;
+            string memberID = textBox1.Text;
+            string movie = textBox2.Text;
 
-            if(movie == "")
+            if (movie == "" && memberID == "")
+            {
+                MessageBox.Show("Inputs cannot be left in blank", "Forgot Password", MessageBoxButton.OK);
+            }
+            else if (movie == "")
             {
                 MessageBox.Show("Please answer the question", "Forgot Password", MessageBoxButton.OK);
+
+            }
+
+            else if (memberID == "")
+            {
+                MessageBox.Show("Please insert member ID", "Forgot Password", MessageBoxButton.OK);
+
             }
 
             else
             {
-                foreach(string l in allLines)
+                foreach (string l in allLines)
                 {
                     content = l.Split(",");
 
-                    if(movie == content[7])
+                    if (memberID == content[0])
                     {
-                        MessageBox.Show("Your password is: " + content[1], "Forgot Password", MessageBoxButton.OK);
-                        found = true;
+                        foundID = true;
+                        if (movie == content[7])
+                        {
+                            MessageBox.Show("Your password is: " + content[1], "Forgot Password", MessageBoxButton.OK);
+                            foundMovie = true;
+                        }
+                    }
+
+
+                }
+
+                if(foundID == false)
+                {
+                    MessageBox.Show("Member ID invalid", "Forgot Password", MessageBoxButton.OK);
+                }
+                else
+                {
+                    if (foundMovie == false)
+                    {
+                        MessageBox.Show("Your answer is incorret. Please try again", "Forgot Password", MessageBoxButton.OK);
+
                     }
                 }
 
-                if(found == false)
-                {
-                    MessageBox.Show("Your answer is incorret. Please try again", "Forgot Password", MessageBoxButton.OK);
-
-                }
+                
             }
         }
     }

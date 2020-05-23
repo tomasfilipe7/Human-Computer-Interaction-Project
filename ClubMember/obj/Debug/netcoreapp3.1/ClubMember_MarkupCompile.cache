@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\
 ClubMember
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\App.xaml
-71902851078
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\App.xaml
+12867865180
 
-10-828622668
-1921654412462
-ConfirmPayment.xaml;CreateAccount.xaml;Login.xaml;MainWindow.xaml;MembershipPage.xaml;PaymentCCPage.xaml;PaymentPaypalPage.xaml;
+15-974729627
+1991363247284
+ConfirmChange.xaml;ConfirmPayment.xaml;CreateAccount.xaml;ForgotPassword.xaml;Login.xaml;MainWindow.xaml;MembershipPage.xaml;PaymentCCPage.xaml;PaymentPaypalPage.xaml;Personal.xaml;Settings.xaml;UpgradeMembershipPage.xaml;
 
 False
 

@@ -10,7 +10,6 @@
 
 
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="312,639,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
         <Label Content="Welcome to" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" FontSize="25" Height="49" Width="148" Foreground="White"/>

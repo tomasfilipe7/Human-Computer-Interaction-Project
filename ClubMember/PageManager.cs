@@ -16,6 +16,8 @@ namespace ClubMember
         private ForgotPassword forgotpass;
         private NavigationWindow mainWindow;
         private UpgradeMembershipPage changePlan;
+        private Personal personalProfile;
+        private Settings settings;
 
         public PageManager()
         {
@@ -87,5 +89,27 @@ namespace ClubMember
         {
             return changePlan;
         }
+
+        public void setProfile()
+        {
+            personalProfile = new Personal();
+        }
+
+        public Personal getProfile()
+        {
+            return personalProfile;
+        }
+
+        public void setSettings()
+        {
+            settings = new Settings();
+        }
+
+        public Settings getSettings()
+        {
+            return settings;
+        }
+
+
     }
 }

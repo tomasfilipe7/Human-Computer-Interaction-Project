@@ -60,3 +60,15 @@ C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMem
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\CreateAccount.baml
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentPaypalPage.g.cs
 C:\Users\tomas\OneDrive\Ambiente de Trabalho\Universidade\IHC\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentPaypalPage.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ForgotPassword.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentPaypalPage.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ForgotPassword.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\PaymentPaypalPage.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ConfirmChange.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Personal.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Settings.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\UpgradeMembershipPage.g.cs
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\ConfirmChange.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Personal.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\Settings.baml
+C:\Users\marci\Desktop\IHC_Projeto\ClubMember\ClubMember\obj\Debug\netcoreapp3.1\UpgradeMembershipPage.baml

@@ -1,0 +1,45 @@
+﻿<Page x:Class="ClubMember.Personal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="Personal">
+
+    <Grid>
+        <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png" OpacityMask="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="316" Margin="20,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,175,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label Content="Membership status:" HorizontalAlignment="Left" Margin="115,204,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium"/>
+        <Image HorizontalAlignment="Left" Height="90" Margin="25,155,0,0" VerticalAlignment="Top" Width="90" Source="Images/person.png"/>
+
+        <Button x:Name="Button1" Content="Tickets" Margin="38,259,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="314"/>
+        <Button x:Name="Button2" Content="Items bought" Margin="38,0,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Center" Width="314"/>
+        <Button x:Name="Button3" Content="Historic" Margin="38,364,0,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="314"/>
+        <Button x:Name="Button4" Content="Profile Settings" Margin="38,418,0,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="314"/>
+
+
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}">
+            <Image Source="Images/feed.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">
+            <Image Source="Images/shirt.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="150,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
+            <Image Source="Images/profile.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}">
+            <Image Source="Images/cart.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click">
+            <Image Source="Images/settings.png" Height="40" Width="50"/>
+        </Button>
+
+
+
+
+    </Grid>
+</Page>

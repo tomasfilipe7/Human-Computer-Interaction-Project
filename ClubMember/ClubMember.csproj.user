@@ -10,6 +10,9 @@
     <Compile Update="CreateAccount.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ForgotPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,12 +22,18 @@
     <Compile Update="PaymentCCPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PaymentPaypalPage.xaml.cs">
+    <Compile Update="Personal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Settings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CreateAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ForgotPassword.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
@@ -39,7 +48,10 @@
     <Page Update="PaymentCCPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PaymentPaypalPage.xaml">
+    <Page Update="Personal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Settings.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

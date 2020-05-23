@@ -4,16 +4,29 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\cart.png" />
+    <None Remove="Images\feed.png" />
     <None Remove="Images\football-png-7.png" />
     <None Remove="Images\paypal.png" />
+    <None Remove="Images\person.png" />
+    <None Remove="Images\profile.png" />
+    <None Remove="Images\settings.png" />
+    <None Remove="Images\shirt.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\cart.png" />
+    <Resource Include="Images\feed.png" />
     <Resource Include="Images\football-png-7.png" />
     <Resource Include="Images\paypal.png" />
+    <Resource Include="Images\person.png" />
+    <Resource Include="Images\profile.png" />
+    <Resource Include="Images\settings.png" />
+    <Resource Include="Images\shirt.png" />
   </ItemGroup>
 
 </Project>
