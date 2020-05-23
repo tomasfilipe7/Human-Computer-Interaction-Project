@@ -14,20 +14,13 @@ using System.Windows.Shapes;
 namespace ClubMember
 {
     /// <summary>
-    /// Interaction logic for ConfirmPayment.xaml
+    /// Interaction logic for UpgradeMembershipPage.xaml
     /// </summary>
-    public partial class ConfirmPayment : Window
+    public partial class UpgradeMembershipPage : Page
     {
-        private Page page;
-        public ConfirmPayment(Page _page)
+        public UpgradeMembershipPage()
         {
             InitializeComponent();
-            page = _page;
-        }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            page.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
-            this.Close();
         }
     }
 }

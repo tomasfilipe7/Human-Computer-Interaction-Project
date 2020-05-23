@@ -21,6 +21,8 @@ namespace ClubMember
         private int months;
         private int price;
         private double total_price;
+        private String plan;
+        private int price_per_month;
         public PaymentPaypalPage()
         {
             InitializeComponent();
@@ -28,8 +30,25 @@ namespace ClubMember
             UpdateMonthsText();
             UpdatePriceText();
         }
-        
 
+        public void setPlan(String _plan)
+        {
+            plan = _plan;
+            UpdatePricePerMonth();
+        }
+        public String getPlan()
+        {
+            return plan;
+        }
+        private void UpdatePricePerMonth()
+        {
+            price_per_month = 6;
+            if (plan == "VIP")
+            {
+                price_per_month = 9;
+            }
+            this.PricePerMonth.Content = price_per_month + "€ per month";
+        }
         private void Increase_Months(object sender, RoutedEventArgs e)
         {
             months += 1;
@@ -58,7 +77,7 @@ namespace ClubMember
         }
         private void UpdatePriceText()
         {
-            price = 6 * months;
+            price = price_per_month * months;
             this.QuantityMonths.Content = months;
             this.SubTotalPrice.Content = price + "€";
             total_price = (double)price * 0.23 + price;
@@ -67,7 +86,7 @@ namespace ClubMember
 
         private void Pay_check(object sender, RoutedEventArgs e)
         {
-            ConfirmPayment window = new ConfirmPayment();
+            ConfirmPayment window = new ConfirmPayment(this);
             window.HorizontalAlignment = HorizontalAlignment.Center;
             window.VerticalAlignment = VerticalAlignment.Center;
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;

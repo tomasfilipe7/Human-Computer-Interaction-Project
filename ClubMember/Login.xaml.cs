@@ -29,9 +29,7 @@ namespace ClubMember
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager = new PageManager();
             PageManager.pagemanager.setMembership("38385296",56,"VIP");
-            PageManager.pagemanager.setpaymentCCPage();
             this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
         }
 
@@ -81,7 +79,6 @@ namespace ClubMember
                         string timeLeft = content[2];
                         string memberType = content[3];
                         PageManager.pagemanager.setMembership(ID, Int32.Parse(timeLeft), memberType);
-                        PageManager.pagemanager.setpaymentCCPage();
                         this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
 
                         if (checkBox1.IsChecked == false)

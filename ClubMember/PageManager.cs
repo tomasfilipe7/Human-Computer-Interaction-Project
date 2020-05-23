@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Navigation;
 
 namespace ClubMember
 {  
@@ -13,6 +14,7 @@ namespace ClubMember
         private PaymentPaypalPage paypalpayment;
         private CreateAccount createAccount;
         private ForgotPassword forgotpass;
+        private NavigationWindow mainWindow;
 
         public PageManager()
         {
@@ -25,22 +27,32 @@ namespace ClubMember
             membershipPage.setDays(days);
             membershipPage.setMemberPlan(memberPlan);
         }
+        public void setMainWindow(NavigationWindow window)
+        {
+            mainWindow = window;
+        }
+        public NavigationWindow getMainWindow()
+        {
+            return mainWindow;
+        }
         public MembershipPage getMembershipPage()
         {
             return membershipPage;
         }
             
-        public void setpaymentCCPage()
+        public void setpaymentCCPage(String _plan)
         {
             paymentccpage = new PaymentCCPage();
+            paymentccpage.setPlan(_plan);
         }
         public PaymentCCPage getPaymentCCPage()
         {
             return paymentccpage;
         }
-        public void setpaymentPayPalPage()
+        public void setpaymentPayPalPage(String _plan)
         {
             paypalpayment = new PaymentPaypalPage();
+            paypalpayment.setPlan(_plan);
         }
         public PaymentPaypalPage getPaymentPaypalPage()
         {
