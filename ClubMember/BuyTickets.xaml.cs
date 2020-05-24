@@ -49,10 +49,14 @@ namespace ClubMember
         {
             this.QuantityTickets.Content = num_tickets;
         }
-
+        public int getNumTickets()
+        {
+            return num_tickets;
+        }
         private void Choose_Tickets(object sender, RoutedEventArgs e)
         {
-
+            PageManager.pagemanager.setChooseTickets();
+            this.NavigationService.Navigate(PageManager.pagemanager.getChooseTickets());
         }
     }
 }

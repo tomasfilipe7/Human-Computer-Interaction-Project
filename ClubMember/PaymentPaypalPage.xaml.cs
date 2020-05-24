@@ -86,7 +86,7 @@ namespace ClubMember
 
         private void Pay_check(object sender, RoutedEventArgs e)
         {
-            ConfirmPayment window = new ConfirmPayment(this);
+            ConfirmPayment window = new ConfirmPayment(this,PageManager.pagemanager.getMembershipPage());
             window.HorizontalAlignment = HorizontalAlignment.Center;
             window.VerticalAlignment = VerticalAlignment.Center;
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;

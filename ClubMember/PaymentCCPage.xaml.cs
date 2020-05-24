@@ -28,8 +28,8 @@ namespace ClubMember
         {
             InitializeComponent();
             months = 1;
-            UpdateMonthsText();
             UpdatePriceText();
+            UpdateMonthsText();
         }
         public void setPlan(String _plan)
         {
@@ -87,7 +87,7 @@ namespace ClubMember
         private void Pay_check(object sender, RoutedEventArgs e)
         {
             PageManager.pagemanager.getMembershipPage().addDays(30 * months);
-            ConfirmPayment window = new ConfirmPayment(this);
+            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getMembershipPage());
             window.HorizontalAlignment = HorizontalAlignment.Center;
             window.VerticalAlignment = VerticalAlignment.Center;
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;

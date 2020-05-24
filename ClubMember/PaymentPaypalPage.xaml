@@ -31,7 +31,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="291,285,0,0" Grid.Row="1" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="6" Width="90" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,311,0,0" VerticalAlignment="Top" Width="114" Height="27" Foreground="Black" Click="Pay_check" Grid.Row="1" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
         <Image HorizontalAlignment="Left" Height="100" Margin="47,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Source="Images/paypal.png"/>
-        <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="291,41,55,0" FontSize="22" Click="Increase_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
+        <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="291,41,55,0" FontSize="22" Click="Increase_Months" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
         <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalBoldButtonStyle}" Margin="230,41,117,0" FontSize="22" Click="Decrease_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
     </Grid>
 
