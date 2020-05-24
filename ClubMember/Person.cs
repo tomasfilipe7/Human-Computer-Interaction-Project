@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Security.RightsManagement;
 using System.Text;
+using System.IO;
 
 namespace ClubMember
 {
@@ -114,7 +115,30 @@ namespace ClubMember
             return movie;
         }
 
+        public void savePerson()
+        {
+            FileStream temp = System.IO.File.Create("users_temp.txt");
+            temp.Close();
+            string[] allLines = System.IO.File.ReadAllLines("users.txt");
+            string[] content;
+            using (StreamWriter writer = new StreamWriter("users_temp.txt", true))
+            {
+                foreach (string l in allLines)
+                {
+                    content = l.Split(",");
+                    string line = content[0] + "," + content[1] + "," + content[2] + "," + content[3] + "," + content[4] + "," + content[5] + "," + content[6] + "," + content[7];
+                    if (ID == content[0])
+                    {
+                        line = ID + "," + password + "," + daysLeft + "," + memberType + "," + fname + "," + lname + "," + email + "," + movie;
+                    }
+                
+                    writer.WriteLine(line);
+                }
+            }
 
+            File.Delete("users.txt");
+            File.Move("users_temp.txt","users.txt");
+        }
 
 
 
