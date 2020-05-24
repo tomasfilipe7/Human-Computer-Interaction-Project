@@ -21,7 +21,6 @@ namespace ClubMember
         private Settings settings;
         private BuyTickets buytickets;
         private ItemsBought itemsBought;
-        private Historic historic;
         private ProfileSettings profSettings;
         private Person person;
 
@@ -160,9 +159,10 @@ namespace ClubMember
             return choosetickets;
         }
 
-        public void setItemsBought()
+        public void setItemsBought(string memberID)
         {
             itemsBought = new ItemsBought();
+            itemsBought.setMemberID(memberID);
         }
 
         public ItemsBought getItemsBought()
@@ -170,19 +170,13 @@ namespace ClubMember
             return itemsBought;
         }
 
-        public void setHistoric()
-        {
-            historic = new Historic();
-        }
-
-        public Historic getHistoric()
-        {
-            return historic;
-        }
-
-        public void setProfileSettings()
+        public void setProfileSettings(string id, string password, string email, string movie)
         {
             profSettings = new ProfileSettings();
+            profSettings.setID(id);
+            profSettings.setPassword(password);
+            profSettings.setEmail(email);
+            profSettings.setMovie(movie);
         }
 
         public ProfileSettings getProfileSettings()

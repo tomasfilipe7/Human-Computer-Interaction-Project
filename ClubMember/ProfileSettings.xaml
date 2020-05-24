@@ -10,6 +10,23 @@
 
     <Grid>
         <Label Content="PROFILE SETTINGS" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301"/>
+        <Label Content="Change password" HorizontalAlignment="Left" Margin="49,141,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Label Content="Change e-mail" HorizontalAlignment="Left" Margin="49,338,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Label Content="Change recovery answer:" HorizontalAlignment="Left" Margin="49,479,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Rectangle HorizontalAlignment="Center" Height="111" Margin="0,364,0,0" VerticalAlignment="Top" Width="275" Fill="White"/>
+        <Label Content="Insert new e-mail:" HorizontalAlignment="Left" Margin="70,373,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="14"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Center" Margin="0,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Background="#FFABADB3"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="244,442,0,0" VerticalAlignment="Top" Width="61" Style="{StaticResource BlueBoldButtonStyle}" Click="Button_Click_1"/>
+        <Rectangle HorizontalAlignment="Center" Height="111" Margin="0,504,0,0" VerticalAlignment="Top" Width="275" Fill="White"/>
+        <Label Content="Insert new favourite movie:" HorizontalAlignment="Left" Margin="70,513,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="14"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Center" Margin="0,550,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Background="#FFABADB3"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="244,584,0,0" VerticalAlignment="Top" Width="61" Style="{StaticResource ResourceKey=BlueBoldButtonStyle}" Click="Button_Click_2"/>
+        <Rectangle HorizontalAlignment="Center" Height="164" Margin="0,168,0,0" VerticalAlignment="Top" Width="275" Fill="White"/>
+        <Label Content="Insert actual password:" HorizontalAlignment="Left" Margin="70,177,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="14"/>
+        <PasswordBox x:Name="textBox1" HorizontalAlignment="Center" Margin="0,214,0,0" VerticalAlignment="Top" Width="235" Background="#FFABADB3"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="244,304,0,0" VerticalAlignment="Top" Width="61" Style="{StaticResource ResourceKey=BlueBoldButtonStyle}" Click="Button_Click"/>
+        <Label Content="Insert new password:" HorizontalAlignment="Left" Margin="70,238,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="14"/>
+        <PasswordBox x:Name="textBox4" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Width="235" Background="#FFABADB3"/>
 
     </Grid>
 </Page>

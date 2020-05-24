@@ -25,10 +25,6 @@ namespace ClubMember
         {
             InitializeComponent();
             PageManager.pagemanager.setSettings();
-            PageManager.pagemanager.setItemsBought();
-            PageManager.pagemanager.setHistoric();
-            PageManager.pagemanager.setProfileSettings();
-
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -86,12 +82,24 @@ namespace ClubMember
                             PageManager.pagemanager.getPerson().getDaysLeft(), 
                             PageManager.pagemanager.getPerson().getMemberType()
                         );
+
                         PageManager.pagemanager.setProfile(
                             PageManager.pagemanager.getPerson().getFname(),
                             PageManager.pagemanager.getPerson().getLname(),
                             PageManager.pagemanager.getPerson().getDaysLeft()
                         );
+
+                        PageManager.pagemanager.setItemsBought(
+                            PageManager.pagemanager.getPerson().getID()
+                        ); ;
                         this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+
+                        PageManager.pagemanager.setProfileSettings(
+                            PageManager.pagemanager.getPerson().getID(),
+                            PageManager.pagemanager.getPerson().getPassword(),
+                            PageManager.pagemanager.getPerson().getEmail(),
+                            PageManager.pagemanager.getPerson().getMovie()
+                        );
 
                     }
                 }

@@ -74,12 +74,7 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.getItemsBought());
         }
 
-        // button to Historic
-        private void Button3_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(PageManager.pagemanager.getHistoric());
-        }
-
+        // button to Profile Settings
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getProfileSettings());
