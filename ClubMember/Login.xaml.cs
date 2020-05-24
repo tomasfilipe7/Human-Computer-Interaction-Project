@@ -114,9 +114,6 @@ namespace ClubMember
                     MessageBox.Show("Login invalid!", "Login", MessageBoxButton.OK);
                 }
             }
-            
-            
-
 
         }
 

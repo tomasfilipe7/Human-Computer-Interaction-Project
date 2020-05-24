@@ -23,7 +23,5 @@
         <CheckBox x:Name="checkBox1" Content="Remember me" HorizontalAlignment="Left" Margin="80,420,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="White" IsChecked="True"/>
         <Button Content="Forgot password" HorizontalAlignment="Left" Margin="209,418,0,0" VerticalAlignment="Top" Width="94" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Height="20" FontSize="11" Click="Button_Click_3"/>
 
-        
-        
     </Grid>
 </Page>
