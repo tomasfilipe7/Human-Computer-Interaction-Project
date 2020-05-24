@@ -22,11 +22,23 @@ namespace ClubMember
         private ItemsBought itemsBought;
         private Historic historic;
         private ProfileSettings profSettings;
+        private Person person;
 
         public PageManager()
         {
             pagemanager = this;
         }
+
+        public void setPerson(string ID, string password, int daysLeft, string memberType, string fname, string lname, string email, string movie)
+        {
+            person = new Person(ID, password, daysLeft, memberType, fname, lname, email, movie);
+        }
+
+        public Person getPerson()
+        {
+            return person;
+        }
+
         public void setMembership(String id, int days, String memberPlan)
         {
             membershipPage = new MembershipPage();

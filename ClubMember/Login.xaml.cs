@@ -78,8 +78,19 @@ namespace ClubMember
                         string memberType = content[3];
                         string fName = content[4];
                         string lName = content[5];
-                        PageManager.pagemanager.setMembership(ID, Int32.Parse(timeLeft), memberType);
-                        PageManager.pagemanager.setProfile(fName,lName,Int32.Parse(timeLeft));
+                        string email = content[6];
+                        string movie = content[7];
+                        PageManager.pagemanager.setPerson(ID, password, Int32.Parse(timeLeft), memberType, fName, lName, email, movie);
+                        PageManager.pagemanager.setMembership(
+                            PageManager.pagemanager.getPerson().getID(), 
+                            PageManager.pagemanager.getPerson().getDaysLeft(), 
+                            PageManager.pagemanager.getPerson().getMemberType()
+                        );
+                        PageManager.pagemanager.setProfile(
+                            PageManager.pagemanager.getPerson().getFname(),
+                            PageManager.pagemanager.getPerson().getLname(),
+                            PageManager.pagemanager.getPerson().getDaysLeft()
+                        );
                         this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
 
                         

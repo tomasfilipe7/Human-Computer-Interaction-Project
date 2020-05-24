@@ -38,9 +38,17 @@ namespace ClubMember
                 TextBlock newT3 = new TextBlock();
                 TextBlock newT4 = new TextBlock();
                 newT1.Text = content[0];
+                newT1.HorizontalAlignment = HorizontalAlignment.Center;
+                newT1.FontSize = 14;
                 newT2.Text = content[1];
+                newT2.HorizontalAlignment = HorizontalAlignment.Center;
+                newT2.FontSize = 14;
                 newT3.Text = content[2];
+                newT3.HorizontalAlignment = HorizontalAlignment.Center;
+                newT3.FontSize = 14;
                 newT4.Text = content[3];
+                newT4.HorizontalAlignment = HorizontalAlignment.Center;
+                newT4.FontSize = 14;
 
                 Grid.SetColumn(newT1, 0);
                 myGrid.Children.Add(newT1);
