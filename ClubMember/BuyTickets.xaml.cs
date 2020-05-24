@@ -18,9 +18,41 @@ namespace ClubMember
     /// </summary>
     public partial class BuyTickets : Page
     {
+        private int num_tickets;
         public BuyTickets()
         {
             InitializeComponent();
+            num_tickets = 1;
+        }
+
+        private void Increase_Tickets(object sender, RoutedEventArgs e)
+        {
+            num_tickets += 1;
+            if (num_tickets >= 10)
+            {
+                num_tickets = 10;
+            }
+            UpdateTicketsText();
+        }
+
+        private void Decrease_Tickets(object sender, RoutedEventArgs e)
+        {
+            num_tickets -= 1;
+            if (num_tickets <= 1)
+            {
+                num_tickets = 1;
+            }
+            UpdateTicketsText();
+        }
+
+        private void UpdateTicketsText()
+        {
+            this.QuantityTickets.Content = num_tickets;
+        }
+
+        private void Choose_Tickets(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -12,6 +12,7 @@ namespace ClubMember
         private Login login;
         private PaymentCCPage paymentccpage;
         private PaymentPaypalPage paypalpayment;
+        private ChooseTickets choosetickets;
         private CreateAccount createAccount;
         private ForgotPassword forgotpass;
         private NavigationWindow mainWindow;
@@ -147,6 +148,16 @@ namespace ClubMember
         public BuyTickets getBuyTickets()
         {
             return buytickets;
+        }
+
+        public void setChooseTickets()
+        {
+            choosetickets = new ChooseTickets();
+        }
+
+        public ChooseTickets getChooseTickets()
+        {
+            return choosetickets;
         }
 
         public void setItemsBought()
