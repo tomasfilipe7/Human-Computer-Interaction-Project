@@ -62,7 +62,7 @@ namespace ClubMember
                 {
                     string line = memberID + "," + password + "," + daysLeft + "," + memberType + "," + fname + "," + lname + "," + email + "," + movie;
 
-                    using (StreamWriter writer = new StreamWriter("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt", true))
+                    using (StreamWriter writer = new StreamWriter("users.txt", true))
                     {
                         writer.WriteLine(line);
                     }

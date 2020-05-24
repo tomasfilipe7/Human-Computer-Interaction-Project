@@ -111,7 +111,7 @@ namespace ClubMember
         // button to Confirm Movie
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            string[] line = System.IO.File.ReadAllLines("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt");
+            string[] line = System.IO.File.ReadAllLines("users.txt");
 
             string[] content;
 
@@ -123,7 +123,7 @@ namespace ClubMember
 
                 if (id == content[0])
                 {
-                    using (StreamWriter writer = new StreamWriter("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt", true))
+                    using (StreamWriter writer = new StreamWriter("users.txt", true))
                     {
 
                         content[7] = new_movie;

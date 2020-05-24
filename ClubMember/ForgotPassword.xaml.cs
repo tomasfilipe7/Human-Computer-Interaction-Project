@@ -27,7 +27,7 @@ namespace ClubMember
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string[] allLines = System.IO.File.ReadAllLines("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/users.txt");
+            string[] allLines = System.IO.File.ReadAllLines("users.txt");
 
             string[] content;
             Boolean foundID = false;

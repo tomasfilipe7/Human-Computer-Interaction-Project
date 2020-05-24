@@ -32,7 +32,7 @@ namespace ClubMember
         {
             memberID = _memberID;
 
-            string[] line = System.IO.File.ReadAllLines("C:/Users/marci/Desktop/IHC_Projeto/ClubMember/ClubMember/itemsBought.txt");
+            string[] line = System.IO.File.ReadAllLines("itemsBought.txt");
 
             string[] content;
 
