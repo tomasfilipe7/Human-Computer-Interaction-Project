@@ -93,7 +93,6 @@ namespace ClubMember
                         );
                         this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
 
-                        
                     }
                 }
 
