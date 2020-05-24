@@ -14,20 +14,13 @@ using System.Windows.Shapes;
 namespace ClubMember
 {
     /// <summary>
-    /// Interaction logic for SendFeedback.xaml
+    /// Interaction logic for About.xaml
     /// </summary>
-    public partial class SendFeedback : Page
+    public partial class About : Page
     {
-        public SendFeedback()
+        public About()
         {
             InitializeComponent();
-        }
-
-        // button to Send Feedback
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Thanks for your feedback!", "Send Feedback", MessageBoxButton.OK);
-            this.NavigationService.Navigate(PageManager.pagemanager.getSettings());
         }
 
         // button to go back

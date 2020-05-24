@@ -49,7 +49,7 @@
                 <Image Source="Images/arrow.png" Height="30" Width="40" Grid.Column="1"></Image>
             </Grid>
         </Button>
-        <Button x:Name="Button2" Margin="20,408,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="38">
+        <Button x:Name="Button2" Margin="20,408,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="38" Click="Button2_Click">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>

@@ -103,6 +103,7 @@ namespace ClubMember
                         );
 
                         PageManager.pagemanager.setSendFeedback();
+                        PageManager.pagemanager.setAboutApp();
 
                     }
                 }

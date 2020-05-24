@@ -41,6 +41,12 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.getSendFeedback());
         }
 
+        // button to About Application
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getAboutApp());
+        }
+
         // button to Settings
 
     }

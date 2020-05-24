@@ -23,6 +23,7 @@ namespace ClubMember
         private ItemsBought itemsBought;
         private ProfileSettings profSettings;
         private SendFeedback sendFeedback;
+        private About aboutApp;
         private Person person;
 
         public PageManager()
@@ -193,6 +194,16 @@ namespace ClubMember
         public SendFeedback getSendFeedback()
         {
             return sendFeedback;
+        }
+
+        public void setAboutApp()
+        {
+            aboutApp = new About();
+        }
+
+        public About getAboutApp()
+        {
+            return aboutApp;
         }
     }
 }
