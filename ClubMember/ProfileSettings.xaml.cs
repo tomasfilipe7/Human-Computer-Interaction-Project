@@ -135,5 +135,11 @@ namespace ClubMember
 
             }
         }
+
+        // button to go back
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+        }
     }
 }

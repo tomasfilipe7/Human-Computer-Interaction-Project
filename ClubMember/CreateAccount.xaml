@@ -23,6 +23,18 @@
         <Label Content="Password:" HorizontalAlignment="Left" Margin="69,383,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
         <TextBox x:Name="textBox6" HorizontalAlignment="Center" Margin="0,473,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" BorderBrush="{x:Null}" FontFamily="Yu Gothic Light"/>
         <Label Content="Favourite movie:" HorizontalAlignment="Left" Margin="69,441,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
+            <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.204"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
 
 
     </Grid>

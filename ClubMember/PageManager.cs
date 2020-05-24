@@ -24,6 +24,7 @@ namespace ClubMember
         private ProfileSettings profSettings;
         private SendFeedback sendFeedback;
         private About aboutApp;
+        private Help help;
         private Person person;
 
         public PageManager()
@@ -204,6 +205,16 @@ namespace ClubMember
         public About getAboutApp()
         {
             return aboutApp;
+        }
+
+        public void setHelp()
+        {
+            help = new Help();
+        }
+
+        public Help getHelp()
+        {
+            return help;
         }
     }
 }

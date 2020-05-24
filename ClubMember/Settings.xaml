@@ -37,7 +37,7 @@
         <CheckBox Content="" HorizontalAlignment="Left" Margin="300,276,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="" HorizontalAlignment="Left" Margin="300,308,0,0" VerticalAlignment="Top"/>
         <Rectangle HorizontalAlignment="Left" Height="110" Margin="20,370,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
-        <Button x:Name="Button1" Margin="20,370,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="38">
+        <Button x:Name="Button1" Margin="20,370,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="38" Click="Button1_Click">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>
