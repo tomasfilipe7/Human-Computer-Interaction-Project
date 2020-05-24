@@ -126,5 +126,9 @@
             <Setter Property="FontFamily" Value="Yu Gothic UI Semibold"/>
             <Setter Property="FontSize" Value="14"/>
         </Style>
+        <Style x:Key="TextBoldStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Yu Gothic"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
