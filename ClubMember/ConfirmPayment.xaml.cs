@@ -19,14 +19,16 @@ namespace ClubMember
     public partial class ConfirmPayment : Window
     {
         private Page page;
-        public ConfirmPayment(Page _page)
+        private Page target_page;
+        public ConfirmPayment(Page _page,Page _target_page)
         {
             InitializeComponent();
             page = _page;
+            target_page = _target_page;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            page.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+            page.NavigationService.Navigate(target_page);
             this.Close();
         }
     }

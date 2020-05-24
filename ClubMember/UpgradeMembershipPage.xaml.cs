@@ -61,7 +61,7 @@ namespace ClubMember
                 plan_chose = "VIP";
             }
             PageManager.pagemanager.getMembershipPage().setMemberPlan(plan_chose);
-            ConfirmChange change = new ConfirmChange(this);
+            ConfirmPayment change = new ConfirmPayment(this,PageManager.pagemanager.getMembershipPage());
             change.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             change.ShowDialog();
         }
