@@ -35,6 +35,12 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.getLogin());
         }
 
+        // button to Send Feedback
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getSendFeedback());
+        }
+
         // button to Settings
 
     }

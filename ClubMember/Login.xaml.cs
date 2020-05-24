@@ -89,10 +89,11 @@ namespace ClubMember
                             PageManager.pagemanager.getPerson().getDaysLeft()
                         );
 
+                        this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+
                         PageManager.pagemanager.setItemsBought(
                             PageManager.pagemanager.getPerson().getID()
                         ); ;
-                        this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
 
                         PageManager.pagemanager.setProfileSettings(
                             PageManager.pagemanager.getPerson().getID(),
@@ -100,6 +101,8 @@ namespace ClubMember
                             PageManager.pagemanager.getPerson().getEmail(),
                             PageManager.pagemanager.getPerson().getMovie()
                         );
+
+                        PageManager.pagemanager.setSendFeedback();
 
                     }
                 }

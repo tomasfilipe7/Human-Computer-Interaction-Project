@@ -62,7 +62,7 @@
 
             </Grid>
         </Button>
-        <Button x:Name="Button3" Margin="20,442,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="38">
+        <Button x:Name="Button3" Margin="20,442,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="38" Click="Button3_Click">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>

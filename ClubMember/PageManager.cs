@@ -22,6 +22,7 @@ namespace ClubMember
         private BuyTickets buytickets;
         private ItemsBought itemsBought;
         private ProfileSettings profSettings;
+        private SendFeedback sendFeedback;
         private Person person;
 
         public PageManager()
@@ -182,6 +183,16 @@ namespace ClubMember
         public ProfileSettings getProfileSettings()
         {
             return profSettings;
+        }
+
+        public void setSendFeedback()
+        {
+            sendFeedback = new SendFeedback();
+        }
+
+        public SendFeedback getSendFeedback()
+        {
+            return sendFeedback;
         }
     }
 }
