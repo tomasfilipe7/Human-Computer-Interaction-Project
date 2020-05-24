@@ -1,0 +1,39 @@
+﻿<Page x:Class="ClubMember.TicketPaymentCC"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="TicketPaymentCC">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="104*"/>
+            <RowDefinition Height="571*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="CreditCard" Style="{StaticResource WhiteBoldButtonStyle}" Content="Credit Card" HorizontalAlignment="Left" Margin="48,0,0,0" VerticalAlignment="Center" Height="31" Width="140"/>
+        <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Margin="188,0,0,0" VerticalAlignment="Center" Height="31" Width="140" HorizontalAlignment="Left" Click="Paypal_Click">
+            <Label Content="Paypal"/>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="5" Margin="48,62,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F"/>
+        <TextBlock HorizontalAlignment="Left" Margin="47,0,0,0" Grid.Row="1" Text="Card Details" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="267" Margin="0,25,0,0" VerticalAlignment="Top" Width="281" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Center" VerticalContentAlignment="Center" Margin="0,51,0,0" Grid.Row="1" Text="Card Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Foreground="#FF7D888F" Height="38"/>
+        <TextBox HorizontalAlignment="Center" VerticalContentAlignment="Center" Margin="0,103,0,0" Grid.Row="1" Text="Name on Card" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Foreground="#FF7D888F" Height="38"/>
+        <TextBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="74,163,0,0" Grid.Row="1" Text="Expire Date (mm/yy)" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Foreground="#FF7D888F" Height="38"/>
+        <TextBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="188,163,0,0" Grid.Row="1" Text="CCV*" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Foreground="#FF7D888F" Height="38"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,206,0,0" Grid.Row="1" Text="* Your CCV is the last 3 digits in the signature strip on the back of your card" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="7" Width="228" Foreground="#FF7D888F" FontWeight="Bold"/>
+        <CheckBox Content="Do you want to save this card?" HorizontalAlignment="Left" Margin="74,238,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" Foreground="#FF7D888F" FontSize="10"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="35" Margin="0,390,0,0" VerticalAlignment="Top" Width="280" Grid.Row="1"/>
+        <Label x:Name="PricePerMonth_Copy" Content="SubTotal" Style="{StaticResource WhiteBoldLabelStyle}" Margin="48,390,0,0" VerticalAlignment="Top" Width="110" HorizontalAlignment="Left" FontSize="14" Foreground="Black" FontWeight="Bold" Grid.Row="1" Height="35"/>
+        <Label x:Name="SubTotalPrice" Content="6€" Style="{StaticResource WhiteBoldLabelStyle}" Margin="210,390,0,0" VerticalAlignment="Top" Width="118" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="35"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="53" Margin="0,440,0,0" VerticalAlignment="Top" Width="280" Grid.Row="1"/>
+        <Label x:Name="PricePerMonth_Copy1" Content="Total:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="0,440,0,0" VerticalAlignment="Top" Width="280" FontSize="14" Foreground="Black" FontWeight="Bold" Grid.Row="1" Height="26"/>
+        <Label x:Name="TotalPrice" Content="7,38€ *" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" Margin="210,440,0,0" VerticalAlignment="Top" Width="118" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="286,440,0,0" Grid.Row="1" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="6" Width="90" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
+        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,466,0,0" VerticalAlignment="Top" Width="114" Height="27" Foreground="Black" Click="Pay_check" Grid.Row="1" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
+        <TextBlock x:Name="PricePerTicket"  HorizontalAlignment="Center" Margin="0,390,0,0" Grid.Row="1" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="100" FontFamily="Yu Gothic" FontSize="8" TextAlignment="Justify" Foreground="#FFA2A2A2" FontWeight="Bold"/>
+    </Grid>
+</Page>
