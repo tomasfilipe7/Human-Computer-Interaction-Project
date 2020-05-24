@@ -12,6 +12,7 @@ namespace ClubMember
         private Login login;
         private PaymentCCPage paymentccpage;
         private PaymentPaypalPage paypalpayment;
+        private TicketPaymentCC ticketPaymentCC;
         private ChooseTickets choosetickets;
         private CreateAccount createAccount;
         private ForgotPassword forgotpass;
@@ -215,6 +216,14 @@ namespace ClubMember
         public Help getHelp()
         {
             return help;
+        }
+        public void setTicketPayment()
+        {
+            ticketPaymentCC = new TicketPaymentCC();
+        }
+        public TicketPaymentCC GetTicketPayment()
+        {
+            return ticketPaymentCC;
         }
     }
 }

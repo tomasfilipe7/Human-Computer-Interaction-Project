@@ -147,6 +147,7 @@
         <TextBlock Style="{StaticResource TextBoldStyle}" x:Name="SeatText" HorizontalAlignment="Left" Margin="131,342,0,0" Text="A2 - S3" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" FontSize="9"/>
         <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Center" Margin="0,140,0,0" Text="Choose the Seat:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold" Width="154"/>
         <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="47,339,0,0" Text="Seat chosen:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="77"/>
+        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="Proceed to payment" Margin="0,407,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="ProceedToPayment"/>
 
 
     </Grid>

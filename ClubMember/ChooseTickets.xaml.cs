@@ -21,6 +21,7 @@ namespace ClubMember
         private String zone;
         private String seat_number;
         private Button seat_selected;
+        private List<String> tickets = new List<String>();
         public ChooseTickets()
         {
             InitializeComponent();
@@ -34,15 +35,43 @@ namespace ClubMember
             seat_selected = (Button)sender;
             seat_number = seat_selected.Name.ToString();
             zone = this.ZoneSelect.Text;
-            UpdateSeatText();
+
+            if (zone != "" && seat_number != "")
+            {
+                String ticket_un = zone + "-" + seat_number;
+                if (tickets.Contains(ticket_un))
+                {
+                    tickets.Remove(ticket_un);
+                }
+                else if (tickets.Count < PageManager.pagemanager.getBuyTickets().getNumTickets())
+                {
+                    tickets.Add(ticket_un);
+                }
+            }
+            UpdateSeatText(seat_selected);
         }
 
-        private void UpdateSeatText()
+        private void UpdateSeatText(Button bt)
         {
-            if(zone != "" && seat_number != "")
+            if(tickets.Count > 0)
             {
-                this.SeatText.Text = zone + " - " + seat_number;
+                String tickets_str = "";
+                foreach (String ticket in tickets)
+                {
+                    tickets_str += ticket + ";";
+                }
+                this.SeatText.Text = tickets_str;
             }
+            else
+            {
+                this.SeatText.Text = "Choose a seat";
+            }       
+        }
+
+        private void ProceedToPayment(object sender, RoutedEventArgs e)
+        {
+            PageManager.pagemanager.setTicketPayment();
+            this.NavigationService.Navigate(PageManager.pagemanager.GetTicketPayment());
         }
     }
 }
