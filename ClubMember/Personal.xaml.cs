@@ -79,5 +79,11 @@ namespace ClubMember
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getProfileSettings());
         }
+
+        private void Button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            PageManager.pagemanager.setBuyTickets();
+            this.NavigationService.Navigate(PageManager.pagemanager.getBuyTickets());
+        }
     }
 }

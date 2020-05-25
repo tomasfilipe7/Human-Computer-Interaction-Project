@@ -16,7 +16,7 @@
         <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="115,211,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="button1_Click"/>
         <Image HorizontalAlignment="Left" Height="90" Margin="25,155,0,0" VerticalAlignment="Top" Width="90" Source="Images/person.png"/>
 
-        <Button x:Name="Button1" Margin="20,259,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto">
+        <Button x:Name="Button1" Margin="20,259,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Click="Button1_Click_1">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>

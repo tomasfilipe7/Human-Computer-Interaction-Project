@@ -58,5 +58,10 @@ namespace ClubMember
             PageManager.pagemanager.setChooseTickets();
             this.NavigationService.Navigate(PageManager.pagemanager.getChooseTickets());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+        }
     }
 }
