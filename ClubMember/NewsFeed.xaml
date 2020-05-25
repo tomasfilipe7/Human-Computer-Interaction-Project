@@ -9,7 +9,7 @@
       Title="NewsFeed">
 
     <Grid>
-        <ScrollViewer Margin="0,265,0,66" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer Margin="0,265,0,87" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <StackPanel Height="510">
                 <Grid Width="331" Height="624">
                     <Grid.RowDefinitions>
@@ -28,21 +28,21 @@
             </StackPanel>
         </ScrollViewer>
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
-        <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="football-png-7.png"/>
         <Rectangle HorizontalAlignment="Center" Height="88" Margin="0,162,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="316" Fill="White"/>
-        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Width="87">
             <Image Source="Images/feed.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="87,627,0,0" Style="{StaticResource BottomBarButton}" Width="83" Click="goToResults">
             <Image Source="Images/shirt.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Center" Click="Button_Click_1">
+        <Button Margin="170,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
             <Image Source="Images/profile.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_Shopping">
+        <Button Margin="245,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_Shopping">
             <Image Source="Images/cart.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Stretch" Click="Button_Click">
+        <Button Margin="320,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80">
             <Image Source="Images/settings.png" Height="40" Width="50"/>
         </Button>
         <Image HorizontalAlignment="Left" Height="100" Margin="38,166,0,0" VerticalAlignment="Top" Width="100" Source="Images/MyClub.png"/>

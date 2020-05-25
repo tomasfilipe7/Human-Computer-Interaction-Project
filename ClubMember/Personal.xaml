@@ -11,12 +11,12 @@
     <Grid>
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png" OpacityMask="White"/>
-        <Rectangle HorizontalAlignment="Left" Height="308" Margin="20,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
-        <TextBlock x:Name="textBlock1" FontSize="16" HorizontalAlignment="Left" Margin="120,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="115,211,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="button1_Click"/>
-        <Image HorizontalAlignment="Left" Height="90" Margin="25,155,0,0" VerticalAlignment="Top" Width="90" Source="Images/person.png"/>
+        <Rectangle HorizontalAlignment="Center" Height="308" Margin="0,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
+        <TextBlock x:Name="textBlock1" FontSize="16" HorizontalAlignment="Left" Margin="129,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="124,211,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="button1_Click"/>
+        <Image HorizontalAlignment="Left" Height="90" Margin="34,155,0,0" VerticalAlignment="Top" Width="90" Source="Images/person.png"/>
 
-        <Button x:Name="Button1" Margin="20,259,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Click="Button1_Click_1">
+        <Button x:Name="Button1" Margin="38,259,34,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Click="Button1_Click_1">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>
@@ -29,19 +29,19 @@
 
             </Grid>
         </Button>
-        <Button x:Name="Button2" Margin="20,0,23,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Center" Width="Auto" Click="Button2_Click">
+        <Button x:Name="Button2" Margin="38,316,34,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Click="Button2_Click">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0">
-                    <Label>Items bought</Label>
+                    <Label Content="Items bought"/>
                 </StackPanel>
-                <Image Source="Images/arrow.png" Height="40" Width="50" Grid.Column="1"></Image>
+                <Image Source="Images/arrow.png" Height="40" Width="50" Grid.Column="1" Margin="0,-2,0,2"></Image>
             </Grid>
         </Button>
-        <Button x:Name="Button4" Margin="20,369,23,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="Auto" Click="Button4_Click">
+        <Button x:Name="Button4" Margin="38,369,34,0" VerticalAlignment="Top" Style="{StaticResource ProfileOptions}" Width="Auto" Click="Button4_Click">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>
@@ -55,19 +55,19 @@
         </Button>
 
 
-        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2">
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2" Width="87">
             <Image Source="Images/feed.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="87,627,0,0" Style="{StaticResource BottomBarButton}" Click="goToResults" Width="83">
             <Image Source="Images/shirt.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="150,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="170,627,0,0" Style="{StaticResource BottomBarButton}">
             <Image Source="Images/profile.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
+        <Button Margin="245,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
             <Image Source="Images/cart.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click">
+        <Button  Margin="320,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80">
             <Image Source="Images/settings.png" Height="40" Width="50"/>
         </Button>
 

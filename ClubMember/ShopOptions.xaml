@@ -51,19 +51,19 @@
             </Grid>
         </Button>
 
-        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1" Width="87">
             <Image Source="Images/feed.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="87,627,0,0" Style="{StaticResource BottomBarButton}" Width="83" Click="goToResults">
             <Image Source="Images/shirt.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="150,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click">
+        <Button Margin="170,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click">
             <Image Source="Images/profile.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="245,627,0,0" Style="{StaticResource BottomBarButton}">
             <Image Source="Images/cart.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2">
+        <Button Margin="320,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2" Width="80">
             <Image Source="Images/settings.png" Height="40" Width="50"/>
         </Button>
     </Grid>

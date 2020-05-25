@@ -55,5 +55,10 @@ namespace ClubMember
         {
             this.NavigationService.Navigate(PageManager.pagemanager.GetNewsFeed());
         }
+
+        private void goToResults(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getResults());
+        }
     }
 }

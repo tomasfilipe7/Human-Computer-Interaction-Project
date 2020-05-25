@@ -11,36 +11,36 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ClubMember.Images
+namespace ClubMember
 {
     /// <summary>
-    /// Interaction logic for NewsFeed.xaml
+    /// Interaction logic for Results.xaml
     /// </summary>
-    public partial class NewsFeed : Page
+    public partial class Results : Page
     {
-        public NewsFeed()
+        public Results()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void goToHome(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(PageManager.pagemanager.getSettings());
+            this.NavigationService.Navigate(PageManager.pagemanager.GetNewsFeed());
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void goToProfile(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
         }
 
-        private void Button_Click_Shopping(object sender, RoutedEventArgs e)
+        private void goToShopOptions(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(PageManager.pagemanager.GetShopOptions());
         }
 
-        private void goToResults(object sender, RoutedEventArgs e)
+        private void goToSettings(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(PageManager.pagemanager.getResults());
+            this.NavigationService.Navigate(PageManager.pagemanager.getShop());
         }
     }
 }

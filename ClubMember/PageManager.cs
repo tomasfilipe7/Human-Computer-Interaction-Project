@@ -30,6 +30,8 @@ namespace ClubMember
         private Person person;
         private ShopOptions shopOptions;
         private NewsFeed newsFeed;
+        private Shop shop;
+        private Results results;
         public PageManager()
         {
             pagemanager = this;
@@ -242,6 +244,24 @@ namespace ClubMember
         public NewsFeed GetNewsFeed()
         {
             return newsFeed;
+        }
+
+        public void setShop()
+        {
+            shop = new Shop();
+        }
+        public Shop getShop()
+        {
+            return shop;
+        }
+
+        public void setResults()
+        {
+            results = new Results();
+        }
+        public Results getResults()
+        {
+            return results;
         }
     }
 }

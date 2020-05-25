@@ -107,6 +107,7 @@ namespace ClubMember
                         PageManager.pagemanager.setShopOptions();
                         PageManager.pagemanager.setBuyTickets();
                         PageManager.pagemanager.setNewsFeed();
+                        PageManager.pagemanager.setResults();
                     }
                 }
 

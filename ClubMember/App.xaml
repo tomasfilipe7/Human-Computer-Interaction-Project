@@ -6,13 +6,13 @@
     <Application.Resources>
         <Style x:Key="WindowStyle" TargetType="Window">
             <Setter Property="Background" Value="#183E7E"/>
-            <Setter Property="Width" Value="375"/>
-            <Setter Property="Height" Value="675"/>
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Height" Value="714"/>
         </Style>
         <Style x:Key="PageStyle" TargetType="Page">
             <Setter Property="Background" Value="#183E7E"/>
-            <Setter Property="Width" Value="375"/>
-            <Setter Property="Height" Value="675"/>
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Height" Value="714"/>
             <Setter Property="FontFamily" Value="Yu Gothic Light"></Setter>
         </Style>
         <Style x:Key="WhiteLabelStyle" TargetType="Label">
