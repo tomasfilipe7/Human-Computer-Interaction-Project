@@ -34,7 +34,6 @@ namespace ClubMember
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
             string[] line = System.IO.File.ReadAllLines("users.txt") ;
 
             string[] content;
@@ -105,6 +104,8 @@ namespace ClubMember
                         PageManager.pagemanager.setSendFeedback();
                         PageManager.pagemanager.setAboutApp();
                         PageManager.pagemanager.setHelp();
+                        PageManager.pagemanager.setShopOptions();
+                        PageManager.pagemanager.setBuyTickets();
 
                     }
                 }

@@ -27,6 +27,7 @@ namespace ClubMember
         private About aboutApp;
         private Help help;
         private Person person;
+        private ShopOptions shopOptions;
 
         public PageManager()
         {
@@ -224,6 +225,14 @@ namespace ClubMember
         public TicketPaymentCC GetTicketPayment()
         {
             return ticketPaymentCC;
+        }
+        public void setShopOptions()
+        {
+            shopOptions = new ShopOptions();
+        }
+        public ShopOptions GetShopOptions()
+        {
+            return shopOptions;
         }
     }
 }

@@ -1,0 +1,70 @@
+﻿<Page x:Class="ClubMember.ShopOptions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClubMember"
+      mc:Ignorable="d" 
+      Style="{StaticResource PageStyle}"
+      Title="ShopOptions">
+
+    <Grid>
+        <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
+        <Button x:Name="Button1" Margin="0,153,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="160" Background="#FF00185A" Click="OnlineStore">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Label VerticalContentAlignment="Center" Height="102" Content="Online Store" Foreground="White" FontSize="36" Width="268"/>
+                    <Label x:Name="LabelText1" HorizontalContentAlignment="Left" Height="102" Content="All of MyClub products available through one tap" Foreground="White" FontSize="12" Width="360"/>
+                </StackPanel>
+                <Image Source="Images/ShopBag_2.png" Margin="5,-10,10,-10" Grid.Column="1"/>
+            </Grid>
+        </Button>
+        <Button x:Name="Button2" Margin="0,311,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="160" Background="#FF5A7FE7" Click="Tickets">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Label VerticalContentAlignment="Center" Height="102" Content="Tickets" Foreground="White" FontSize="36" Width="268"/>
+                    <Label x:Name="LabelText2" HorizontalContentAlignment="Left" Height="102" Content="Buy your ticket here in digital format \n No queues, no complications." Foreground="White" FontSize="12" Width="360"/>
+                </StackPanel>
+                <Image Source="Images/Tickets.png" Margin="5,5,10,-25" Grid.Column="1"/>
+            </Grid>
+        </Button>
+        <Button x:Name="Button3" Margin="0,468,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="160" Background="White" Click="Membership">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Label VerticalContentAlignment="Center" Height="102" Content="Membership" Foreground="#FF1A92E7" FontSize="36" Width="268"/>
+                    <Label x:Name="LabelText3" HorizontalContentAlignment="Left" Height="102" Content="Check your membership fees here and enjoy all the advantages of being a member.  " Foreground="Black" FontSize="12" Width="360"/>
+                </StackPanel>
+                <Image Source="Images/CreditCard.png" Margin="5,13,10,-34" Grid.Column="1"/>
+            </Grid>
+        </Button>
+
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}">
+            <Image Source="Images/feed.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">
+            <Image Source="Images/shirt.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="150,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click">
+            <Image Source="Images/profile.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}">
+            <Image Source="Images/cart.png" Height="40" Width="50"/>
+        </Button>
+        <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2">
+            <Image Source="Images/settings.png" Height="40" Width="50"/>
+        </Button>
+    </Grid>
+</Page>
