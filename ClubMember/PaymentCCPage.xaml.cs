@@ -102,5 +102,10 @@ namespace ClubMember
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getPaymentPaypalPage());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+        }
     }
 }

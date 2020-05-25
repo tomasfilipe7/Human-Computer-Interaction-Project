@@ -33,6 +33,18 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="47,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Source="Images/paypal.png"/>
         <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="291,41,55,0" FontSize="22" Click="Increase_Months" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
         <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalBoldButtonStyle}" Margin="230,41,117,0" FontSize="22" Click="Decrease_Months" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Grid.Row="1"/>
+        <Button Margin="-12,18,316,18" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
+            <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.204"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
     </Grid>
 
 </Page>

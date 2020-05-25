@@ -40,5 +40,17 @@
         <Label x:Name="TotalPrice" Content="7,38€ *" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" Margin="209,508,0,0" VerticalAlignment="Top" Width="119" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="26"/>
         <TextBlock HorizontalAlignment="Left" Margin="286,508,0,0" Grid.Row="1" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="6" Width="89" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,534,0,0" VerticalAlignment="Top" Width="114" Height="27" Foreground="Black" Click="Pay_check" Grid.Row="1" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
+        <Button Margin="-12,18,316,18" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
+            <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.204"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
     </Grid>
 </Page>

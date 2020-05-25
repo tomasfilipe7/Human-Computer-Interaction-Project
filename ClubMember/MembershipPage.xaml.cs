@@ -61,6 +61,11 @@ namespace ClubMember
             PageManager.pagemanager.setUpgradeMembershipPage(memberplan);
             this.NavigationService.Navigate(PageManager.pagemanager.getUpgradeMembershipPage());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+        }
     }
 
 }

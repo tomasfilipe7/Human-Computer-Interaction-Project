@@ -14,5 +14,17 @@
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="Renew" Margin="0,338,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="Renew_Click"/>
         <Label x:Name="MembershipPlan" Style="{StaticResource WhiteBoldLabelStyle}" Content="Membership Plan: Standard" Margin="0,416,0,0" VerticalAlignment="Top" Height="58" Width="228"/>
         <Button x:Name="ChangePlan" Style="{StaticResource BlueBoldButtonStyle}" Content="Change Plan" Margin="0,460,0,0" VerticalAlignment="Top" Width="228" Height="40" Foreground="White" Click="Upgrade_Click" />
+        <Button Margin="0,14,304,593" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
+            <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.204"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
     </Grid>
 </Page>
