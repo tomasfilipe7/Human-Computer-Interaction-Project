@@ -9,8 +9,8 @@
       Title="ChooseTickets">
 
     <Grid>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Center" Margin="0,52,0,0" Text="Choose the Zone:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <ComboBox x:Name="ZoneSelect" HorizontalAlignment="Left" Margin="111,86,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="True" SelectionChanged="ZoneSelect_SelectionChanged">
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="36,87,0,0" Text="Choose the Zone:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Yu Gothic UI Semibold"/>
+        <ComboBox x:Name="ZoneSelect" HorizontalAlignment="Left" Margin="36,139,0,0" VerticalAlignment="Top" Width="158" IsSynchronizedWithCurrentItem="True" SelectionChanged="ZoneSelect_SelectionChanged">
             <ListBoxItem Content="A1"/>
             <ListBoxItem Content="A2"/>
             <ListBoxItem Content="A3"/>
@@ -23,131 +23,143 @@
             <ListBoxItem Content="VIP 1"/>
             <ListBoxItem Content="VIP 2"/>
         </ComboBox>
-        <Rectangle HorizontalAlignment="Left" Height="156" Margin="36,162,0,0" Stroke="Black" VerticalAlignment="Top" Width="321" Fill="White"/>
-        <Button x:Name="S17" HorizontalAlignment="Left" Margin="225,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Rectangle HorizontalAlignment="Left" Height="156" Margin="32,263,0,0" Stroke="Black" VerticalAlignment="Top" Width="320" Fill="White"/>
+        <Button x:Name="S17" HorizontalAlignment="Left" Margin="220,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S32" HorizontalAlignment="Left" Margin="80,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S32" HorizontalAlignment="Left" Margin="76,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S20" HorizontalAlignment="Left" Margin="311,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S20" HorizontalAlignment="Left" Margin="306,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S40" HorizontalAlignment="Left" Margin="311,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S40" HorizontalAlignment="Left" Margin="306,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S39" HorizontalAlignment="Left" Margin="283,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S39" HorizontalAlignment="Left" Margin="278,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S38" HorizontalAlignment="Left" Margin="254,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S38" HorizontalAlignment="Left" Margin="250,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S37" HorizontalAlignment="Left" Margin="224,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S37" HorizontalAlignment="Left" Margin="220,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S18" HorizontalAlignment="Left" Margin="254,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S18" HorizontalAlignment="Left" Margin="250,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S19" HorizontalAlignment="Left" Margin="282,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S19" HorizontalAlignment="Left" Margin="278,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S30" HorizontalAlignment="Left" Margin="311,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S30" HorizontalAlignment="Left" Margin="306,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S29" HorizontalAlignment="Left" Margin="283,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S29" HorizontalAlignment="Left" Margin="278,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S28" HorizontalAlignment="Left" Margin="254,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S28" HorizontalAlignment="Left" Margin="250,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S27" HorizontalAlignment="Left" Margin="225,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S27" HorizontalAlignment="Left" Margin="220,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S36" HorizontalAlignment="Left" Margin="195,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S36" HorizontalAlignment="Left" Margin="190,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S35" HorizontalAlignment="Left" Margin="168,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S35" HorizontalAlignment="Left" Margin="164,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S34" HorizontalAlignment="Left" Margin="138,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S34" HorizontalAlignment="Left" Margin="134,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S33" HorizontalAlignment="Left" Margin="110,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S33" HorizontalAlignment="Left" Margin="106,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S31" HorizontalAlignment="Left" Margin="52,269,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S31" HorizontalAlignment="Left" Margin="48,370,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S26" HorizontalAlignment="Left" Margin="196,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S26" HorizontalAlignment="Left" Margin="192,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S25" HorizontalAlignment="Left" Margin="167,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S25" HorizontalAlignment="Left" Margin="162,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S24" HorizontalAlignment="Left" Margin="138,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S24" HorizontalAlignment="Left" Margin="134,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S23" HorizontalAlignment="Left" Margin="109,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S23" HorizontalAlignment="Left" Margin="104,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S22" HorizontalAlignment="Left" Margin="81,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S22" HorizontalAlignment="Left" Margin="76,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S21" HorizontalAlignment="Left" Margin="52,237,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S21" HorizontalAlignment="Left" Margin="48,338,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S16" HorizontalAlignment="Left" Margin="196,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S16" HorizontalAlignment="Left" Margin="192,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S15" HorizontalAlignment="Left" Margin="167,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S15" HorizontalAlignment="Left" Margin="162,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S14" HorizontalAlignment="Left" Margin="138,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S14" HorizontalAlignment="Left" Margin="134,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S13" HorizontalAlignment="Left" Margin="109,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S13" HorizontalAlignment="Left" Margin="104,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S12" HorizontalAlignment="Left" Margin="81,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S12" HorizontalAlignment="Left" Margin="76,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S11" HorizontalAlignment="Left" Margin="52,205,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S11" HorizontalAlignment="Left" Margin="48,306,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S1" HorizontalAlignment="Left" Margin="52,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S1" HorizontalAlignment="Left" Margin="48,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S10" HorizontalAlignment="Left" Margin="311,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S10" HorizontalAlignment="Left" Margin="306,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S9" HorizontalAlignment="Left" Margin="283,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
+        <Button x:Name="S9" HorizontalAlignment="Left" Margin="278,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S8" HorizontalAlignment="Left" Margin="254,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S8" HorizontalAlignment="Left" Margin="250,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S7" HorizontalAlignment="Left" Margin="225,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S7" HorizontalAlignment="Left" Margin="220,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="30" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S6" HorizontalAlignment="Left" Margin="196,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S6" HorizontalAlignment="Left" Margin="192,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S5" HorizontalAlignment="Left" Margin="167,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S5" HorizontalAlignment="Left" Margin="162,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="30" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S4" HorizontalAlignment="Left" Margin="138,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S4" HorizontalAlignment="Left" Margin="134,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S3" HorizontalAlignment="Left" Margin="109,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S3" HorizontalAlignment="Left" Margin="104,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="30" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <Button x:Name="S2" HorizontalAlignment="Left" Margin="80,173,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="29" Height="32" Click="Choose_Seat">
+        <Button x:Name="S2" HorizontalAlignment="Left" Margin="76,274,0,0" VerticalAlignment="Top" Background="#00F4FF00" BorderBrush="#00707070" Width="28" Height="32" Click="Choose_Seat">
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
-        <TextBlock Style="{StaticResource TextBoldStyle}" x:Name="SeatText" HorizontalAlignment="Left" Margin="131,342,0,0" Text="A2 - S3" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" FontSize="9"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Center" Margin="0,140,0,0" Text="Choose the Seat:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold" Width="154"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="47,339,0,0" Text="Seat chosen:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="77"/>
-        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="Proceed to payment" Margin="0,407,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="ProceedToPayment"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" x:Name="SeatText" HorizontalAlignment="Left" Margin="134,442,0,0" Text="A2 - S3" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="36,214,0,0" Text="Choose the Seat:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Width="154" FontFamily="Yu Gothic UI Semibold"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="47,442,0,0" Text="Seat chosen:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="77"/>
+        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="Proceed to payment" Margin="0,510,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="ProceedToPayment"/>
+        <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_3">
+            <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.204"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
 
 
     </Grid>

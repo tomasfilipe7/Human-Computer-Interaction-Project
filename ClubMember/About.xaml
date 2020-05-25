@@ -9,7 +9,7 @@
       Title="About">
 
     <Grid>
-        <Label Content="ABOUT APPLICATION" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301"/>
+        <Label Content="ABOUT APPLICATION" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic UI Semibold"/>
         <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
             <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>

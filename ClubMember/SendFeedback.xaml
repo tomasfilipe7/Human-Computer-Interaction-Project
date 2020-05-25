@@ -9,7 +9,7 @@
       Title="SendFeedback">
 
     <Grid>
-        <Label Content="SEND FEEDBACK" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301"/>
+        <Label Content="SEND FEEDBACK" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic UI Semibold"/>
         <Rectangle HorizontalAlignment="Left" Height="366" Margin="20,0,0,0" VerticalAlignment="Center" Width="332" Fill="White"/>
         <TextBox HorizontalAlignment="Left" Margin="54,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" Height="224"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,208,0,0" Text="Share with us your feedback about our app!" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>

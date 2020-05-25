@@ -9,7 +9,7 @@
       Title="ProfileSettings">
 
     <Grid>
-        <Label Content="PROFILE SETTINGS" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301"/>
+        <Label Content="PROFILE SETTINGS" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic Medium"/>
         <Label Content="Change password" HorizontalAlignment="Left" Margin="49,141,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
         <Label Content="Change e-mail" HorizontalAlignment="Left" Margin="49,338,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
         <Label Content="Change recovery answer:" HorizontalAlignment="Left" Margin="49,479,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
