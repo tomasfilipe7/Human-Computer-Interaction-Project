@@ -9,24 +9,44 @@
       Title="NewsFeed">
 
     <Grid>
+        <ScrollViewer Margin="0,265,0,66" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Height="510">
+                <Grid Width="331" Height="624">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="170"/>
+                        <RowDefinition Height="170"/>
+                        <RowDefinition Height="170"/>
+
+                    </Grid.RowDefinitions>
+                    <Image Margin="64,0,65,19" Source="Images/FootballFeet.jpg"/>
+                    <Label Style="{StaticResource WhiteBoldLabelStyle}" Content="Derby ends with a dominant win from MCFC" Margin="0,120,0,0" VerticalAlignment="Top" Width="202" FontSize="9" Height="26"/>
+                    <Image Height="227" Margin="64,10,65,0" Source="Images/GoalFootball.jpg" VerticalAlignment="Top" Grid.Row="1" Grid.RowSpan="1"/>
+                    <Label Style="{StaticResource WhiteBoldLabelStyle}" Content="Derby tickets sold out in a matter of hours" Margin="0,124,0,0" VerticalAlignment="Top" Width="202" FontSize="9" Grid.Row="1" Height="26"/>
+                    <Image Height="227" Margin="64,23,65,0" Source="Images/Ronaldo.jpg" VerticalAlignment="Top" Grid.Row="2"/>
+                    <Label Style="{StaticResource WhiteBoldLabelStyle}" Content="CR7 might be the next MyClub's transfer." Margin="0,124,0,0" VerticalAlignment="Top" Width="202" FontSize="9" Grid.Row="2" Height="26"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="football-png-7.png"/>
-        <Rectangle HorizontalAlignment="Left" Height="77" Margin="27,169,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="316" Fill="White"/>
+        <Rectangle HorizontalAlignment="Center" Height="88" Margin="0,162,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="316" Fill="White"/>
         <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}">
-            <Image Source="feed.png" Height="40" Width="50"/>
+            <Image Source="Images/feed.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">
-            <Image Source="shirt.png" Height="40" Width="50"/>
+            <Image Source="Images/shirt.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Center" Click="Button_Click_1">
-            <Image Source="profile.png" Height="40" Width="50"/>
+            <Image Source="Images/profile.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_Shopping">
-            <Image Source="cart.png" Height="40" Width="50"/>
+            <Image Source="Images/cart.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Stretch" Click="Button_Click">
-            <Image Source="settings.png" Height="40" Width="50"/>
+            <Image Source="Images/settings.png" Height="40" Width="50"/>
         </Button>
-
+        <Image HorizontalAlignment="Left" Height="100" Margin="38,166,0,0" VerticalAlignment="Top" Width="100" Source="Images/MyClub.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="238,169,0,0" VerticalAlignment="Top" Width="100" Source="Images/RivalsFC.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="158,182,0,0" Text="2 - 0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Yu Gothic" FontSize="30" Foreground="#FF183E7E" Height="40" Width="75"/>
     </Grid>
 </Page>
