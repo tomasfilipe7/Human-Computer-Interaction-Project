@@ -53,6 +53,11 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.getHelp());
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.GetShopOptions());
+        }
+
         // button to Settings
 
     }

@@ -19,7 +19,7 @@
         <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Center" Click="Button_Click">
             <Image Source="Images/profile.png" Height="40" Width="50"/>
         </Button>
-        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="225,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
             <Image Source="Images/cart.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="300,627,0,0" Style="{StaticResource BottomBarButton}" HorizontalAlignment="Stretch">
