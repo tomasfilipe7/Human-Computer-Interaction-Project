@@ -21,5 +21,17 @@
         <TextBlock HorizontalAlignment="Left" Margin="64,412,0,0" Text="9€ per month, includes discount on home tickets, discount on the club store, access to VIP events and VIP cabins." TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="10"/>
         <Button x:Name="ChangePlan" Style="{StaticResource BlueBoldButtonStyle}" Content="Change Plan" Margin="0,492,0,0" VerticalAlignment="Top" Width="228" Height="40" Foreground="White" Click="ChangePlan_Click"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,532,0,0" Text="* The change will automatically take effect, upon the ending of the current plan." TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Width="228" FontSize="7"/>
+        <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
+            <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.204"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
     </Grid>
 </Page>

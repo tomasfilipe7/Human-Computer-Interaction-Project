@@ -60,10 +60,17 @@ namespace ClubMember
             {
                 plan_chose = "VIP";
             }
+            PageManager.pagemanager.getPerson().setMemberType(plan_chose);
+            PageManager.pagemanager.getPerson().savePerson();
             PageManager.pagemanager.getMembershipPage().setMemberPlan(plan_chose);
             ConfirmPayment change = new ConfirmPayment(this,PageManager.pagemanager.getMembershipPage());
             change.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             change.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
         }
     }
 }
