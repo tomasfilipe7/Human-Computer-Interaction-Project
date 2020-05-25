@@ -51,7 +51,7 @@
             </Grid>
         </Button>
 
-        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}">
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
             <Image Source="Images/feed.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="75,627,0,0" Style="{StaticResource BottomBarButton}">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClubMember.Images;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Navigation;
@@ -28,7 +29,7 @@ namespace ClubMember
         private Help help;
         private Person person;
         private ShopOptions shopOptions;
-
+        private NewsFeed newsFeed;
         public PageManager()
         {
             pagemanager = this;
@@ -233,6 +234,14 @@ namespace ClubMember
         public ShopOptions GetShopOptions()
         {
             return shopOptions;
+        }
+        public void setNewsFeed()
+        {
+            newsFeed = new NewsFeed();
+        }
+        public NewsFeed GetNewsFeed()
+        {
+            return newsFeed;
         }
     }
 }
