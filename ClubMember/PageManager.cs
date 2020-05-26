@@ -35,6 +35,7 @@ namespace ClubMember
         private Results results;
         private OwnedTickets ownedTickets;
         private TICKET ticket;
+        private ShoppingCart shoppingCart;
         public PageManager()
         {
             pagemanager = this;
@@ -285,5 +286,15 @@ namespace ClubMember
         {
             return ticket;
         }
+
+        public void setShoppingCart()
+        {
+            shoppingCart = new ShoppingCart();
+        }
+
+        public ShoppingCart GetShoppingCart()
+        {
+            return shoppingCart;
+        } 
     }
 }
