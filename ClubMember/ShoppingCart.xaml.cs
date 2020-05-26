@@ -58,7 +58,7 @@ namespace ClubMember
 
                 using (StreamWriter writer = new StreamWriter("itemsBought.txt", true))
                 {
-                    String tmp = memberID + ", " + l + ", 1, " + prices[count].ToString() + ", " + DateTime.Today;
+                    String tmp = memberID + ", " + l + ", 1, " + prices[count].ToString() + "€" + ", " + DateTime.Today;
                     writer.WriteLine(tmp);
                 }
 

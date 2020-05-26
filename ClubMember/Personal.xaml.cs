@@ -56,6 +56,21 @@ namespace ClubMember
             this.button1.Content = "Membership status: " + daysLeft + " days left";
         }
 
+        public void addDays(int _daysLeft)
+        {
+            daysLeft += _daysLeft;
+            if (daysLeft <= 10)
+            {
+                this.button1.Background = Brushes.Red;
+            }
+            else
+            {
+                this.button1.Background = Brushes.Green;
+            }
+
+            this.button1.Content = "Membership status: " + daysLeft + " days left";
+        }
+
         // button to Settings
         private void Button_Click(object sender, RoutedEventArgs e)
         {

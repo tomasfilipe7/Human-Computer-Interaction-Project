@@ -88,6 +88,7 @@ namespace ClubMember
 
         private void Pay_check(object sender, RoutedEventArgs e)
         {
+            PageManager.pagemanager.getProfile().addDays(30 * months);
             PageManager.pagemanager.getPerson().addDays(30 * months);
             PageManager.pagemanager.getPerson().savePerson();
             PageManager.pagemanager.getMembershipPage().setDays(PageManager.pagemanager.getPerson().getDaysLeft());
