@@ -22,6 +22,12 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
+        <Rectangle HorizontalAlignment="Center" Height="451" Margin="0,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,181,0,0" Text="This application was developed by:" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="37" FontSize="16" FontFamily="Yu Gothic UI Semibold"/>
+        <Label Content="Bruno Lopes nºMEC: 89179" HorizontalAlignment="Left" Margin="64,223,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Márcia Pires nºMEC: 88747" HorizontalAlignment="Left" Margin="65,259,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Tomás Martins nºMEC: 89286" HorizontalAlignment="Left" Margin="64,295,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,357,0,0" Text="In the context of the Human-Computer Interaction course" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="44" FontSize="16" FontFamily="Yu Gothic UI Semibold"/>
 
     </Grid>
 </Page>
