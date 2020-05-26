@@ -15,6 +15,7 @@ namespace ClubMember
         private PaymentCCPage paymentccpage;
         private PaymentPaypalPage paypalpayment;
         private TicketPaymentCC ticketPaymentCC;
+        private TicketPaypal ticketPaypal;
         private ChooseTickets choosetickets;
         private CreateAccount createAccount;
         private ForgotPassword forgotpass;
@@ -35,7 +36,6 @@ namespace ClubMember
         private Results results;
         private OwnedTickets ownedTickets;
         private TICKET ticket;
-        private ShoppingCart shoppingCart;
         public PageManager()
         {
             pagemanager = this;
@@ -233,6 +233,15 @@ namespace ClubMember
         {
             return ticketPaymentCC;
         }
+
+        public void setTicketPaypal()
+        {
+            ticketPaypal = new TicketPaypal();
+        }
+        public TicketPaypal GetTicketPaypal()
+        {
+            return ticketPaypal;
+        }
         public void setShopOptions()
         {
             shopOptions = new ShopOptions();
@@ -286,15 +295,5 @@ namespace ClubMember
         {
             return ticket;
         }
-
-        public void setShoppingCart()
-        {
-            shoppingCart = new ShoppingCart();
-        }
-
-        public ShoppingCart GetShoppingCart()
-        {
-            return shoppingCart;
-        } 
     }
 }

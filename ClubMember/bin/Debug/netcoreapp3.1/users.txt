@@ -1,4 +1,4 @@
-12345,aeiou,32,VIP,John,Doe,john_99@gmail.com,Senhor dos Aneis
+12345,aeiou,5,VIP,John,Doe,john_99@gmail.com,Senhor dos Aneis
 98765,adeus,11,Standard,Jane,Doe,jane.doe10@gmail.com, Harry Potter
 adr,adr,90,Standard,adr,adr,adr,1917
 q,q,90,Standard,q,q,q,q

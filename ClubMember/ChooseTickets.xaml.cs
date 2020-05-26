@@ -80,6 +80,7 @@ namespace ClubMember
         private void ProceedToPayment(object sender, RoutedEventArgs e)
         {
             PageManager.pagemanager.setTicketPayment();
+            PageManager.pagemanager.setTicketPaypal();
             this.NavigationService.Navigate(PageManager.pagemanager.GetTicketPayment());
         }
 

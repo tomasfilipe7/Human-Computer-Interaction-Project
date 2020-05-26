@@ -5,11 +5,6 @@ w,w,90,Standard,w,w,w,w
 e,e,90,Standard,e,e,e,e
 12345,MyClub_x_RivalsFC,05/06/2020,24€,C1-S15
 12345,MyClub_x_RivalsFC,27/05/2020,18€,VIP 1-S26
-
 12345,MyClub_x_RivalsFC,27/05/2020,18€,A2-S5
-12345,MyClub_x_RivalsFC,27/05/2020,24,A2-S24
-12345,MyClub_x_RivalsFC,27/05/2020,24,A2-S28
-12345,MyClub_x_RivalsFC,27/05/2020,24,A2-S9
 12345,MyClub_x_RivalsFC,27/05/2020,18€,VIP 1-S1
-12345,MyClub_x_RivalsFC,27/05/2020,24,VIP 1-S2
-12345,MyClub_x_RivalsFC,27/05/2020,24,VIP 1-S3
+
