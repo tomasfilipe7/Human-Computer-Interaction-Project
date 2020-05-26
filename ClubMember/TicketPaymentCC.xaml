@@ -13,12 +13,12 @@
             <RowDefinition Height="124*"/>
             <RowDefinition Height="551*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="CreditCard" Style="{StaticResource WhiteBoldButtonStyle}" Content="Credit Card" HorizontalAlignment="Left" Margin="48,77,0,0" VerticalAlignment="Top" Height="31" Width="140" FontSize="14" FontFamily="Yu Gothic UI Semibold"/>
-        <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Margin="188,77,0,0" VerticalAlignment="Top" Height="31" Width="140" HorizontalAlignment="Left" Click="Paypal_Click" FontSize="14" FontFamily="Yu Gothic UI Semibold" BorderBrush="White">
+        <Button x:Name="CreditCard" Style="{StaticResource WhiteBoldButtonStyle}" Content="Credit Card" HorizontalAlignment="Left" Margin="60,91,0,0" VerticalAlignment="Top" Height="31" Width="140" FontSize="14" FontFamily="Yu Gothic UI Semibold"/>
+        <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Margin="200,91,0,0" VerticalAlignment="Top" Height="31" Width="140" HorizontalAlignment="Left" Click="Paypal_Click" FontSize="14" FontFamily="Yu Gothic UI Semibold" BorderBrush="White">
             <Label Content="Paypal" Height="31"/>
         </Button>
-        <Rectangle HorizontalAlignment="Left" Height="5" Margin="48,102,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F"/>
-        <TextBlock HorizontalAlignment="Left" Margin="47,0,0,0" Grid.Row="1" Text="Card Details" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" Height="22" Width="74"/>
+        <Rectangle HorizontalAlignment="Left" Height="5" Margin="60,116,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,1,0,0" Grid.Row="1" Text="Card Details" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" Height="22" Width="74"/>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="223" Margin="0,27,0,0" VerticalAlignment="Top" Width="281" Grid.Row="1"/>
         <TextBox HorizontalAlignment="Center" VerticalContentAlignment="Center" Margin="0,51,0,0" Grid.Row="1" Text="Card Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Foreground="#FF7D888F" Height="33"/>
         <TextBox HorizontalAlignment="Center" VerticalContentAlignment="Center" Margin="0,99,0,0" Grid.Row="1" Text="Name on Card" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Foreground="#FF7D888F" Height="33"/>

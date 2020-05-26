@@ -88,7 +88,7 @@ namespace ClubMember
                             PageManager.pagemanager.getPerson().getDaysLeft()
                         );
 
-                        this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+                        this.NavigationService.Navigate(PageManager.pagemanager.GetNewsFeed());
 
                         PageManager.pagemanager.setItemsBought(
                             PageManager.pagemanager.getPerson().getID()

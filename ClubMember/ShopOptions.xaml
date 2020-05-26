@@ -21,7 +21,7 @@
                     <Label VerticalContentAlignment="Center" Height="102" Content="Online Store" Foreground="White" FontSize="36" Width="268"/>
                     <Label x:Name="LabelText1" HorizontalContentAlignment="Left" Height="102" Content="All of MyClub products available through one tap" Foreground="White" FontSize="12" Width="360"/>
                 </StackPanel>
-                <Image Source="Images/ShopBag_2.png" Margin="5,-10,10,-10" Grid.Column="1"/>
+                <Image Source="Images/ShopBag_2.png" Margin="20,12,20,12" Grid.Column="1"/>
             </Grid>
         </Button>
         <Button x:Name="Button2" Margin="0,311,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="160" Background="#FF5A7FE7" Click="Tickets">
@@ -34,7 +34,7 @@
                     <Label VerticalContentAlignment="Center" Height="102" Content="Tickets" Foreground="White" FontSize="36" Width="268"/>
                     <Label x:Name="LabelText2" HorizontalContentAlignment="Left" Height="102" Content="Buy your ticket here in digital format \n No queues, no complications." Foreground="White" FontSize="12" Width="360"/>
                 </StackPanel>
-                <Image Source="Images/Tickets.png" Margin="5,5,10,-25" Grid.Column="1"/>
+                <Image Source="Images/Tickets.png" Margin="17,16,17,-8" Grid.Column="1"/>
             </Grid>
         </Button>
         <Button x:Name="Button3" Margin="0,468,0,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Height="160" Background="White" Click="Membership">
@@ -47,7 +47,7 @@
                     <Label VerticalContentAlignment="Center" Height="102" Content="Membership" Foreground="#FF1A92E7" FontSize="36" Width="268"/>
                     <Label x:Name="LabelText3" HorizontalContentAlignment="Left" Height="102" Content="Check your membership fees here and enjoy all the advantages of being a member.  " Foreground="Black" FontSize="12" Width="360"/>
                 </StackPanel>
-                <Image Source="Images/CreditCard.png" Margin="5,13,10,-34" Grid.Column="1"/>
+                <Image Source="Images/CreditCard.png" Margin="17,28,17,-20" Grid.Column="1"/>
             </Grid>
         </Button>
 

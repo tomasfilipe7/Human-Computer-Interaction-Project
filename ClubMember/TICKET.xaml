@@ -11,8 +11,8 @@
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="529" Margin="0,185,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="400" Fill="White"/>
 
-        <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
-        <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
+        <Label Content="ClubMember" HorizontalAlignment="Left" Margin="142,93,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="84,93,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
         <Image HorizontalAlignment="Center" Height="218" Margin="0,579,0,0" VerticalAlignment="Top" Width="260" Source="Images/BarCode.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="19,218,0,0" Text="Primeira Liga - Época 2019/2020" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="330" FontFamily="Yu Gothic" FontWeight="Bold" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="19,297,0,0" Text="Data de realização" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="187" FontFamily="Yu Gothic" FontWeight="Bold" FontSize="20"/>

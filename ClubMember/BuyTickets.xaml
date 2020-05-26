@@ -9,8 +9,8 @@
       Title="BuyTickets">
 
     <Grid>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="44,81,0,0" Text="Choose the game:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Yu Gothic UI Semibold"/>
-        <Calendar x:Name="GameCalendar" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.537" Height="174" FirstDayOfWeek="Sunday" IsTodayHighlighted="False">
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="44,113,0,0" Text="Choose the game:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Yu Gothic UI Semibold"/>
+        <Calendar x:Name="GameCalendar" HorizontalAlignment="Center" Margin="0,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.537" Height="174" FirstDayOfWeek="Sunday" IsTodayHighlighted="False">
             <Calendar.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFA3AEB9"/>
@@ -31,15 +31,16 @@
         <Rectangle HorizontalAlignment="Center" Height="20" Margin="0,249,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="20
                    " Fill="#66F4FF00" IsHitTestVisible="False"/>
         <Rectangle HorizontalAlignment="Left" Height="20" Margin="219,266,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="20                    " Fill="#66F4FF00" IsHitTestVisible="False" RenderTransformOrigin="0.567,0.522"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="168,321,0,0" Text="MyClub x UFC" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" Width="106"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="128,321,0,0" Text="27/05:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="104"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="160,345,0,0" Text="SALALA x MyClub" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" Width="110"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="119,345,0,0" Text="05/06:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="99"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="44,393,0,0" Text="Quantity of tickets:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="204,445,141,0" FontSize="22" Click="Increase_Tickets" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Background="White"/>
-        <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalBoldButtonStyle}" Margin="144,445,203,0" FontSize="22" Click="Decrease_Tickets" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Background="White"/>
-        <Label x:Name="QuantityTickets" Content="1" Style="{StaticResource WhiteBoldLabelStyle}" Margin="0,446,0,0" VerticalAlignment="Top" Width="32" HorizontalContentAlignment="Center" Foreground="White" FontWeight="Normal" Height="28" Background="Transparent" FontSize="14"/>
-        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="CHOOSE TICKETS" Margin="0,528,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="Choose_Tickets"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="170,352,0,0" Text="MyClub x UFC" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" Width="134" FontSize="16"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="118,352,0,0" Text="27/05:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="132" FontSize="16"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="160,375,0,0" Text="SALALA x MyClub" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" Width="138" FontSize="16"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="108,375,0,0" Text="05/06:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="124" FontSize="16"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="48,445,0,0" Text="Quantity of tickets:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="221,491,149,0" FontSize="22" Click="Increase_Tickets" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Background="White"/>
+        <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalBoldButtonStyle}" Margin="149,491,221,0" FontSize="22" Click="Decrease_Tickets" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" 
+                Background="White"/>
+        <Label x:Name="QuantityTickets" Content="1" Style="{StaticResource WhiteBoldLabelStyle}" Margin="0,491,0,0" VerticalAlignment="Top" Width="32" HorizontalContentAlignment="Center" Foreground="White" FontWeight="Normal" Height="28" Background="Transparent" FontSize="16" FontFamily="Yu Gothic UI Semibold"/>
+        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="CHOOSE TICKETS" Margin="0,556,0,0" VerticalAlignment="Top" Width="174" Height="40" Foreground="White" Click="Choose_Tickets"/>
         <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
             <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
