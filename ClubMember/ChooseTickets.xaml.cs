@@ -24,6 +24,7 @@ namespace ClubMember
         private Button seat_selected;
         private List<Button> buttons = new List<Button>();
         private List<String> tickets = new List<String>();
+        
         public ChooseTickets()
         {
             InitializeComponent();
@@ -31,6 +32,8 @@ namespace ClubMember
             seat_number = "";
             this.SeatText.Text = "Choose a seat";
         }
+        
+        
 
         private void Choose_Seat(object sender, RoutedEventArgs e)
         {
@@ -92,6 +95,10 @@ namespace ClubMember
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getBuyTickets());
+        }
+        public List<String> getTickets()
+        {
+            return tickets;
         }
     }
 }

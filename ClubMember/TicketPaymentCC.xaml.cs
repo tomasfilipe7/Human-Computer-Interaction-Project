@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace ClubMember
 {
@@ -81,6 +82,20 @@ namespace ClubMember
 
         private void Pay_check(object sender, RoutedEventArgs e)
         {
+            int i = 0;
+            foreach(String ticket in PageManager.pagemanager.getChooseTickets().getTickets())
+            {
+                if(i == 0)
+                {
+                    saveTicket(PageManager.pagemanager.getPerson().getID(), PageManager.pagemanager.getBuyTickets().getGame(), PageManager.pagemanager.getBuyTickets().getDate(), price_per_memberticket.ToString() + "€", ticket);
+                    i+=1;
+                }
+                else
+                {
+                    saveTicket(PageManager.pagemanager.getPerson().getID(), PageManager.pagemanager.getBuyTickets().getGame(), PageManager.pagemanager.getBuyTickets().getDate(), price_per_ticket.ToString() + "€", ticket);
+                }
+            }
+            
             ConfirmPayment window = new ConfirmPayment(this,PageManager.pagemanager.getBuyTickets());
             window.HorizontalAlignment = HorizontalAlignment.Center;
             window.VerticalAlignment = VerticalAlignment.Center;
@@ -96,6 +111,17 @@ namespace ClubMember
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getChooseTickets());
+        }
+
+        private void saveTicket(String id,String game, String date, String price, String seat)
+        {
+
+            string line = id + "," + game + "," + date + "," + price + "," + seat;
+
+            using (StreamWriter writer = new StreamWriter("tickets.txt", true))
+            {
+                writer.WriteLine(line);
+            }
         }
     }
 }

@@ -108,6 +108,7 @@ namespace ClubMember
                         PageManager.pagemanager.setBuyTickets();
                         PageManager.pagemanager.setNewsFeed();
                         PageManager.pagemanager.setResults();
+                        PageManager.pagemanager.setOwnedTickets(ID);
                     }
                 }
 

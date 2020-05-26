@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,12 +20,23 @@ namespace ClubMember
     public partial class BuyTickets : Page
     {
         private int num_tickets;
+        private String date;
+        private String game;
         public BuyTickets()
         {
             InitializeComponent();
             num_tickets = 1;
         }
 
+        public String getDate()
+        {
+            return date;
+        }
+
+        public String getGame()
+        {
+            return game;
+        }
         private void Increase_Tickets(object sender, RoutedEventArgs e)
         {
             num_tickets += 1;
@@ -55,6 +67,15 @@ namespace ClubMember
         }
         private void Choose_Tickets(object sender, RoutedEventArgs e)
         {
+            date = this.GameCalendar.SelectedDate.ToString().Split(" ")[0];
+            if(date.Equals("27/05/2020"))
+            {
+                game = "MyClub_x_RivalsFC";
+            }
+            else
+            {
+                game = "MyClub_x_RivalsFC";
+            }
             PageManager.pagemanager.setChooseTickets();
             this.NavigationService.Navigate(PageManager.pagemanager.getChooseTickets());
         }

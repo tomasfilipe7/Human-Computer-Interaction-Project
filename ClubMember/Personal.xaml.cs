@@ -82,8 +82,8 @@ namespace ClubMember
 
         private void Button1_Click_1(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.setBuyTickets();
-            this.NavigationService.Navigate(PageManager.pagemanager.getBuyTickets());
+            PageManager.pagemanager.getOwnedTickets().setMemberID(PageManager.pagemanager.getPerson().getID());
+            this.NavigationService.Navigate(PageManager.pagemanager.getOwnedTickets());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

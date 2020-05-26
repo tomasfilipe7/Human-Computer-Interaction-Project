@@ -18,14 +18,18 @@
 
         <Button x:Name="Button1" Margin="38,259,34,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Click="Button1_Click_1">
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="27*"/>
+                    <RowDefinition Height="13*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0">
+                <StackPanel Grid.Column="0" Grid.RowSpan="2">
                     <Label>Tickets available</Label>
                 </StackPanel>
-                <Image Source="Images/arrow.png" Height="40" Width="50" Grid.Column="1"></Image>
+                <Image Source="Images/arrow.png" Height="40" Width="50" Grid.Column="1" Margin="0,0,-1,0" Grid.RowSpan="2"></Image>
 
             </Grid>
         </Button>

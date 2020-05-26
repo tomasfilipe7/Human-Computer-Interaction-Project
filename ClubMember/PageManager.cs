@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Media;
 using System.Windows.Navigation;
 
 namespace ClubMember
@@ -32,6 +33,8 @@ namespace ClubMember
         private NewsFeed newsFeed;
         private Shop shop;
         private Results results;
+        private OwnedTickets ownedTickets;
+        private TICKET ticket;
         public PageManager()
         {
             pagemanager = this;
@@ -262,6 +265,25 @@ namespace ClubMember
         public Results getResults()
         {
             return results;
+        }
+        public void setOwnedTickets(String memberID)
+        {
+            ownedTickets = new OwnedTickets();
+            ownedTickets.setMemberID(memberID);
+        }
+        public OwnedTickets getOwnedTickets()
+        {
+            return ownedTickets;
+        }
+
+        public void setTicket(String game, String date, String price, String seat)
+        {
+            ticket = new TICKET(game, date, price, seat);
+        }
+
+        public TICKET getTicket()
+        {
+            return ticket;
         }
     }
 }
