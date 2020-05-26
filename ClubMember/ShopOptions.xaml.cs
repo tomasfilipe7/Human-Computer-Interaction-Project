@@ -38,7 +38,7 @@ namespace ClubMember
 
         private void OnlineStore(object sender, RoutedEventArgs e)
         {
-           
+            this.NavigationService.Navigate(PageManager.pagemanager.getShop());
         }
 
         private void Tickets(object sender, RoutedEventArgs e)

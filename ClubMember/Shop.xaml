@@ -10,15 +10,66 @@
     <Grid>
         <Label Content="ClubMember SHOP" HorizontalAlignment="Left" Margin="50,55,50,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal" Width="283"/>
         <Image HorizontalAlignment="Center" Height="60" Margin="0,116,0,0" VerticalAlignment="Top" Width="58" Source="Images/ShopBag_2.png"/>
-        <ScrollViewer>
+        <ScrollViewer Height="535" VerticalAlignment="Top" Margin="0,178,0,0">
             <StackPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="0"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="120"/>
                     </Grid.RowDefinitions>
+                    <Rectangle Stroke="White" Margin="0,0,-183,0" Style="{DynamicResource WhiteRectangleStyle}" Grid.Row="0" Grid.ColumnSpan="2"/>
+                    <Rectangle Stroke="White" Margin="0,0,-183,0" Style="{DynamicResource WhiteRectangleStyle}" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Rectangle Stroke="White" Margin="0,0,-183,0" Style="{DynamicResource WhiteRectangleStyle}" Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <Rectangle Stroke="White" Margin="0,0,-183,0" Style="{DynamicResource WhiteRectangleStyle}" Grid.Row="3" Grid.ColumnSpan="2"/>
+                    <Rectangle Stroke="White" Margin="0,0,-183,0" Style="{DynamicResource WhiteRectangleStyle}" Grid.Row="4" Grid.ColumnSpan="2"/>
+                    <Button Content="Add to Cart" Margin="58,83,58,10" Grid.Row="0"/>
+                    <Button Content="Add to Cart" Margin="52,83,-136,10" Grid.Row="0" Grid.Column="1"/>
+                    <Button Content="Add to Cart" Margin="58,83,58,10" Grid.Row="1"/>
+                    <Button Content="Add to Cart" Margin="52,83,-136,10" Grid.Row="1" Grid.Column="1"/>
+                    <Button Content="Add to Cart" Margin="58,83,58,10" Grid.Row="2"/>
+                    <Button Content="Add to Cart" Margin="52,83,-136,10" Grid.Row="2" Grid.Column="1"/>
+                    <Button Content="Add to Cart" Margin="58,83,58,10" Grid.Row="3"/>
+                    <Button Content="Add to Cart" Margin="52,83,-136,10" Grid.Row="3" Grid.Column="1"/>
+                    <Button Content="Add to Cart" Margin="58,83,58,10" Grid.Row="4"/>
+                    <Button Content="Add to Cart" Margin="52,83,-136,10" Grid.Row="4" Grid.Column="1"/>
+                    <Image Margin="22,6,106,41" Grid.Row="0" Source="Images/BeenieShop.png"/>
+                    <Image Margin="2,118,100,18" Grid.Row="0" Source="Images/BallShop.jpg" Grid.RowSpan="2"/>
+                    <Image Margin="10,6,-100,26" Grid.Row="1" Source="Images/CapShop.jpg" Grid.Column="1"/>
+                    <Image Margin="10,4,-85,40" Source="Images/HoodieShop.png" Grid.Column="1" Grid.Row="0"/>
+                    <Image Margin="10,6,106,24" Grid.Row="2" Source="Images/NotebookShop.png"/>
+                    <Image Margin="7,7,-85,32" Grid.Row="2" Source="Images/PenShop.png" Grid.Column="1"/>
+                    <Image Margin="16,3,111,42" Grid.Row="3" Source="Images/ShirtShop.png"/>
+                    <Image Margin="7,4,-85,36" Grid.Row="3" Source="Images/ShortShop.png" Grid.Column="1"/>
+                    <Image Margin="16,8,-94,32" Grid.Row="4" Source="Images/freeLogo-removebg-preview.png" Grid.Column="1"/>
+                    <Image Margin="22,7,106,37" Grid.Row="4" Source="Images/ScarfShop.png"/>
+                    <Label Content="8€" HorizontalAlignment="Left" Margin="127,0,0,0" VerticalAlignment="Center" FontSize="16" FontFamily="YU Gothic Bold"/>
+                    <Label Content="MCFC Beenie" HorizontalAlignment="Left" Margin="92,13,0,0" VerticalAlignment="Top" Grid.Row="0" FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="15€" HorizontalAlignment="Left" Margin="122,0,0,0" VerticalAlignment="Center" FontSize="16" FontFamily="YU Gothic Bold" Grid.Row="1" RenderTransformOrigin="-0.026,0.5"/>
+                    <Label Content="MCFC Ball" HorizontalAlignment="Left" Margin="100,18,0,0" VerticalAlignment="Top" Grid.Row="1" FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="5€" HorizontalAlignment="Left" Margin="127,0,0,0" VerticalAlignment="Center" FontSize="16" FontFamily="YU Gothic Bold" Grid.Row="2" RenderTransformOrigin="-0.026,0.5"/>
+                    <Label Content="MCFC Agenda" HorizontalAlignment="Left" Margin="94,15,0,0" VerticalAlignment="Top" Grid.Row="2" FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="40€" HorizontalAlignment="Left" Margin="122,0,0,0" VerticalAlignment="Center" FontSize="16" FontFamily="YU Gothic Bold" Grid.Row="3" RenderTransformOrigin="-0.026,0.5"/>
+                    <Label Content="MCFC Jersey" HorizontalAlignment="Left" Margin="94,15,0,0" VerticalAlignment="Top" Grid.Row="3" FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="10€" HorizontalAlignment="Left" Margin="122,0,0,0" VerticalAlignment="Center" FontSize="16" FontFamily="YU Gothic Bold" Grid.Row="4" RenderTransformOrigin="-0.026,0.5"/>
+                    <Label Content="MCFC Scarf" HorizontalAlignment="Left" Margin="94,15,0,0" VerticalAlignment="Top" Grid.Row="4" FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="MCFC Hoodie" Margin="76,15,-183,77" Grid.Column="1" FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="30€" Margin="107,42,-152,49" Grid.Column="1" FontSize="16" FontFamily="YU Gothic Bold"/>
+                    <Label Content="MCFC Cap" Margin="86,18,-173,74" Grid.Column="1" Grid.Row="1"  FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="8€" Margin="115,42,-144,49" Grid.Column="1" Grid.Row="1" FontSize="16" FontFamily="YU Gothic Bold"/>
+                    <Label Content="MCFC Pen" Margin="86,18,-173,74" Grid.Column="1" Grid.Row="2"  FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="4€" Margin="115,42,-144,49" Grid.Column="1" Grid.Row="2" FontSize="16" FontFamily="YU Gothic Bold"/>
+                    <Label Content="MCFC Shorts" Margin="86,18,-183,74" Grid.Column="1" Grid.Row="3"  FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="20€" Margin="115,42,-152,49" Grid.Column="1" Grid.Row="3" FontSize="16" FontFamily="YU Gothic Bold"/>
+                    <Label Content="MCFC Sticker" Margin="81,17,-183,75" Grid.Column="1" Grid.Row="4"  FontSize="14" FontFamily="YU Gothic"/>
+                    <Label Content="2€" Margin="115,42,-144,49" Grid.Column="1" Grid.Row="4" FontSize="16" FontFamily="YU Gothic Bold"/>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
