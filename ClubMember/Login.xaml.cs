@@ -88,6 +88,7 @@ namespace ClubMember
                             PageManager.pagemanager.getPerson().getDaysLeft()
                         );
 
+                        PageManager.pagemanager.setNewsFeed();
                         this.NavigationService.Navigate(PageManager.pagemanager.GetNewsFeed());
 
                         PageManager.pagemanager.setItemsBought(
@@ -106,7 +107,6 @@ namespace ClubMember
                         PageManager.pagemanager.setHelp();
                         PageManager.pagemanager.setShopOptions();
                         PageManager.pagemanager.setBuyTickets();
-                        PageManager.pagemanager.setNewsFeed();
                         PageManager.pagemanager.setShop();
                         PageManager.pagemanager.setResults();
                         PageManager.pagemanager.setOwnedTickets(ID);
