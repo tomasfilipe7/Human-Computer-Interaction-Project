@@ -23,27 +23,27 @@
                     <Image Margin="260,22,27,576" Source="Images/freeLogo__1_-removebg-preview.png"/>
                     <Label Content="Fri 13/03, 20H30" Margin="140,143,114,501" FontFamily="Yu Gothic UI Semibold"/>
                     <Label Content="2 : 2" Margin="159,161,134,471" FontFamily="Yu Gothic" FontSize="24" Foreground="Black" FontWeight="Bold"/>
-                    <Image Margin="27,111,260,492" Source="Images/freeLogo (3).jpeg"/>
+                    <Image Margin="27,111,260,492" Source="Images/SharkSC.jpeg"/>
                     <Image Margin="260,105,27,499" Source="Images/freeLogo-removebg-preview.png"/>
                     <Label Content="Fri 20/03, 20H30" Margin="139,220,115,423" FontFamily="Yu Gothic UI Semibold"/>
                     <Label Content="1 : 2" Margin="159,238,134,393" FontFamily="Yu Gothic" FontSize="24" Foreground="Black" FontWeight="Bold"/>
                     <Image Margin="27,187,260,416" Source="Images/freeLogo-removebg-preview.png"/>
-                    <Image Margin="260,186,27,415" Source="Images/freeLogo (4).jpeg"/>
+                    <Image Margin="260,186,27,415" Source="Images/WolfFC.jpeg"/>
                     <Label Content="Fri 27/03, 20H30" Margin="136,300,118,343" FontFamily="Yu Gothic UI Semibold"/>
                     <Label Content="1 : 1" Margin="159,318,134,313" FontFamily="Yu Gothic" FontSize="24" Foreground="Black" FontWeight="Bold"/>
-                    <Image Margin="38,299,272,351" Source="Images/freeLogo (5).jpeg"/>
+                    <Image Margin="38,299,272,351" Source="Images/SCBull.jpeg"/>
                     <Image Margin="260,276,27,328" Source="Images/freeLogo-removebg-preview.png"/>
                     <Rectangle HorizontalAlignment="Center" Height="45" Margin="0,414,0,0" Stroke="GhostWhite" VerticalAlignment="Top" Width="384" Style="{DynamicResource WhiteRectangleStyle}" Grid.Row="0"/>
                     <Label Content="APRIL 2020" Margin="122,414,96,223" FontFamily="Yu Gothic" FontSize="20" Foreground="#29A8F8" FontWeight="Bold"/>
                     <Rectangle Stroke="White" Margin="0,459,-3,-81" Style="{DynamicResource WhiteRectangleStyle}"/>
-                    <Image Margin="27,550,259,72" Source="Images/freeLogo-removebg-preview.png"/>
-                    <Image Margin="270,565,37,93" Source="Images/freeLogo (6).jpeg"/>
+                    <Image Margin="26,524,260,98" Source="Images/freeLogo-removebg-preview.png"/>
+                    <Image Margin="270,537,37,121" Source="Images/freeLogo__1_-removebg-preview.png"/>
                     <Label Content="Fri 18/04, 20H30" Margin="140,464,118,220" FontFamily="Yu Gothic UI Semibold"/>
                     <Label Content="2 : 1" Margin="162,485,126,187" FontFamily="Yu Gothic" FontSize="24" Foreground="Black" FontWeight="Bold"/>
                     <Image Margin="26,442,260,180" Source="Images/freeLogo-removebg-preview.png"/>
-                    <Image Margin="270,454,37,204" Source="Images/freeLogo__1_-removebg-preview.png"/>
-                    <Label Content="Fri 25/04, 20H30" Margin="136,541,122,143" FontFamily="Yu Gothic UI Semibold"/>
-                    <Label Content="2 : 0" Margin="159,567,129,105" FontFamily="Yu Gothic" FontSize="24" Foreground="Black" FontWeight="Bold"/>
+                    <Image Margin="287,470,37,204" Source="Images/FCSeagull.jpeg"/>
+                    <Label Content="Fri 25/04, 20H30" Margin="140,543,118,141" FontFamily="Yu Gothic UI Semibold"/>
+                    <Label Content="2 : 0" Margin="162,565,126,107" FontFamily="Yu Gothic" FontSize="24" Foreground="Black" FontWeight="Bold"/>
                 </Grid>
             </StackPanel>
         </ScrollViewer>

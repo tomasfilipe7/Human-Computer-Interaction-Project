@@ -8,7 +8,7 @@
       Style="{StaticResource PageStyle}"
       Title="Shop">
     <Grid>
-        <Button Content="" HorizontalAlignment="Left" Margin="282,38,0,0" VerticalAlignment="Top" Width="108" Height="51" Background="White" BorderBrush="{x:Null}"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="282,38,0,0" VerticalAlignment="Top" Width="108" Height="51" Background="White" BorderBrush="{x:Null}" Click="goToShoppingCart"/>
         <Label Content="SHOP" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontSize="32" Foreground="White" FontWeight="Normal" Width="96"/>
         <ScrollViewer Height="535" VerticalAlignment="Top" Margin="0,178,0,0">
             <StackPanel>
