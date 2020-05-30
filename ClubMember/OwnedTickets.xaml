@@ -11,9 +11,10 @@
     <Grid>
         <Label Content="TICKETS BOUGHT" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic UI Semibold"/>
         <Grid Margin="24,160,36,492" >
-            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,-14,0">GAME | DATE | PRICE | SEAT</Label>
+            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,-13,0">GAME | DATE | PRICE | SEAT</Label>
+
         </Grid>
-        <ScrollViewer Margin="24,188,19,77" HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer Margin="24,191,23,150" VerticalScrollBarVisibility="Hidden">
             <StackPanel x:Name="stackP" Background="White" Height="438">
                 <Grid x:Name="myGrid">
                     <Grid.ColumnDefinitions>
@@ -40,6 +41,8 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
+        <Label x:Name="lblPop" Content="Click over each ticket for more details" HorizontalAlignment="Left" Margin="24,607,0,0" VerticalAlignment="Top" Height="67" Width="273" Foreground="White" FontSize="16" Background="#B2808080"/>
+        <Button x:Name="btn_OK" Content="OK" HorizontalAlignment="Left" Margin="250,640,0,0" VerticalAlignment="Top" Height="24" Width="35" RenderTransformOrigin="0.586,0.587" Click="btn_OK_Click"/>
 
     </Grid>
 </Page>

@@ -9,8 +9,6 @@
       Title="ShoppingCart">
 
     <Grid Margin="0,2,0,-2">
-        <Label Content="Shopping Cart" HorizontalAlignment="Left" Margin="143,119,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="YU Gothic Bold"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="38,98,0,0" VerticalAlignment="Top" Width="100" Source="Images/cart.png"/>
         <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="goBackToShop">
             <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
@@ -23,10 +21,16 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <Grid Margin="24,208,36,444" >
-            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,-14,0">ITEM | PRICE</Label>
+        <Grid Margin="24,176,36,476" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.Column="0" Margin="0,-8,-14,0">ITEM</Label>
+            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.Column="1" Margin="0,-8,-14,0">PRICE</Label>
+
         </Grid>
-        <ScrollViewer Margin="24,236,19,29" HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer Margin="24,204,19,61" HorizontalScrollBarVisibility="Auto">
             <StackPanel x:Name="stackP" Background="White" Height="438">
                 <Grid x:Name="myGrid">
                     <Grid.ColumnDefinitions>
@@ -54,6 +58,7 @@
             </Image>
         </Button>
         <Button Content="BUY" FontSize="20" FontFamily="YU Gothic Bold" HorizontalAlignment="Left" Height="34" Margin="298,46,0,0" VerticalAlignment="Top" Width="66" Click="goToPayment"/>
+        <Label Content="SHOPPING CART" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontSize="32" Foreground="White" FontWeight="Normal" Width="96"/>
 
     </Grid>
 </Page>
