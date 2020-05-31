@@ -28,7 +28,7 @@ namespace ClubMember
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(PageManager.pagemanager.GetShopPayment());
+            this.NavigationService.Navigate(PageManager.pagemanager.GetShoppingCart());
 
         }
 
