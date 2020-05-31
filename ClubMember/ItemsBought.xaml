@@ -10,19 +10,20 @@
 
     <Grid>
         <Label Content="ITEMS BOUGHT" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic UI Semibold"/>
-        <Grid Margin="24,160,36,492" >
+        <Grid Margin="24,160,23,492" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="14*"/>
+                <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.ColumnSpan="2" Margin="0,-8,78,0">Item</Label>
             <Label Grid.Column="1" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.ColumnSpan="2" Margin="0,-8,78,0">Quantity</Label>
             <Label Grid.Column="2" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,0,0">Price</Label>
-            <Label Grid.Column="2" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.ColumnSpan="2" Margin="78,-8,0,0">Date</Label>
+            <Label Grid.Column="2" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.ColumnSpan="3" Margin="78,-8,0,0">Date</Label>
         </Grid>
-        <ScrollViewer Margin="24,188,19,77" HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer Margin="24,188,23,77" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
             <StackPanel x:Name="stackP" Background="White" Height="438">
                 <Grid x:Name="myGrid">
                     <Grid.ColumnDefinitions>
