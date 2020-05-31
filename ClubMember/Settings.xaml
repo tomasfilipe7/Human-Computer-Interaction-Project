@@ -14,7 +14,7 @@
             <Image Source="Images/feed.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="87,627,0,0" Style="{StaticResource BottomBarButton}" Width="83" Click="goToResults">
-            <Image Source="Images/shirt.png" Height="40" Width="50"/>
+            <Image Source="Images/calendar.png" Height="40" Width="50"/>
         </Button>
         <Button Margin="170,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click">
             <Image Source="Images/profile.png" Height="40" Width="50"/>
