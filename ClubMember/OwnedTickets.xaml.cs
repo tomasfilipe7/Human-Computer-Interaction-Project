@@ -28,8 +28,6 @@ namespace ClubMember
         public OwnedTickets()
         {
             InitializeComponent();
-            lblPop.Visibility = Visibility.Visible;
-            btn_OK.Visibility = Visibility.Visible;
         }
 
         public void setMemberID(String _memberID)
@@ -85,10 +83,5 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.getTicket());
         }
 
-        private void btn_OK_Click(object sender, RoutedEventArgs e)
-        {
-            lblPop.Visibility = Visibility.Hidden;
-            btn_OK.Visibility = Visibility.Hidden;
-        }
     }
 }

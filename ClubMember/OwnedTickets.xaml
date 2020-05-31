@@ -11,19 +11,12 @@
     <Grid>
         <Label Content="TICKETS BOUGHT" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic UI Semibold"/>
         <Grid Margin="24,160,36,492" >
-            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,-13,0">GAME | DATE | PRICE | SEAT</Label>
+            <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,-13,31">GAME | DATE | PRICE | SEAT</Label>
 
         </Grid>
         <ScrollViewer Margin="24,191,23,150" VerticalScrollBarVisibility="Hidden">
             <StackPanel x:Name="stackP" Background="White" Height="438">
                 <Grid x:Name="myGrid">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition x:Name="C1"/>
-                        <ColumnDefinition x:Name="C2"/>
-                        <ColumnDefinition x:Name="C3"/>
-                        <ColumnDefinition x:Name="C4"/>
-                    </Grid.ColumnDefinitions>
-
                 </Grid>
             </StackPanel>
 
