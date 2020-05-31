@@ -13,6 +13,7 @@
             <RowDefinition Height="563*"/>
             <RowDefinition Height="151*"/>
         </Grid.RowDefinitions>
+        <Rectangle HorizontalAlignment="Center" Height="562" Margin="0,152,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="316" Fill="White" Grid.RowSpan="2"/>
         <ScrollViewer Margin="0,265,0,87" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="2">
             <StackPanel Height="510">
                 <Grid Width="331" Height="624">
@@ -32,7 +33,6 @@
             </StackPanel>
         </ScrollViewer>
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
-        <Rectangle HorizontalAlignment="Center" Height="88" Margin="0,162,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="316" Fill="White"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
         <Button Margin="0,64,0,0" Style="{StaticResource BottomBarButton}" Width="87" Grid.Row="1">
             <Image Source="Images/feed.png" Height="40" Width="50"/>
@@ -49,8 +49,8 @@
         <Button Margin="320,64,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80" Grid.Row="1">
             <Image Source="Images/settings.png" Height="40" Width="50"/>
         </Button>
-        <Image HorizontalAlignment="Left" Height="100" Margin="38,166,0,0" VerticalAlignment="Top" Width="100" Source="Images/MyClub.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="238,169,0,0" VerticalAlignment="Top" Width="100" Source="Images/RivalsFC.png"/>
-        <TextBlock HorizontalAlignment="Left" Margin="158,182,0,0" Text="2 - 0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Yu Gothic" FontSize="30" Foreground="#FF183E7E" Height="40" Width="75"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="51,164,0,0" VerticalAlignment="Top" Width="100" Source="Images/MyClub.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="245,169,0,0" VerticalAlignment="Top" Width="100" Source="Images/RivalsFC.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="165,182,0,0" Text="2 - 0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Yu Gothic" FontSize="30" Foreground="#FF183E7E" Height="40" Width="75"/>
     </Grid>
 </Page>
