@@ -20,9 +20,10 @@ namespace ClubMember
     {
         private Page page;
         private Page target_page;
-        public ConfirmPayment(Page _page,Page _target_page)
+        public ConfirmPayment(Page _page,Page _target_page,String text)
         {
             InitializeComponent();
+            this.PaymentText.Content = text;
             page = _page;
             target_page = _target_page;
         }

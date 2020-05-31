@@ -63,7 +63,7 @@ namespace ClubMember
             PageManager.pagemanager.getPerson().setMemberType(plan_chose);
             PageManager.pagemanager.getPerson().savePerson();
             PageManager.pagemanager.getMembershipPage().setMemberPlan(plan_chose);
-            ConfirmPayment change = new ConfirmPayment(this,PageManager.pagemanager.getMembershipPage());
+            ConfirmPayment change = new ConfirmPayment(this,PageManager.pagemanager.getMembershipPage(),"The plan was changed successfully!");
             change.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             change.ShowDialog();
         }

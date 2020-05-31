@@ -95,7 +95,7 @@ namespace ClubMember
                 }
             }
 
-            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getBuyTickets());
+            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getBuyTickets(), "Tickets bought with success!");
             window.HorizontalAlignment = HorizontalAlignment.Center;
             window.VerticalAlignment = VerticalAlignment.Center;
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;

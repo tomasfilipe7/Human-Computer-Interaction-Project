@@ -88,13 +88,14 @@ namespace ClubMember
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Sticker", 2);
+            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Scarf", 10);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
+            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Sticker", 2);
             count++;
             txtBlk.Text = count.ToString();
         }

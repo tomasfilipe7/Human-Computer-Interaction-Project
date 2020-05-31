@@ -92,7 +92,7 @@ namespace ClubMember
             PageManager.pagemanager.getPerson().addDays(30 * months);
             PageManager.pagemanager.getPerson().savePerson();
             PageManager.pagemanager.getMembershipPage().setDays(PageManager.pagemanager.getPerson().getDaysLeft());
-            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getMembershipPage());
+            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getMembershipPage(), "Your membership fee was updated\n successfully!");
             window.HorizontalAlignment = HorizontalAlignment.Center;
             window.VerticalAlignment = VerticalAlignment.Center;
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
