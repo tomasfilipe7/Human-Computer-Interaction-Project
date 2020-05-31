@@ -68,7 +68,7 @@ namespace ClubMember
                     }
 
                     MessageBox.Show(memberID + " account was successfully created!", "Create Account", MessageBoxButton.OK);
-                    this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+                    this.NavigationService.Navigate(PageManager.pagemanager.getLogin());
 
                 }
                 
