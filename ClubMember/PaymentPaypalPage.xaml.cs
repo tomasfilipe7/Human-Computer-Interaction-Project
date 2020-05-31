@@ -96,15 +96,17 @@ namespace ClubMember
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             window.ShowDialog();
         }
-
-        private void CreditCard_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(PageManager.pagemanager.getPaymentCCPage());
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(PageManager.pagemanager.getMembershipPage());
+        }
+        private void Paypal_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void CreditCard(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(PageManager.pagemanager.getPaymentCCPage());
         }
     }
 }

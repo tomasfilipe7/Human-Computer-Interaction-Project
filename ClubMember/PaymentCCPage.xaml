@@ -17,7 +17,7 @@
         <Button x:Name="Paypal" Style="{StaticResource WhiteBoldButtonStyle}" Margin="199,2,0,0" VerticalAlignment="Top" Height="31" Width="140" HorizontalAlignment="Left" Click="Paypal_Click" Grid.Row="1">
             <Label Content="Paypal"/>
         </Button>
-        <Rectangle HorizontalAlignment="Left" Height="5" Margin="59,24,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F" Grid.Row="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="5" Margin="59,28,0,0" Stroke="#FF7D888F" VerticalAlignment="Top" Width="140" Fill="#FF7D888F" Grid.Row="1"/>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="74" Margin="0,49,0,0" VerticalAlignment="Top" Width="280" Grid.Row="1"/>
         <Label Content="Months" Style="{StaticResource WhiteBoldLabelStyle}" Margin="59,49,0,505" HorizontalAlignment="Left" Width="88" FontSize="18" Grid.Row="1" />
         <Label x:Name="PricePerMonth" Content="6€ per moth" Style="{StaticResource WhiteBoldLabelStyle}" Margin="59,97,0,0" VerticalAlignment="Top" Width="87" HorizontalAlignment="Left" FontSize="10" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1"/>

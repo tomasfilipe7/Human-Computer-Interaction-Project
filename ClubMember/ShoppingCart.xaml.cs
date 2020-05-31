@@ -63,7 +63,6 @@ namespace ClubMember
                 newT1.Name = "T_" + count;
                 newT1.MouseDown += CheckName;
                 this.RegisterName(newT1.Name, newT1);
-                Debug.WriteLine(newT1.Name);
                 Grid.SetRow(newT1, count);
                 Grid.SetRow(bt, count);
                 Grid.SetColumn(newT1, 0);
@@ -89,8 +88,6 @@ namespace ClubMember
         private void CheckName(object sender, RoutedEventArgs e)
         {
             TextBlock tx = (TextBlock)sender;
-            Debug.WriteLine("HELLOOOOOO");
-            Debug.WriteLine(tx.Name);
         }
         private void DeleteItem(object sender, RoutedEventArgs e)
         {
@@ -102,7 +99,7 @@ namespace ClubMember
             prices.Remove(Int32.Parse(txt.Text.Split(" | ")[1].Replace("€","")));
             PageManager.pagemanager.getShop().delete_shoppingCart(txt.Text.Split(" | ")[0], Int32.Parse(txt.Text.Split(" | ")[1].Replace("€", "")));
             txt.Text = "";
-            img.Opacity = 0;
+            img.Source = null;
 
         }
         private void goToPayment(object sender, RoutedEventArgs e)

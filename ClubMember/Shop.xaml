@@ -8,7 +8,19 @@
       Style="{StaticResource PageStyle}"
       Title="Shop">
     <Grid>
-        <Button Content="" HorizontalAlignment="Left" Margin="282,38,0,0" VerticalAlignment="Top" Width="108" Height="51" Background="White" BorderBrush="{x:Null}" Click="goToShoppingCart"/>
+        <Button HorizontalAlignment="Left" Margin="282,38,0,0" VerticalAlignment="Top" Width="108" Height="51" Background="White" BorderBrush="{x:Null}" Click="goToShoppingCart">
+            <Grid Width="105">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Width="104">
+                    <TextBlock x:Name="txtBlk" Text="0" TextWrapping="Wrap" FontFamily="Yu Gothic UI Semibold" FontSize="20" Width="52" Height="37" VerticalAlignment="Bottom"/>
+                </StackPanel>
+                <Image Source="Images/cart.png" Height="39" Width="44" Grid.Column="1"/>
+            </Grid>
+
+        </Button>
         <Label Content="SHOP" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontSize="32" Foreground="White" FontWeight="Normal" Width="96"/>
         <ScrollViewer Height="535" VerticalAlignment="Top" Margin="0,178,0,0">
             <StackPanel>
@@ -85,7 +97,5 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <Image Source="Images/cart.png" HorizontalAlignment="Left" Height="74" Margin="329,42,0,0" VerticalAlignment="Top" Width="43"/>
-        <TextBlock x:Name="txtBlk" HorizontalAlignment="Left" Margin="296,51,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontSize="20" Width="28" Height="34"/>
     </Grid>
 </Page>
