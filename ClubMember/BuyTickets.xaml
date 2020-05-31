@@ -28,13 +28,13 @@
                 </LinearGradientBrush>
             </Calendar.Background>
         </Calendar>
-        <Rectangle HorizontalAlignment="Center" Height="20" Margin="0,283,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="20
+        <Rectangle HorizontalAlignment="Left" Height="20" Margin="127,249,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="20
                    " Fill="#66F4FF00" IsHitTestVisible="False"/>
-        <Rectangle HorizontalAlignment="Left" Height="20" Margin="231,302,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="20                    " Fill="#66F4FF00" IsHitTestVisible="False" RenderTransformOrigin="0.567,0.522"/>
+        <Rectangle HorizontalAlignment="Left" Height="20" Margin="230,213,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="20                    " Fill="#66F4FF00" IsHitTestVisible="False" RenderTransformOrigin="0.567,0.522"/>
         <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="170,352,0,0" Text="MyClub x UFC" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" Width="134" FontSize="16"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="118,352,0,0" Text="27/05:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="132" FontSize="16"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="118,352,0,0" Text="05/06:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="132" FontSize="16"/>
         <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="160,375,0,0" Text="SALALA x MyClub" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal" Width="138" FontSize="16"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="108,375,0,0" Text="05/06:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="124" FontSize="16"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="108,375,0,0" Text="14/06:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="124" FontSize="16"/>
         <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="48,445,0,0" Text="Quantity of tickets:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
         <Button x:Name="PlusSignal" Content="+" Style="{StaticResource SignalBoldButtonStyle}" Margin="221,491,149,0" FontSize="22" Click="Increase_Tickets" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" Background="White"/>
         <Button x:Name="MinusSignal" Content="-" Style="{StaticResource SignalBoldButtonStyle}" Margin="149,491,221,0" FontSize="22" Click="Decrease_Tickets" RenderTransformOrigin="0.511,0.549" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="28" 

@@ -68,7 +68,7 @@ namespace ClubMember
         private void Choose_Tickets(object sender, RoutedEventArgs e)
         {
             date = this.GameCalendar.SelectedDate.ToString().Split(" ")[0];
-            if(date.Equals("27/05/2020"))
+            if(date.Equals("05/06/2020"))
             {
                 game = "MyClub_x_RivalsFC";
             }
@@ -82,7 +82,7 @@ namespace ClubMember
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(PageManager.pagemanager.getProfile());
+            this.NavigationService.Navigate(PageManager.pagemanager.GetShopOptions());
         }
     }
 }
