@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows;
@@ -24,6 +25,7 @@ namespace ClubMember
         private Button seat_selected;
         private List<Button> buttons = new List<Button>();
         private List<String> tickets = new List<String>();
+        private List<Button> unavailable = new List<Button>();
         
         public ChooseTickets()
         {
@@ -33,7 +35,18 @@ namespace ClubMember
             this.SeatText.Text = "Choose a seat";
         }
         
-        
+        private void getUnavailableSeats()
+        {
+            Random random = new Random();
+            int num_taken = random.Next(1,31);
+            for(int i = 0; i < num_taken; i++)
+            {
+                int seat_random = random.Next(1, 41);
+                Button bt = (Button)this.FindName("S" + seat_random.ToString());
+                bt.Background = System.Windows.Media.Brushes.Gray;
+                unavailable.Add(bt);
+            }
+        }
 
         private void Choose_Seat(object sender, RoutedEventArgs e)
         {
@@ -50,7 +63,7 @@ namespace ClubMember
                     tickets.Remove(ticket_un);
                     buttons.Remove(seat_selected);
                 }
-                else if (tickets.Count < PageManager.pagemanager.getBuyTickets().getNumTickets())
+                else if (tickets.Count < PageManager.pagemanager.getBuyTickets().getNumTickets() && unavailable.Contains(seat_selected)==false)
                 {
                     seat_selected.Background = System.Windows.Media.Brushes.Yellow;
                     tickets.Add(ticket_un);
@@ -67,7 +80,7 @@ namespace ClubMember
                 String tickets_str = "";
                 foreach (String ticket in tickets)
                 {
-                    tickets_str += ticket + ";";
+                    tickets_str += ticket + "; ";
                 }
                 this.SeatText.Text = tickets_str;
             }
@@ -86,11 +99,17 @@ namespace ClubMember
 
         private void ZoneSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            foreach(Button bt in buttons)
+            foreach (Button bt in unavailable)
+            {
+                bt.Background = System.Windows.Media.Brushes.Transparent;
+            }
+            unavailable.Clear();
+            foreach (Button bt in buttons)
             {
                 bt.Background = System.Windows.Media.Brushes.Transparent;
             }
             buttons.Clear();
+            getUnavailableSeats();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

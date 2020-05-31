@@ -145,7 +145,7 @@
             <Image Source="Images/Seat.png" Height="25" Width="19"/>
         </Button>
         <TextBlock Style="{StaticResource TextBoldStyle}" x:Name="SeatText" HorizontalAlignment="Left" Margin="134,442,0,0" Text="A2 - S3" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Normal"/>
-        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="36,234,0,0" Text="Choose the Seat:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Width="154" FontFamily="Yu Gothic UI Semibold"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="36,234,0,0" Text="Choose the Seat :" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Width="154" FontFamily="Yu Gothic UI Semibold"/>
         <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="47,442,0,0" Text="Seat chosen:" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="77"/>
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="Proceed to payment" Margin="0,510,0,0" VerticalAlignment="Top" Width="173" Height="40" Foreground="White" Click="ProceedToPayment"/>
         <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_3">
@@ -160,6 +160,10 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="197,242,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="12" Fill="#FF595959"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="209,241,0,0" Text="- Seats Taken" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="10" FontWeight="Bold" Width="62" FontFamily="Yu Gothic UI Semibold"/>
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="289,242,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="12" Fill="#FFE8D634"/>
+        <TextBlock Style="{StaticResource TextBoldStyle}" HorizontalAlignment="Left" Margin="301,241,0,0" Text="- Seats Selected" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="10" FontWeight="Bold" Width="80" FontFamily="Yu Gothic UI Semibold"/>
 
 
     </Grid>

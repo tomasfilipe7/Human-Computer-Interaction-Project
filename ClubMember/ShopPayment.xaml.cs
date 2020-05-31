@@ -34,6 +34,7 @@ namespace ClubMember
 
         private void Pay_done(object sender, RoutedEventArgs e)
         {
+            PageManager.pagemanager.getItemsBought().setMemberID(PageManager.pagemanager.getPerson().getID());
             ConfirmPayment confirm = new ConfirmPayment(this, PageManager.pagemanager.getShop());
             confirm.ShowDialog();
         }
