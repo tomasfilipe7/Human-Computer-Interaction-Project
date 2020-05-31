@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Diagnostics;
 
 namespace ClubMember
 { 
@@ -49,18 +50,26 @@ namespace ClubMember
             {
                 row = new RowDefinition();
                 myGrid.RowDefinitions.Add(row);
-
+                Image bt = new Image();
+                bt.Source = new BitmapImage(new Uri("/ClubMember;component/Images/TrashCan.png", UriKind.Relative));
+                bt.Width = 20;
+                bt.Height = 20;
+                bt.VerticalAlignment = VerticalAlignment.Top;
+                bt.Name = "Image_" + count;
+                bt.MouseDown += DeleteItem;
                 TextBlock newT1 = new TextBlock();
                 newT1.Text = l + " | " + prices[count].ToString() + "€" + "\n";
                 newT1.FontSize = 15;
+                newT1.Name = "T_" + count;
+                newT1.MouseDown += CheckName;
+                this.RegisterName(newT1.Name, newT1);
+                Debug.WriteLine(newT1.Name);
                 Grid.SetRow(newT1, count);
+                Grid.SetRow(bt, count);
+                Grid.SetColumn(newT1, 0);
+                Grid.SetColumn(bt, 3);
                 myGrid.Children.Add(newT1);
-
-                using (StreamWriter writer = new StreamWriter("itemsBought.txt", true))
-                {
-                    String tmp = memberID + ", " + l + ", 1, " + prices[count].ToString() + "€" + ", " + DateTime.Today;
-                    writer.WriteLine(tmp);
-                }
+                myGrid.Children.Add(bt);
 
                 count++;
             }
@@ -77,10 +86,42 @@ namespace ClubMember
             return count;
         }
 
+        private void CheckName(object sender, RoutedEventArgs e)
+        {
+            TextBlock tx = (TextBlock)sender;
+            Debug.WriteLine("HELLOOOOOO");
+            Debug.WriteLine(tx.Name);
+        }
+        private void DeleteItem(object sender, RoutedEventArgs e)
+        {
+            Image img = (Image)sender;
+            String num = img.Name.Split("_")[1];
+            int index = Int32.Parse(num);
+            TextBlock txt = (TextBlock)(this.FindName("T_"+num));
+            shoppingCart.Remove(txt.Text.Split(" | ")[0]);
+            prices.Remove(Int32.Parse(txt.Text.Split(" | ")[1].Replace("€","")));
+            PageManager.pagemanager.getShop().delete_shoppingCart(txt.Text.Split(" | ")[0], Int32.Parse(txt.Text.Split(" | ")[1].Replace("€", "")));
+            txt.Text = "";
+            img.Opacity = 0;
+
+        }
         private void goToPayment(object sender, RoutedEventArgs e)
         {
             PageManager.pagemanager.setShopPayment();
             this.NavigationService.Navigate(PageManager.pagemanager.GetShopPayment());
+        }
+        public void PaidSuccess()
+        {
+            int count = 0;
+            foreach (string l in shoppingCart)
+            {
+                using (StreamWriter writer = new StreamWriter("itemsBought.txt", true))
+                {
+                    String tmp = memberID + ", " + l + ", 1, " + prices[count].ToString() + "€" + ", " + DateTime.Today;
+                    writer.WriteLine(tmp);
+                }
+                count++;
+            }
         }
     }
 }

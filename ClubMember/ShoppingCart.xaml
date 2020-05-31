@@ -25,6 +25,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                
             </Grid.ColumnDefinitions>
             <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.Column="0" Margin="0,-8,-14,0">ITEM</Label>
             <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.Column="1" Margin="0,-8,-14,0">PRICE</Label>
@@ -38,6 +39,7 @@
                         <ColumnDefinition x:Name="C2"/>
                         <ColumnDefinition x:Name="C3"/>
                         <ColumnDefinition x:Name="C4"/>
+
                     </Grid.ColumnDefinitions>
 
                 </Grid>

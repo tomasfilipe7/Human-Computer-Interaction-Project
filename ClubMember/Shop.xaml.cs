@@ -19,6 +19,9 @@ namespace ClubMember
     public partial class Shop : Page
     {
         int count = 0;
+        private List<String> shoppingCart = new List<String>();
+        private List<int> prices = new List<int>();
+
         public Shop()
         {
             InitializeComponent();
@@ -30,80 +33,99 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.GetShopOptions());
         }
 
+        private void addToCart(String item,int price)
+        {
+            shoppingCart.Add(item);
+            prices.Add(price);
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Beenie", 8);
+            addToCart("MCFC Beenie", 8);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Hoodie", 30);
+            addToCart("MCFC Hoodie", 30);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Ball", 15);
+            addToCart("MCFC Ball", 15);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Cap", 8);
+            addToCart("MCFC Cap", 8);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Agenda", 5);
+            addToCart("MCFC Agenda", 5);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Pen", 4);
+            addToCart("MCFC Pen", 4);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Jersey", 40);
+            addToCart("MCFC Jersey", 40);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Shorts", 20);
+            addToCart("MCFC Shorts", 20);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Scarf", 10);
+            addToCart("MCFC Scarf", 10);
             count++;
             txtBlk.Text = count.ToString();
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            PageManager.pagemanager.GetShoppingCart().addToCart("MCFC Sticker", 2);
+            addToCart("MCFC Sticker", 2);
             count++;
             txtBlk.Text = count.ToString();
         }
 
+        public void delete_shoppingCart(String item,int price)
+        {
+            shoppingCart.Remove(item);
+            prices.Remove(price);
+            count--;
+            txtBlk.Text = count.ToString();
+        }
         private void goToShoppingCart(object sender, RoutedEventArgs e)
         {
+            PageManager.pagemanager.setShoppingCart();
+            int count = 0;
+            foreach(String item in shoppingCart)
+            {
+                PageManager.pagemanager.GetShoppingCart().addToCart(item, prices[count]);
+                count++;
+            }
             this.NavigationService.Navigate(PageManager.pagemanager.GetShoppingCart());
             PageManager.pagemanager.GetShoppingCart().setMemberID(PageManager.pagemanager.getPerson().getID());
-    }
+        }
     }
 }

@@ -34,8 +34,9 @@ namespace ClubMember
 
         private void Pay_done(object sender, RoutedEventArgs e)
         {
+            PageManager.pagemanager.GetShoppingCart().PaidSuccess();
             PageManager.pagemanager.getItemsBought().setMemberID(PageManager.pagemanager.getPerson().getID());
-            ConfirmPayment confirm = new ConfirmPayment(this, PageManager.pagemanager.getShop(),"The payment was accepted successfully!");
+            ConfirmPayment confirm = new ConfirmPayment(this, PageManager.pagemanager.getShop(), "The payment was accepted successfully!");
             confirm.ShowDialog();
         }
     }
