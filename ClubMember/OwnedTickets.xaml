@@ -41,8 +41,7 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <Label x:Name="lblPop" Content="Click over each ticket for more details" HorizontalAlignment="Left" Margin="24,607,0,0" VerticalAlignment="Top" Height="67" Width="273" Foreground="White" FontSize="16" Background="#B2808080"/>
-        <Button x:Name="btn_OK" Content="OK" HorizontalAlignment="Left" Margin="250,640,0,0" VerticalAlignment="Top" Height="24" Width="35" RenderTransformOrigin="0.586,0.587" Click="btn_OK_Click"/>
+        <Label x:Name="lblPop" Content="Click over each ticket for more details" HorizontalAlignment="Left" Margin="24,569,0,0" VerticalAlignment="Top" Height="46" Width="297" Foreground="White" FontSize="16" Background="{x:Null}" FontFamily="Yu Gothic UI Semibold"/>
 
     </Grid>
 </Page>
