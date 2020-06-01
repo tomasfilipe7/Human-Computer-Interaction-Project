@@ -30,15 +30,14 @@
         <TextBox HorizontalAlignment="Center" VerticalContentAlignment="Center" Margin="0,248,0,0" Grid.Row="1" Text="Name on Card" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Foreground="#FF7D888F" Height="38"/>
         <TextBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="86,308,0,0" Grid.Row="1" Text="Expire Date (mm/yy)" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Foreground="#FF7D888F" Height="38"/>
         <TextBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="200,308,0,0" Grid.Row="1" Text="CCV*" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Foreground="#FF7D888F" Height="38"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,351,0,0" Grid.Row="1" Text="* Your CCV is the last 3 digits in the signature strip on the back of your card" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="7" Width="228" Foreground="#FF7D888F" FontWeight="Bold"/>
-        <CheckBox Content="Do you want to save this card?" HorizontalAlignment="Center" Margin="0,381,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" Foreground="#FF7D888F" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,351,0,0" Grid.Row="1" Text="* Your CCV is the last 3 digits in the signature strip on the back of your card" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Width="228" Foreground="#FF7D888F" FontWeight="Bold"/>
+        <CheckBox Content="Do you want to save this card?" HorizontalAlignment="Left" Margin="86,402,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" Foreground="#FF7D888F" FontSize="11"/>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="35" Margin="0,458,0,0" VerticalAlignment="Top" Width="280" Grid.Row="1"/>
         <Label x:Name="PricePerMonth_Copy" Content="SubTotal:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="60,458,0,0" VerticalAlignment="Top" Width="96" HorizontalAlignment="Left" FontSize="14" Foreground="Black" FontWeight="Bold" Grid.Row="1" Height="35"/>
         <Label x:Name="SubTotalPrice" Content="6€" Style="{StaticResource WhiteBoldLabelStyle}" Margin="256,458,0,0" VerticalAlignment="Top" Width="82" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="35"/>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="63" Margin="0,508,0,0" VerticalAlignment="Top" Width="280" Grid.Row="1"/>
         <Label x:Name="PricePerMonth_Copy1" Content="TOTAL:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="60,509,0,0" VerticalAlignment="Top" Width="96" FontSize="14" Foreground="Black" FontWeight="Bold" Grid.Row="1" Height="26" HorizontalAlignment="Left"/>
         <Label x:Name="TotalPrice" Content="7,38€ *" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" Margin="274,508,0,0" VerticalAlignment="Top" Width="56" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Grid.Row="1" Height="26"/>
-        <TextBlock HorizontalAlignment="Left" Margin="301,537,0,0" Grid.Row="1" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8" Width="89" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,544,0,0" VerticalAlignment="Top" Width="114" Height="27" Foreground="Black" Click="Pay_check" Grid.Row="1" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
         <Button Margin="-12,18,316,18" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
             <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
@@ -52,5 +51,6 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="282,534,0,0" Grid.Row="1" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Width="90" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
     </Grid>
 </Page>

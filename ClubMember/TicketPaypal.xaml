@@ -17,11 +17,10 @@
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="141" Margin="0,395,0,0" VerticalAlignment="Top" Width="280"/>
         <Label x:Name="PricePerMonth_Copy" Content="SubTotal:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="60,491,0,0" VerticalAlignment="Top" Width="110" HorizontalAlignment="Left" FontSize="14" Foreground="Black" FontWeight="Bold" Height="35"/>
         <Label x:Name="SubTotalPrice" Content="6€" Style="{StaticResource WhiteBoldLabelStyle}" Margin="270,491,81,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" FontSize="14" Foreground="#FFA2A2A2" FontWeight="Bold" Height="35"/>
-        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="40" Margin="0,541,0,0" VerticalAlignment="Top" Width="280"/>
-        <Label x:Name="PricePerMonth_Copy1" Content="Total:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="77,541,0,0" VerticalAlignment="Top" Width="66" FontSize="16" Foreground="Black" FontWeight="Bold" Height="40" HorizontalAlignment="Left"/>
+        <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="58" Margin="0,541,0,0" VerticalAlignment="Top" Width="280"/>
+        <Label x:Name="PricePerMonth_Copy1" Content="Total:" Style="{StaticResource WhiteBoldLabelStyle}" Margin="75,550,0,0" VerticalAlignment="Top" Width="66" FontSize="16" Foreground="Black" FontWeight="Bold" Height="40" HorizontalAlignment="Left"/>
         <Label x:Name="TotalPrice" Content="7,38€ *" Style="{StaticResource WhiteBoldLabelStyle}" HorizontalContentAlignment="Left" Margin="262,541,0,0" VerticalAlignment="Top" Width="65" HorizontalAlignment="Left" FontSize="16" Foreground="#FFA2A2A2" FontWeight="Bold" Height="40"/>
-        <TextBlock HorizontalAlignment="Left" Margin="304,569,0,0" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="6" Width="90" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
-        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,593,0,0" VerticalAlignment="Top" Width="114" Height="31" Foreground="White" Click="Pay_check" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
+        <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="PAY" Margin="0,610,0,0" VerticalAlignment="Top" Width="114" Height="31" Foreground="White" Click="Pay_check" BorderBrush="#00A2A2A2" Background="#FFA2A2A2" />
         <Grid x:Name="myGrid2" Margin="74,407,73,203" >
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -40,8 +39,9 @@
             </Image>
         </Button>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="35" Margin="0,262,0,0" VerticalAlignment="Top" Width="280"/>
-        <CheckBox Content="Do you want to save this paypal account?" HorizontalAlignment="Left" Margin="60,302,0,0" VerticalAlignment="Top" Width="220" Foreground="#FF7D888F" FontSize="10"/>
+        <CheckBox Content="Do you want to save this paypal account?" HorizontalAlignment="Left" Margin="60,302,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="10" Background="White"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="58,262,0,0" VerticalAlignment="Top" Width="100" Source="Images/paypal.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="285,570,0,0" Text="* IVA 23%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Width="90" Foreground="#FF7D888F" FontWeight="Bold" Height="20"/>
 
     </Grid>
 </Page>

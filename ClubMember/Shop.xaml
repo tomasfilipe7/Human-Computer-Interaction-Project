@@ -97,5 +97,6 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="282,89,0,0" Text="^ Checkout ^" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextAlignment="Center" FontWeight="Bold" FontFamily="Yu Gothic" Foreground="White"/>
     </Grid>
 </Page>

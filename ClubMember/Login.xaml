@@ -19,7 +19,7 @@
         <Button Style="{StaticResource BlueBoldButtonStyle}" Content="LOGIN" Margin="0,487,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="Button_Click_1" RenderTransformOrigin="0.48,-0.646"/>
         <Label Content="ClubMember" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Foreground="White" Height="42" Width="172" FontSize="28"/>
         <PasswordBox x:Name="textBox2" HorizontalAlignment="Left" Margin="82,390,0,0" VerticalAlignment="Top" Width="216" Height="25" BorderBrush="{x:Null}"/>
-        <Button Style="{StaticResource BlueBoldButtonStyle}" Content="CREATE ACCOUNT" Margin="0,552,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="Button_Click_2"/>
+        <Button Style="{StaticResource BlueBoldButtonStyle}" Content="CREATE ACCOUNT" Margin="128,614,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="Button_Click_2" HorizontalAlignment="Left"/>
         <CheckBox x:Name="checkBox1" Content="Remember me" HorizontalAlignment="Left" Margin="80,420,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="White" IsChecked="True"/>
         <Button Content="Forgot password" HorizontalAlignment="Left" Margin="209,418,0,0" VerticalAlignment="Top" Width="94" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Height="20" FontSize="11" Click="Button_Click_3"/>
 
