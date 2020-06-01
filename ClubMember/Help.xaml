@@ -9,6 +9,57 @@
       Title="Help">
 
     <Grid>
+
+        <ScrollViewer Margin="34,155,34,108" VerticalScrollBarVisibility="Hidden" Background="White">
+            <StackPanel Height="896">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="51"/>
+                        <RowDefinition Height="104"/>
+                        <RowDefinition Height="97"/>
+                        <RowDefinition Height="97"/>
+                        <RowDefinition Height="160"/>
+                        <RowDefinition Height="152"/>
+                        <RowDefinition Height="105"/>
+                        <RowDefinition Height="0*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Margin="15,0,0,0" Style="{StaticResource BottomBarButton}" Width="61" Height="48" Grid.Row="1">
+                        <Image Source="Images/feed.png" Height="40" Width="50"/>
+                    </Button>
+                    <Button Margin="75,0,0,0" Style="{StaticResource BottomBarButton}" Width="66" Height="48" Grid.Row="1">
+                        <Image Source="Images/calendar.png" Height="40" Width="50"/>
+                    </Button>
+                    <Button Margin="140,0,0,0" Style="{StaticResource BottomBarButton}" Width="59" Height="48" Grid.Row="1">
+                        <Image Source="Images/profile.png" Height="40" Width="50"/>
+                    </Button>
+                    <Button Margin="198,0,0,0" Style="{StaticResource BottomBarButton}" Width="59" Height="48" Grid.Row="1">
+                        <Image Source="Images/cart.png" Height="40" Width="50"/>
+                    </Button>
+                    <Button Margin="256,0,0,0" Style="{StaticResource BottomBarButton}" Width="63" Height="48" Grid.Row="1">
+                        <Image Source="Images/settings.png" Height="40" Width="50"/>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Left" Margin="38,52,0,0" Text="1" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" FontFamily="Yu Gothic UI Semibold" Height="37" Grid.Row="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="101,53,0,0" Text="2" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" FontFamily="Yu Gothic UI Semibold"  Height="37" Grid.Row="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="162,53,0,0" Text="3" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" FontFamily="Yu Gothic UI Semibold"  Height="37" Grid.Row="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="220,52,0,0" Text="4" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" FontFamily="Yu Gothic UI Semibold"  Height="37" Grid.Row="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="280,52,0,0" Text="5" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" FontFamily="Yu Gothic UI Semibold"  Height="37" Grid.Row="1"/>
+                    <TextBlock HorizontalAlignment="Center" Text="1 - News feed" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Yu Gothic UI"  Height="37" Grid.Row="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="30,0,0,0" Text="2 - Results" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontFamily="Yu Gothic UI"  Height="37" Grid.Row="3"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="30,0,0,0" Text="3 - Profile" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontFamily="Yu Gothic UI"  Height="37" Grid.Row="4"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,157,0,0" Text="4 - Shop Options" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontFamily="Yu Gothic UI"  Background="White" Height="37" Grid.Row="4" Grid.RowSpan="2"/>
+                    <TextBlock HorizontalAlignment="Center" Text="5 - Settings" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontFamily="Yu Gothic UI" Background="White" Height="37" Grid.Row="6"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,35,0,0" Text="In this tab you'll be able to find the latest news about the club." FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Yu Gothic UI" Height="60" Grid.Row="2"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,37,0,0" Text="In this tab you'll be able to find the results of the last games." FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Yu Gothic UI" Height="46" Grid.Row="3"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,37,0,0" Text="In this tab you'll be able to check your membership status and also update it, check your tickets acquired, check the items you bought from the online store and update your profile." FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" FontFamily="Yu Gothic UI" Height="120" Grid.Row="4"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,37,0,0" Text="In this tab you'll be able to purchase in the online store, buy your tickets for the next games and update or upgrade your membership fee." FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Yu Gothic UI" Height="120" Grid.Row="5" Grid.RowSpan="2"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,37,0,0" Text="In this tab you'll be able to configure some application settings." FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Yu Gothic UI" Height="100" Grid.Row="6" Grid.RowSpan="2"/>
+                    <TextBlock Grid.Row="0" Text="The bottom navigation bar: " FontSize="16" FontFamily="Yu Gothic UI Semibold" Margin="30,13,30,14" Background="White"/>
+
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+
         <Label Content="HELP" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" RenderTransformOrigin="0.507,0.301" FontFamily="Yu Gothic UI Semibold"/>
         <Button Margin="0,10,304,598" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
             <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">
@@ -22,7 +73,6 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <Rectangle HorizontalAlignment="Center" Height="451" Margin="0,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
 
     </Grid>
 </Page>
