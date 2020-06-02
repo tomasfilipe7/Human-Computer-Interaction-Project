@@ -34,21 +34,31 @@
         </ScrollViewer>
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png"/>
-        <Button Margin="0,64,0,0" Style="{StaticResource BottomBarButton}" Width="87" Grid.Row="1">
-            <Image Source="Images/feed.png" Height="40" Width="50"/>
+        <Button Margin="0,59,0,0" Style="{StaticResource BottomBarButton}" Width="87" Grid.Row="1" Height="53">
+            <Image Source="Images/feed.png" Height="40" Width="50" Margin="0,0,0,12"/>
         </Button>
-        <Button Margin="87,64,0,0" Style="{StaticResource BottomBarButton}" Width="83" Click="goToResults" Grid.Row="1">
-            <Image Source="Images/calendar.png" Height="40" Width="50"/>
+        <Label Content="News" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="23,91,328,34" Grid.Row="1"/>
+
+        <Button Margin="87,59,0,0" Style="{StaticResource BottomBarButton}" Width="83" Click="goToResults" Grid.Row="1" Height="53">
+            <Image Source="Images/calendar.png" Height="40" Width="50" Margin="0,0,0,10"/>
         </Button>
-        <Button Margin="170,64,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1" Grid.Row="1">
-            <Image Source="Images/profile.png" Height="40" Width="50"/>
+        <Label Content="Results" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="104,91,247,34" Grid.Row="1"/>
+
+        <Button Margin="170,59,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1" Grid.Row="1" Height="53">
+            <Image Source="Images/profile.png" Height="40" Width="50" Margin="0,0,0,10"/>
         </Button>
-        <Button Margin="245,64,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_Shopping" Grid.Row="1">
-            <Image Source="Images/cart.png" Height="40" Width="50"/>
+        <Label Content="Profile" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="183,91,168,34" Grid.Row="1"/>
+
+        <Button Margin="245,59,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_Shopping" Grid.Row="1" Height="53">
+            <Image Source="Images/cart.png" Height="40" Width="50" Margin="0,0,0,7"/>
         </Button>
-        <Button Margin="320,64,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80" Grid.Row="1">
-            <Image Source="Images/settings.png" Height="40" Width="50"/>
+        <Label Content="Shop" Height="26" FontFamily="Yu Gothic UI Semibold" Margin="264,91,98,34" Grid.Row="1"/>
+
+        <Button Margin="320,59,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80" Grid.Row="1" Height="53">
+            <Image Source="Images/settings.png" Height="40" Width="50" Margin="0,0,0,8"/>
         </Button>
+        <Label Content="Settings" Height="26" FontFamily="Yu Gothic UI Semibold" Margin="333,91,13,34" Grid.Row="1"/>
+
         <Image HorizontalAlignment="Left" Height="100" Margin="51,164,0,0" VerticalAlignment="Top" Width="100" Source="Images/MyClub.png"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="245,169,0,0" VerticalAlignment="Top" Width="100" Source="Images/RivalsFC.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="165,182,0,0" Text="2 - 0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Yu Gothic" FontSize="30" Foreground="#FF183E7E" Height="40" Width="75"/>

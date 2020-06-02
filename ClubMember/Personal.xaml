@@ -60,21 +60,31 @@
         </Button>
 
 
-        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2" Width="87">
-            <Image Source="Images/feed.png" Height="40" Width="50"/>
+        <Button Margin="0,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_2" Width="87" Height="53">
+            <Image Source="Images/feed.png" Height="40" Width="50" Margin="0,0,0,12"/>
         </Button>
-        <Button Margin="87,627,0,0" Style="{StaticResource BottomBarButton}" Click="goToResults" Width="83">
-            <Image Source="Images/calendar.png" Height="40" Width="50"/>
+        <Label Content="News" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="23,658,328,30"/>
+
+        <Button Margin="87,627,0,0" Style="{StaticResource BottomBarButton}" Click="goToResults" Width="83" Height="53">
+            <Image Source="Images/calendar.png" Height="40" Width="50" Margin="0,0,0,10"/>
         </Button>
-        <Button Margin="170,627,0,0" Style="{StaticResource BottomBarButton}">
-            <Image Source="Images/profile.png" Height="40" Width="50"/>
+        <Label Content="Results" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="104,658,246,30"/>
+
+        <Button Margin="170,627,0,0" Style="{StaticResource BottomBarButton}" Height="53">
+            <Image Source="Images/profile.png" Height="40" Width="50" Margin="0,0,0,10"/>
         </Button>
-        <Button Margin="245,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1">
-            <Image Source="Images/cart.png" Height="40" Width="50"/>
+        <Label Content="Profile" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="183,658,168,30"/>
+
+        <Button Margin="245,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click_1" Height="53">
+            <Image Source="Images/cart.png" Height="40" Width="50" Margin="0,0,0,7"/>
         </Button>
-        <Button  Margin="320,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80">
-            <Image Source="Images/settings.png" Height="40" Width="50"/>
+        <Label Content="Shop" Height="26" Width="49" FontFamily="Yu Gothic UI Semibold" Margin="263,658,88,30"/>
+
+        <Button  Margin="320,627,0,0" Style="{StaticResource BottomBarButton}" Click="Button_Click" Width="80" Height="53">
+            <Image Source="Images/settings.png" Height="40" Width="50" Margin="0,0,0,8"/>
         </Button>
+        <Label Content="Settings" Height="26" FontFamily="Yu Gothic UI Semibold" Margin="332,658,12,30"/>
+
 
 
 
