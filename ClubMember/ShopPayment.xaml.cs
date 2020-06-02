@@ -37,6 +37,7 @@ namespace ClubMember
             PageManager.pagemanager.GetShoppingCart().PaidSuccess();
             PageManager.pagemanager.getItemsBought().setMemberID(PageManager.pagemanager.getPerson().getID());
             ConfirmPayment confirm = new ConfirmPayment(this, PageManager.pagemanager.getShop(), "The payment was accepted successfully!");
+            confirm.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             confirm.ShowDialog();
         }
     }

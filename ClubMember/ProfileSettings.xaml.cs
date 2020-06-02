@@ -68,7 +68,11 @@ namespace ClubMember
                 {
                     PageManager.pagemanager.getPerson().setPassword(new_password);
                     PageManager.pagemanager.getPerson().savePerson();
-                    MessageBox.Show("Password changed!", "Change Password", MessageBoxButton.OK);
+                    ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getProfileSettings(), "Password changed!");
+                    window.HorizontalAlignment = HorizontalAlignment.Center;
+                    window.VerticalAlignment = VerticalAlignment.Center;
+                    window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                    window.ShowDialog();
                     found = true;
                 }                
 
@@ -76,7 +80,11 @@ namespace ClubMember
             
             if (found == false)
             {
-                MessageBox.Show("Your actual password is incorret", "Change Password", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getProfileSettings(), "Your actual password is incorret");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
 
             }
 
@@ -91,7 +99,11 @@ namespace ClubMember
             string email = textBox2.Text;
             PageManager.pagemanager.getPerson().setEmail(email);
             PageManager.pagemanager.getPerson().savePerson();
-            MessageBox.Show("E-mail changed!", "Change E-mail", MessageBoxButton.OK);
+            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getProfileSettings(), "E-mail changed!");
+            window.HorizontalAlignment = HorizontalAlignment.Center;
+            window.VerticalAlignment = VerticalAlignment.Center;
+            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.ShowDialog();
 
             textBox2.Text = "";
         }
@@ -102,7 +114,11 @@ namespace ClubMember
             string movie = textBox3.Text;
             PageManager.pagemanager.getPerson().setMovie(movie);
             PageManager.pagemanager.getPerson().savePerson();
-            MessageBox.Show("Recovery Answer changed!", "Change Recovery Answer", MessageBoxButton.OK);
+            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getProfileSettings(), "Recovery answer changed!");
+            window.HorizontalAlignment = HorizontalAlignment.Center;
+            window.VerticalAlignment = VerticalAlignment.Center;
+            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.ShowDialog();
 
             textBox3.Text = "";
         }

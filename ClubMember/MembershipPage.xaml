@@ -8,11 +8,11 @@
      Style="{StaticResource PageStyle}"
       Title="MembershipPage">
     <Grid>
-        <Label x:Name="Membership" Style="{StaticResource WhiteBoldLabelStyle}" Content="MEMBERSHIP ID: 583867" Margin="0,142,0,0" VerticalAlignment="Top" Width="304" Height="52" FontFamily="Segoe UI Light" FontSize="14"/>
+        <Label x:Name="Membership" Style="{StaticResource WhiteBoldLabelStyle}" Content="MEMBERSHIP ID: 583867" Margin="0,142,0,0" VerticalAlignment="Top" Width="304" Height="52" FontFamily="Yu Gothic UI" FontSize="16"/>
         <Rectangle Style="{StaticResource WhiteRectangleStyle}" HorizontalAlignment="Center" Height="297" Stroke="Black" VerticalAlignment="Top" Width="312" Margin="0,246,0,0"/>
-        <Label x:Name="DaysLeft" Style="{StaticResource WhiteBoldLabelStyle}" Content="Days left: 34" Margin="0,252,0,0" VerticalAlignment="Top" Height="58" Width="228" FontSize="14" FontFamily="Yu Gothic UI Semibold"/>
+        <Label x:Name="DaysLeft" Style="{StaticResource WhiteBoldLabelStyle}" Content="Days left: 34" Margin="0,252,0,0" VerticalAlignment="Top" Height="58" Width="228" FontSize="18" FontFamily="Yu Gothic UI Semibold"/>
         <Button x:Name="Renew" Style="{StaticResource BlueBoldButtonStyle}" Content="RENEW MONTHLY FEE" Margin="0,298,0,0" VerticalAlignment="Top" Width="172" Height="40" Foreground="White" Click="Renew_Click"/>
-        <Label x:Name="MembershipPlan" Style="{StaticResource WhiteBoldLabelStyle}" Content="Membership Plan: Standard" Margin="0,394,0,0" VerticalAlignment="Top" Height="58" Width="228" FontSize="14"/>
+        <Label x:Name="MembershipPlan" Style="{StaticResource WhiteBoldLabelStyle}" Content="Membership Plan: Standard" Margin="0,394,0,0" VerticalAlignment="Top" Height="58" Width="271" FontSize="18"/>
         <Button x:Name="ChangePlan" Style="{StaticResource BlueBoldButtonStyle}" Content="CHANGE PLAN" Margin="0,445,0,0" VerticalAlignment="Top" Width="172" Height="40" Foreground="White" Click="Upgrade_Click" />
         <Button Margin="0,14,304,593" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
             <Image Source="Images/arrow.png" Height="61" Width="63" RenderTransformOrigin="0.5,0.5">

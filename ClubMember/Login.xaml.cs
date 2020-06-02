@@ -44,17 +44,29 @@ namespace ClubMember
 
             if(ID == "" && password == "")
             {
-                MessageBox.Show("Inputs cannot be left in blank", "Login", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getLogin(), "Inputs cannot be left in blank");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
             }
 
             else if (ID == "")
             {
-                MessageBox.Show("Please, insert MemberID", "Login", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getLogin(), "Please, insert MemberID");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
             }
 
             else if (password == "")
             {
-                MessageBox.Show("Please, insert password", "Login", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getLogin(), "Please, insert password");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
             }
 
             else
@@ -67,7 +79,12 @@ namespace ClubMember
 
                     if (ID == content[0] && password == content[1])
                     {
-                        MessageBox.Show("Login successfully!", "Login", MessageBoxButton.OK);
+                        PageManager.pagemanager.setNewsFeed();
+                        ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.GetNewsFeed(), "Login successfully!");
+                        window.HorizontalAlignment = HorizontalAlignment.Center;
+                        window.VerticalAlignment = VerticalAlignment.Center;
+                        window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                        window.ShowDialog();
                         found = true;
                         string timeLeft = content[2];
                         string memberType = content[3];
@@ -88,8 +105,7 @@ namespace ClubMember
                             PageManager.pagemanager.getPerson().getDaysLeft()
                         );
 
-                        PageManager.pagemanager.setNewsFeed();
-                        this.NavigationService.Navigate(PageManager.pagemanager.GetNewsFeed());
+                        
 
                         PageManager.pagemanager.setItemsBought(
                             PageManager.pagemanager.getPerson().getID()
@@ -115,7 +131,11 @@ namespace ClubMember
 
                 if (found == false)
                 {
-                    MessageBox.Show("Login invalid!", "Login", MessageBoxButton.OK);
+                    ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getLogin(), "Login invalid!");
+                    window.HorizontalAlignment = HorizontalAlignment.Center;
+                    window.VerticalAlignment = VerticalAlignment.Center;
+                    window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                    window.ShowDialog();
                 }
             }
 

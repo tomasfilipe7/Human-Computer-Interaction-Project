@@ -28,7 +28,7 @@
             <Label HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.Column="0" Margin="0,-8,-14,0">ITEM | PRICE</Label>
 
         </Grid>
-        <ScrollViewer Margin="24,207,22,61" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
+        <ScrollViewer Margin="24,207,22,61" VerticalScrollBarVisibility="Hidden">
             <StackPanel x:Name="stackP" Background="White" Height="438" Width="355">
                 <Grid x:Name="myGrid">
                     <Grid.ColumnDefinitions>

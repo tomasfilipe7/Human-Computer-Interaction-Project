@@ -23,7 +23,7 @@
             <Label Grid.Column="2" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Margin="0,-8,0,0">Price</Label>
             <Label Grid.Column="2" HorizontalContentAlignment="Center" Background="Gray" FontSize="14" FontFamily="Yu Gothic UI Semibold" Foreground="White" Grid.ColumnSpan="3" Margin="78,-8,0,0">Date</Label>
         </Grid>
-        <ScrollViewer Margin="24,188,23,77" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer Margin="24,188,23,77" VerticalScrollBarVisibility="Hidden">
             <StackPanel x:Name="stackP" Background="White" Height="438">
                 <Grid x:Name="myGrid">
                     <Grid.ColumnDefinitions>

@@ -12,8 +12,9 @@
         <Label Content="ClubMember" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Light" FontSize="32" Foreground="White" FontWeight="Normal"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="62,55,0,0" VerticalAlignment="Top" Width="58" Source="Images/football-png-7.png" OpacityMask="White"/>
         <Rectangle HorizontalAlignment="Center" Height="308" Margin="0,155,0,0" VerticalAlignment="Top" Width="332" Fill="White"/>
-        <TextBlock x:Name="textBlock1" FontSize="16" HorizontalAlignment="Left" Margin="129,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="124,211,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="button1_Click"/>
+        <TextBlock x:Name="textBlock1" FontSize="18" FontFamily="Yu Gothic UI Semibold" HorizontalAlignment="Left" Margin="129,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content=""  HorizontalAlignment="Left" Margin="124,211,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic Medium" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="button1_Click"/>
+        <Label FontSize="12" FontFamily="Yu Gothic UI Semibold" Content="^ Click here to update!" Margin="124,234,106,448"/>
         <Image HorizontalAlignment="Left" Height="90" Margin="34,155,0,0" VerticalAlignment="Top" Width="90" Source="Images/person.png"/>
 
         <Button x:Name="Button1" Margin="38,259,34,0" Style="{StaticResource ProfileOptions}" VerticalAlignment="Top" Width="Auto" Click="Button1_Click_1">

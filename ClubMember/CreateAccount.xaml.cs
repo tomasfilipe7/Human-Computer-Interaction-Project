@@ -39,7 +39,11 @@ namespace ClubMember
 
             if (fname == "" || lname == "" || memberID == "" || email  == "" || password == "" || movie == "")
             {
-                MessageBox.Show("Inputs cannot be left in blank", "Create Account", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getCreateAccount(), "Inputs cannot be left in blank");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
             }
        
             else
@@ -53,7 +57,11 @@ namespace ClubMember
 
                     if(memberID == content[0])
                     {
-                        MessageBox.Show("Member already exists!", "Create Account", MessageBoxButton.OK);
+                        ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getCreateAccount(), "Member already exists!");
+                        window.HorizontalAlignment = HorizontalAlignment.Center;
+                        window.VerticalAlignment = VerticalAlignment.Center;
+                        window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                        window.ShowDialog();
                         found = true;
                     }
                 }
@@ -67,8 +75,11 @@ namespace ClubMember
                         writer.WriteLine(line);
                     }
 
-                    MessageBox.Show(memberID + " account was successfully created!", "Create Account", MessageBoxButton.OK);
-                    this.NavigationService.Navigate(PageManager.pagemanager.getLogin());
+                    ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getLogin(), memberID + " account was\nsuccessfully created!" );
+                    window.HorizontalAlignment = HorizontalAlignment.Center;
+                    window.VerticalAlignment = VerticalAlignment.Center;
+                    window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                    window.ShowDialog();
 
                 }
                 

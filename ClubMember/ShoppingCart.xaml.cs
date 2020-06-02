@@ -114,11 +114,16 @@ namespace ClubMember
             {
                 using (StreamWriter writer = new StreamWriter("itemsBought.txt", true))
                 {
-                    String tmp = memberID + ", " + l + ", 1, " + prices[count].ToString() + "€" + ", " + DateTime.Today;
+                    String tmp = memberID + ", " + l + ", 1, " + prices[count].ToString() + "€" + ", " + DateTime.Today.ToString().Split(" ")[0];
                     writer.WriteLine(tmp);
                 }
                 count++;
             }
+
+            shoppingCart.Clear();
+            prices.Clear();
+            PageManager.pagemanager.getShop().clearCount();
+            setMemberID(memberID);
         }
     }
 }

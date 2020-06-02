@@ -26,7 +26,11 @@ namespace ClubMember
         // button to Send Feedback
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Thanks for your feedback!", "Send Feedback", MessageBoxButton.OK);
+            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getSendFeedback(), "Thanks for your feedback!");
+            window.HorizontalAlignment = HorizontalAlignment.Center;
+            window.VerticalAlignment = VerticalAlignment.Center;
+            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.ShowDialog();
             this.NavigationService.Navigate(PageManager.pagemanager.getSettings());
         }
 

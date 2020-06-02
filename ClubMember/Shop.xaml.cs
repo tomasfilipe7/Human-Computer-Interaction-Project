@@ -127,5 +127,13 @@ namespace ClubMember
             this.NavigationService.Navigate(PageManager.pagemanager.GetShoppingCart());
             PageManager.pagemanager.GetShoppingCart().setMemberID(PageManager.pagemanager.getPerson().getID());
         }
+
+        public void clearCount()
+        {
+            count = 0;
+            shoppingCart.Clear();
+            prices.Clear();
+            txtBlk.Text = count.ToString();
+        }
     }
 }

@@ -38,17 +38,29 @@ namespace ClubMember
 
             if (movie == "" && memberID == "")
             {
-                MessageBox.Show("Inputs cannot be left in blank", "Forgot Password", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getForgotPassword(), "Inputs cannot be left in blank");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
             }
             else if (movie == "")
             {
-                MessageBox.Show("Please answer the question", "Forgot Password", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getForgotPassword(), "Please, answer the question");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
 
             }
 
             else if (memberID == "")
             {
-                MessageBox.Show("Please insert member ID", "Forgot Password", MessageBoxButton.OK);
+                ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getForgotPassword(), "Please, insert member ID");
+                window.HorizontalAlignment = HorizontalAlignment.Center;
+                window.VerticalAlignment = VerticalAlignment.Center;
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
 
             }
 
@@ -63,9 +75,12 @@ namespace ClubMember
                         foundID = true;
                         if (movie == content[7])
                         {
-                            MessageBox.Show("Your password is: " + content[1], "Forgot Password", MessageBoxButton.OK);
+                            ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getLogin(), "Your password is: " + content[1]);
+                            window.HorizontalAlignment = HorizontalAlignment.Center;
+                            window.VerticalAlignment = VerticalAlignment.Center;
+                            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                            window.ShowDialog();
                             foundMovie = true;
-                            this.NavigationService.Navigate(PageManager.pagemanager.getLogin());
                         }
                     }
 
@@ -74,13 +89,21 @@ namespace ClubMember
 
                 if(foundID == false)
                 {
-                    MessageBox.Show("Member ID invalid", "Forgot Password", MessageBoxButton.OK);
+                    ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getForgotPassword(), "Member ID invalid");
+                    window.HorizontalAlignment = HorizontalAlignment.Center;
+                    window.VerticalAlignment = VerticalAlignment.Center;
+                    window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                    window.ShowDialog();
                 }
                 else
                 {
                     if (foundMovie == false)
                     {
-                        MessageBox.Show("Your answer is incorret. Please try again", "Forgot Password", MessageBoxButton.OK);
+                        ConfirmPayment window = new ConfirmPayment(this, PageManager.pagemanager.getForgotPassword(), "Your answer is incorret.\nPlease try again");
+                        window.HorizontalAlignment = HorizontalAlignment.Center;
+                        window.VerticalAlignment = VerticalAlignment.Center;
+                        window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                        window.ShowDialog();
 
                     }
                 }
